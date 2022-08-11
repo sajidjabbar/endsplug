@@ -67,7 +67,19 @@ import video_btn from "../assets/img/video-btn.png";
 import Main_Story_img from "../assets/img/main-story.png";
 import user_profile_img from "../assets/img/friend-profile.png";
 import auth_logo from "../assets/img/auth-logo.png";
+import google from "../assets/img/search.png";
+import login_header_logo from "../assets/img/login-header-logo.png";
+import password_eye from "../assets/img/password-eye.png";
+import upload_icon from "../assets/img/upload-icon.png";
+import member_img from "../assets/img/member-img.png";
+import videoPlayer from "../assets/img/videoplayer.png";
 export {
+	videoPlayer,
+	member_img,
+	upload_icon,
+	password_eye,
+	login_header_logo,
+	google,
 	auth_logo,
 	user_profile_img,
 	Main_Story_img,
