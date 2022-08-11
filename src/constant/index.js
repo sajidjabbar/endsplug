@@ -61,7 +61,19 @@ import buddies6 from "../assets/img/buddies6.png";
 import buddies7 from "../assets/img/buddies7.png";
 import buddies8 from "../assets/img/buddies8.png";
 import buddies9 from "../assets/img/buddies9.png";
+import attchment_img from "../assets/img/atttachment.png";
+import gallery_btn from "../assets/img/gallery-btn.png";
+import video_btn from "../assets/img/video-btn.png";
+import Main_Story_img from "../assets/img/main-story.png";
+import user_profile_img from "../assets/img/friend-profile.png";
+import auth_logo from "../assets/img/auth-logo.png";
 export {
+	auth_logo,
+	user_profile_img,
+	Main_Story_img,
+	gallery_btn,
+	video_btn,
+	attchment_img,
 	buddies1,
 	buddies2,
 	buddies3,

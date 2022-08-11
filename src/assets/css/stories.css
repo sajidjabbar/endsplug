@@ -1,0 +1,28 @@
+.stories-wrapper {
+	padding-top: 8vh;
+	position: relative;
+}
+/* .Story-card div:first-child {
+	background: transparent !important;
+} */
+.stories-wrapper .Story-card {
+	justify-content: center;
+}
+.stories-wrapper p.previous {
+	position: absolute;
+	left: -20%;
+	top: 42%;
+	font-size: 47px;
+}
+.stories-wrapper p button {
+	background: transparent;
+	border: 0px;
+	color: #fff;
+}
+.stories-wrapper p.next {
+	position: absolute;
+	right: -20%;
+	top: 42%;
+	font-size: 47px;
+	z-index: 2;
+}

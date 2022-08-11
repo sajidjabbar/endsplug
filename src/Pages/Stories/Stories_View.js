@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Stories, { WithHeader } from "react-insta-stories";
+import { Main_Story_img, user_profile_img } from "../../constant/index";
+import "../../assets/css/stories.css";
 const Stories_View = () => {
+	const storyContent = {
+		width: "auto",
+		maxWidth: "100%",
+		maxHeight: "100%",
+		margin: "auto",
+		background: "transparent",
+	};
 	const [currentId, setCurrentId] = useState(0);
 	return (
 		<section className="stories-wrapper">
@@ -8,20 +17,25 @@ const Stories_View = () => {
 				<div className="row">
 					<div className="col-lg-3"></div>
 					<div className="col-lg-6">
-						<div style={{ display: "flex", flexDirection: "row" }}>
-							<p
-								onClick={() => {
-									setCurrentId((currentId) => currentId - 1);
-								}}
-								style={{ color: "white" }}
-							>
-								next
+						<div
+							className="Story-card"
+							style={{ display: "flex", flexDirection: "row" }}
+						>
+							<p className="previous" style={{ color: "white" }}>
+								<button
+									onClick={() => {
+										setCurrentId((currentId) => currentId - 1);
+									}}
+								>
+									<i className="fa fa-angle-left"></i>
+								</button>
 							</p>
 							<Stories
 								currentIndex={currentId}
 								loop
+								storyStyles={storyContent}
 								keyboardNavigation
-								defaultInterval={3000}
+								defaultInterval={1500}
 								stories={stories}
 								onStoryEnd={(s, st) => {
 									console.log("story ended", s, st);
@@ -36,13 +50,14 @@ const Stories_View = () => {
 									setCurrentId((currentId) => currentId + 1 - 1);
 								}}
 							/>
-							<p
-								onClick={() => {
-									setCurrentId((currentId) => currentId + 1);
-								}}
-								style={{ color: "white" }}
-							>
-								next
+							<p className="next" style={{ color: "white" }}>
+								<button
+									onClick={() => {
+										setCurrentId((currentId) => currentId + 1);
+									}}
+								>
+									<i className="fa fa-angle-right"></i>
+								</button>
 							</p>
 						</div>
 					</div>
@@ -54,34 +69,31 @@ const Stories_View = () => {
 };
 
 const stories = [
-	"https://example.com/pic.jpg",
 	{
-		url: "https://example.com/pic2.jpg",
+		url: Main_Story_img,
 		duration: 5000,
 		header: {
 			heading: "Mohit Karekar",
 			subheading: "Posted 30m ago",
-			profileImage: "https://picsum.photos/100/100",
+			profileImage: user_profile_img,
 		},
 	},
-	"https://example.com/pic.jpg",
 	{
-		url: "https://example.com/pic2.jpg",
+		url: Main_Story_img,
 		duration: 5000,
 		header: {
 			heading: "Mohit Karekar",
 			subheading: "Posted 30m ago",
-			profileImage: "https://picsum.photos/100/100",
+			profileImage: user_profile_img,
 		},
 	},
-	"https://example.com/pic.jpg",
 	{
-		url: "https://example.com/pic2.jpg",
+		url: Main_Story_img,
 		duration: 5000,
 		header: {
 			heading: "Mohit Karekar",
 			subheading: "Posted 30m ago",
-			profileImage: "https://picsum.photos/100/100",
+			profileImage: user_profile_img,
 		},
 	},
 ];

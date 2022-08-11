@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import Modal from "react-bootstrap/Modal";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Newslettter from "../../components/Newslettter";
+// import { Base64 } from "js-base64";
 import {
+	attchment_img,
 	buddies1,
 	buddies2,
 	buddies3,
@@ -26,6 +29,7 @@ import {
 	following_admin_img2,
 	following_admin_img3,
 	friend_profile_img,
+	gallery_btn,
 	left_question,
 	likes,
 	live,
@@ -53,12 +57,23 @@ import {
 	Stream3,
 	stream_img_1,
 	verified,
+	video_btn,
 } from "../../constant";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useFilePicker } from "use-file-picker";
 
 const Home = () => {
+	const [openFileSelector, { filesContent, loading }] = useFilePicker({
+		multiple: true,
+		accept: [".png", ".jpg", ".mp4", "gif", "pdf"],
+		limitFilesConfig: { min: 2, max: 3 },
+	});
+	const [show, setShow] = useState(false);
+
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 	const settings = {
 		dots: false,
 		infinite: true,
@@ -284,7 +299,7 @@ const Home = () => {
 		},
 		{
 			id: 14,
-			name: "robintallrothh ",
+			name: "robintallrothh",
 			profile_img: buddies6,
 			isOnline: true,
 			Stories: true,
@@ -602,7 +617,7 @@ const Home = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-8">
-							<div className="status-card-wrapper">
+							<div className="status-card-wrapper" onClick={handleShow}>
 								<div className="status-field-and-profile-wrapper">
 									<div className="status-profile-wrapper">
 										<img src={profile_img} className="img-fluid" alt="" />
@@ -674,9 +689,9 @@ const Home = () => {
 										<h6>2 hr</h6>
 									</div>
 									<div className="more-option-wrapper">
-										<div class="dropdown">
+										<div className="dropdown">
 											<button
-												class="btn btn-secondary dropdown-toggle"
+												className="btn btn-secondary dropdown-toggle"
 												type="button"
 												id="dropdownMenuButton"
 												data-toggle="dropdown"
@@ -686,22 +701,22 @@ const Home = () => {
 												<i className="fa fa-ellipsis-v"></i>
 											</button>
 											<div
-												class="dropdown-menu"
+												className="dropdown-menu"
 												aria-labelledby="dropdownMenuButton"
 											>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													Report
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													hide
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													share
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													copy link
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													unfollow
 												</a>
 											</div>
@@ -827,9 +842,9 @@ const Home = () => {
 										<h6>2 hr</h6>
 									</div>
 									<div className="more-option-wrapper">
-										<div class="dropdown">
+										<div className="dropdown">
 											<button
-												class="btn btn-secondary dropdown-toggle"
+												className="btn btn-secondary dropdown-toggle"
 												type="button"
 												id="dropdownMenuButton"
 												data-toggle="dropdown"
@@ -839,22 +854,22 @@ const Home = () => {
 												<i className="fa fa-ellipsis-v"></i>
 											</button>
 											<div
-												class="dropdown-menu"
+												className="dropdown-menu"
 												aria-labelledby="dropdownMenuButton"
 											>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													Report
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													hide
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													share
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													copy link
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													unfollow
 												</a>
 											</div>
@@ -984,9 +999,9 @@ const Home = () => {
 										<h6>2 hr</h6>
 									</div>
 									<div className="more-option-wrapper">
-										<div class="dropdown">
+										<div className="dropdown">
 											<button
-												class="btn btn-secondary dropdown-toggle"
+												className="btn btn-secondary dropdown-toggle"
 												type="button"
 												id="dropdownMenuButton"
 												data-toggle="dropdown"
@@ -996,22 +1011,22 @@ const Home = () => {
 												<i className="fa fa-ellipsis-v"></i>
 											</button>
 											<div
-												class="dropdown-menu"
+												className="dropdown-menu"
 												aria-labelledby="dropdownMenuButton"
 											>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													Report
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													hide
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													share
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													copy link
 												</a>
-												<a class="dropdown-item" href="#">
+												<a className="dropdown-item" href="#">
 													unfollow
 												</a>
 											</div>
@@ -1118,20 +1133,82 @@ const Home = () => {
 									</div>
 								</div>
 							</div>
+							<div className="pagination-wrapper">
+								<div className="pagination-list-wrapper">
+									<ul>
+										<li className="pagination-item">
+											<button className="pagination-btn active">1</button>
+										</li>
+										<li className="pagination-item">
+											<button className="pagination-btn">2</button>
+										</li>
+										<li className="pagination-item">
+											<button className="pagination-btn">3</button>
+										</li>
+										<li className="pagination-item">
+											<button className="pagination-btn">4</button>
+										</li>
+										<li className="pagination-item">
+											<button className="pagination-btn">5</button>
+										</li>
+										<li className="pagination-item">
+											<button className="pagination-btn">10</button>
+										</li>
+										<li className="pagination-item">
+											<button className="pagination-btn next-btn">
+												Next <i className="fa fa-angle-right"></i>
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 						<div className="col-lg-4">
 							<div className="budddies-wrapper">
 								<div className="buddies-heading-wrapper">
 									<h4>Buddies</h4>
 								</div>
-								<div className="buddies-list-wrapper">
-									<div className="buddies-single-wrapper">
-										<img src={buddies1} className="buddy-img" alt="" />
-									</div>
-									<div className="buddy-name-wrapper">
-										<h6>Howard Barton</h6>
-									</div>
-								</div>
+								{buddies.map((data, index) => {
+									return (
+										<div key={index} className="buddies-list-wrapper">
+											<div className="buddies-single-wrapper">
+												<img
+													src={data?.profile_img}
+													className="buddy-img"
+													alt=""
+												/>
+
+												<div className="active"></div>
+											</div>
+
+											<div className="buddy-name-wrapper">
+												<div className="dropdown">
+													<button
+														className="btn btn-secondary dropdown-toggle"
+														type="button"
+														id="dropdownMenuButton"
+														data-toggle="dropdown"
+														aria-haspopup="true"
+														aria-expanded="false"
+													>
+														<h6>{data?.name}</h6>
+													</button>
+													<div
+														className="dropdown-menu"
+														aria-labelledby="dropdownMenuButton"
+													>
+														<a className="dropdown-item" href="#">
+															<i className="fa fa-user"></i> View Profile
+														</a>
+														<a className="dropdown-item" href="#">
+															<i className="fa fa-comment"></i> Message
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									);
+								})}
 							</div>
 						</div>
 					</div>
@@ -1144,6 +1221,89 @@ const Home = () => {
 			{/* footer starts here */}
 			<Footer />
 			{/* footer ends here */}
+			{/* create post modal starts here */}
+			<Modal className="Create-Post" show={show} onHide={handleClose}>
+				<Modal.Header closeButton={"hvbhy"}>
+					<Modal.Title>Create post</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>
+					<div className="Post-Modal-sec">
+						<div className="modal-profile-wrapper">
+							<div className="modal-img-wrapper">
+								<img src={profile_img} alt="" />
+							</div>
+							<div className="profile-content-wrapper">
+								<h5>Darrell Bailey</h5>
+								<select name="" id="">
+									<option value="Public">
+										<i class="fa fa-globe" aria-hidden="true"></i> Public{" "}
+									</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div className="mind-sec-wrapper">
+						<div className="mind-field-wrapper">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								placeholder="What's on your mind, Darell?"
+								className="form-control"
+								rows="5"
+							></textarea>
+						</div>
+						<div className="add-to-post">
+							<div className="post-heading">
+								<h6>Add to your post</h6>
+							</div>
+							<div className="attachments-wrapper">
+								<ul>
+									<li>
+										<div className="file-wrapper">
+											<button onClick={() => openFileSelector()}>
+												<img src={video_btn} />
+											</button>
+										</div>
+									</li>
+									<li>
+										<div className="file-wrapper">
+											<button onClick={() => openFileSelector()}>
+												<img src={gallery_btn} />
+											</button>
+										</div>
+									</li>
+									<li>
+										<div className="file-wrapper">
+											<button onClick={() => openFileSelector()}>
+												<img src={attchment_img} />
+											</button>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div className="post-btn-wrapper">
+							<button className="btn  form-control">Post</button>
+						</div>
+					</div>
+
+					<br />
+
+					{filesContent.map((file, index) => (
+						<>
+							{console.log(file)}
+							<div>
+								<h2>{file.name}</h2>
+								{/* <div key={index}>{file.content}</div> */}
+								{/* <img source={{ uri: Base64.decode(file.content) }} /> */}
+								<br />
+							</div>
+						</>
+					))}
+				</Modal.Body>
+			</Modal>
+			{/* create post modal end here */}
 		</>
 	);
 };
