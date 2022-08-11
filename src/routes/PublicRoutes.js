@@ -5,6 +5,8 @@ import Home from "../Pages/Home/Home";
 import Privacy from "../Pages/Privacy/Privacy";
 import Stories_View from "../Pages/Stories/Stories_View";
 import Welcome from "../Pages/auth/welcome";
+import EditProduct from "../Pages/ProductActions/EditProduct";
+import InviteLink from "../Pages/InviteLink/InviteLink";
 const PublicRoutes = () => {
 	return (
 		<BrowserRouter>
@@ -14,6 +16,10 @@ const PublicRoutes = () => {
 				<Route path="/privacy" element={<Privacy />} />
 				<Route path="/Story" element={<Stories_View />} />
 				<Route path="/welcome" element={<Welcome />} />
+				<Route path="/invite-link" element={<InviteLink />} />
+
+				{/* Product Routes */}
+				<Route path="/edit-product" element={<EditProduct />} />
 			</Routes>
 		</BrowserRouter>
 	);
