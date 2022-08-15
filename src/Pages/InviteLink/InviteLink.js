@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import "../../assets/css/invite-link.css";
 import $ from "jquery";
 
 const InviteLink = () => {
@@ -49,7 +50,7 @@ const InviteLink = () => {
 								<div id="inviteCode" class="invite-page">
 									<input
 										id="link"
-										value="https://staging.revolutioncredit.com/signupc/VprfEgvNdGuDLdAWBqi7iWAFoxKKpg_yg0hqNGBd2PU?eTypeId=44"
+										value="https://xd.adobe.com/view/040b5b14-018f-4667/"
 										readonly
 									/>
 									<div id="copy">
