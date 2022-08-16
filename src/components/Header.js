@@ -155,30 +155,60 @@ const Header = () => {
 													className="dropdown-menu"
 													aria-labelledby="navbarDropdown"
 												>
-													<a className="dropdown-item" href="#">
-														<img src={uk} className="img-fluid" />
-													</a>
-													<a className="dropdown-item" href="#">
-														<img src={blue_flag} className="img-fluid" />
-													</a>
-													<a className="dropdown-item" href="#">
-														<img src={vietnam} className="img-fluid" />
-													</a>
-													<a className="dropdown-item" href="#">
-														<img src={germany} className="img-fluid" />
-													</a>
-													<a className="dropdown-item" href="#">
-														<img src={norway} className="img-fluid" />
-													</a>
-													<a className="dropdown-item" href="#">
-														<img src={greek} className="img-fluid" />
-													</a>
-													<a className="dropdown-item" href="#">
-														<img src={cambridge} className="img-fluid" />
-													</a>
-													<a className="dropdown-item" href="#">
-														<img src={european_union} className="img-fluid" />
-													</a>
+													<div className="profile-dropdown">
+														<div className="profile">
+															<figure>
+																<img
+																	src={profile_img}
+																	alt=""
+																	className="img-fluid"
+																/>
+															</figure>
+															<div className="name">
+																<h4>Darrell Bailey</h4>
+																<p>
+																	<Link to="/user-profile">
+																		View My Profile
+																	</Link>
+																</p>
+															</div>
+														</div>
+														<ul className="list">
+															<li>
+																<Link to="#">Money</Link>
+															</li>
+															<li>
+																<Link to="#">Earned Nugs</Link>
+															</li>
+															<li>
+																<Link to="#">My Products</Link>
+															</li>
+															<li>
+																<Link to="#">Market place</Link>
+															</li>
+															<li>
+																<Link to="#">Help & Feedback</Link>
+															</li>
+															<li>
+																<Link to="#">Notification Settings</Link>
+															</li>
+															<li>
+																<Link to="#">Follows</Link>
+															</li>
+															<li>
+																<Link to="#">Blocked List</Link>
+															</li>
+															<li>
+																<Link to="#">Privacy Settings</Link>
+															</li>
+															<li>
+																<Link to="#">Polices</Link>
+															</li>
+															<li>
+																<Link to="#">Log Out</Link>
+															</li>
+														</ul>
+													</div>
 												</div>
 											</li>
 										</ul>

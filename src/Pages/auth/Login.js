@@ -53,13 +53,13 @@ const Login = () => {
 												<img src={password_eye} alt="" />
 											</span>
 										</div>
-										<div class="form-check">
+										<div className="form-check">
 											<input
 												type="checkbox"
-												class="form-check-input"
+												className="form-check-input"
 												id="exampleCheck1"
 											/>
-											<label class="form-check-label" for="exampleCheck1">
+											<label className="form-check-label" for="exampleCheck1">
 												Remember me
 											</label>
 										</div>
