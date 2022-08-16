@@ -12,6 +12,7 @@ import NewPassword from "../Pages/auth/NewPassword";
 import CreateAccount from "../Pages/auth/CreateAccount";
 import Test from "../Pages/auth/AccountStep/test";
 import BecomeMember from "../Pages/auth/AccountStep/BecomeMember";
+import ContactUs from "../Pages/contact-us/ContactUs";
 const PublicRoutes = () => {
 	return (
 		<BrowserRouter>
@@ -27,6 +28,7 @@ const PublicRoutes = () => {
 				<Route path="/NewPassword" element={<NewPassword />} />
 				<Route path="/CreateAccount" element={<CreateAccount />} />
 				<Route path="/BecomeMember" element={<BecomeMember />} />
+				<Route path="/contact-us" element={<ContactUs />} />
 			</Routes>
 		</BrowserRouter>
 	);
