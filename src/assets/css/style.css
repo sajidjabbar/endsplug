@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 @font-face {
 	font-family: "nexa-bold";
@@ -827,7 +827,7 @@ header .dropdown-toggle::after {
 .budddies-wrapper .buddy-name-wrapper .dropdown-menu a {
 	color: #fff;
 }
-.newsfeed .pagination-list-wrapper ul button.pagination-btn {
+.pagination-list-wrapper ul button.pagination-btn {
 	background: #1f1f1f;
 	border: 0px;
 	width: 57px;
@@ -838,7 +838,7 @@ header .dropdown-toggle::after {
 	color: #fff;
 	font-family: "nexa-regular";
 }
-.newsfeed .pagination-list-wrapper ul button.pagination-btn.active {
+.pagination-list-wrapper ul button.pagination-btn.active {
 	background: #fc6721;
 }
 .pagination-list-wrapper ul li.pagination-item .next-btn {

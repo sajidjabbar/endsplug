@@ -31,6 +31,11 @@ import EditProfile from "../Pages/UserProfile/EditProfile";
 import MyProducts from "../Pages/Products/MyProducts";
 import ProductDetail from "../Pages/Products/ProductDetail";
 import Home2 from "../Pages/Home/Home2";
+import MarketPlace from "../Pages/MarketPlace/MarketPlace";
+import LiveStream from "../Pages/LiveStream/LiveStream";
+import GroupStream from "../Pages/LiveStream/GroupStream";
+import ProductDetail2 from "../Pages/MarketPlace/ProductDetail2";
+import WriteReview from "../Pages/MarketPlace/WriteReview";
 
 const PublicRoutes = () => {
 	return (
@@ -64,6 +69,15 @@ const PublicRoutes = () => {
 				{/* Product */}
 				<Route path="/products" element={<MyProducts />} />
 				<Route path="/product-detail" element={<ProductDetail />} />
+
+				{/* Market Place */}
+				<Route path="/market-place" element={<MarketPlace />} />
+				<Route path="/product-detail2" element={<ProductDetail2 />} />
+				<Route path="/write-review" element={<WriteReview />} />
+
+				{/* Live Stream */}
+				<Route path="/live-stream" element={<LiveStream />} />
+				<Route path="/group-stream" element={<GroupStream />} />
 
 				{/* Product Routes */}
 				<Route path="/edit-product" element={<EditProduct />} />

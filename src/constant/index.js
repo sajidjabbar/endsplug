@@ -106,6 +106,21 @@ import productslick1 from "../assets/img/product-slick1.png";
 import productslick2 from "../assets/img/product-slick2.png";
 import productslick3 from "../assets/img/product-slick3.png";
 import productslick4 from "../assets/img/product-slick4.png";
+import cat1 from "../assets/img/cate1.png";
+import cat2 from "../assets/img/cate2.png";
+import cat3 from "../assets/img/cate3.png";
+import Merchand1 from "../assets/img/merchand1.png";
+import Merchand2 from "../assets/img/merchand2.png";
+import Merchand3 from "../assets/img/merchand3.png";
+import Merchand4 from "../assets/img/merchand4.png";
+import liveStream from "../assets/img/livestream1.png";
+import weedEmoji from "../assets/img/emoji.png";
+import GroupStreamImg from "../assets/img/group-live.png";
+import reviewimg1 from "../assets/img/review1.png";
+import reviewimg2 from "../assets/img/review2.png";
+import reviewimg3 from "../assets/img/review3.png";
+import WriteReviewImg from "../assets/img/writereview1.png";
+import WeedIcon from "../assets/img/weed-icon.png";
 
 export {
 	videoPlayer,
@@ -216,4 +231,19 @@ export {
 	productslick2,
 	productslick3,
 	productslick4,
+	cat1,
+	cat2,
+	cat3,
+	Merchand1,
+	Merchand2,
+	Merchand3,
+	Merchand4,
+	liveStream,
+	GroupStreamImg,
+	weedEmoji,
+	reviewimg1,
+	reviewimg2,
+	reviewimg3,
+	WriteReviewImg,
+	WeedIcon,
 };
