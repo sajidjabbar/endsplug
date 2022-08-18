@@ -73,6 +73,8 @@ import password_eye from "../assets/img/password-eye.png";
 import upload_icon from "../assets/img/upload-icon.png";
 import member_img from "../assets/img/member-img.png";
 import videoPlayer from "../assets/img/videoplayer.png";
+import wishlist from "../assets/img/wishlist-pro.png";
+
 export {
 	videoPlayer,
 	member_img,
@@ -149,4 +151,5 @@ export {
 	vietnam,
 	blue_flag,
 	profile_img,
+	wishlist,
 };
