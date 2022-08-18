@@ -128,7 +128,7 @@ const UserInfo = () => {
 							<Link to="#">Recharge</Link>
 						</li>
 						<li>
-							<Link to="#">My Orders and payments</Link>
+							<Link to="/my-order">My Orders and payments</Link>
 						</li>
 						<li>
 							<Link to="#">Change personal info </Link>
@@ -137,7 +137,7 @@ const UserInfo = () => {
 							<Link to="#">Setting</Link>
 						</li>
 						<li>
-							<Link to="#">Help</Link>
+							<Link to="/faqs">Help</Link>
 						</li>
 						<li>
 							<Link to="#">P & P </Link>

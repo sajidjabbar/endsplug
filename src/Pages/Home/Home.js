@@ -578,7 +578,13 @@ const Home = () => {
 												</figure>
 											</div>
 											<div className="create-story-content-wrapper">
-												<i className="fa fa-plus"></i>
+												<button
+													type="button"
+													data-bs-toggle="modal"
+													data-bs-target="#AddStory"
+												>
+													<i className="fa fa-plus"></i>
+												</button>
 												<h4>Create story</h4>
 											</div>
 										</div>
@@ -623,12 +629,12 @@ const Home = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-8">
-							<div className="status-card-wrapper" onClick={handleShow}>
+							<div className="status-card-wrapper">
 								<div className="status-field-and-profile-wrapper">
 									<div className="status-profile-wrapper">
 										<img src={profile_img} className="img-fluid" alt="" />
 									</div>
-									<div className="status-field-wrapper">
+									<div className="status-field-wrapper" onClick={handleShow}>
 										<input
 											type="text"
 											placeholder="What's on your mind, lauren?"
@@ -638,7 +644,12 @@ const Home = () => {
 								</div>
 								<div className="status-list-wrapper">
 									<div className="live-btn-wrapper">
-										<button type="button">
+										<button
+											type="button"
+											class="btn"
+											data-bs-toggle="modal"
+											data-bs-target="#BrodcastModal"
+										>
 											<img src={live} className="img-fluid" alt="" />
 											Live video
 										</button>
@@ -716,7 +727,7 @@ const Home = () => {
 												<a className="dropdown-item" href="#">
 													hide
 												</a>
-												<a className="dropdown-item" href="#">
+												<a className="dropdown-item" href="/invite-link">
 													share
 												</a>
 												<a className="dropdown-item" href="#">
@@ -1203,7 +1214,7 @@ const Home = () => {
 														className="dropdown-menu"
 														aria-labelledby="dropdownMenuButton"
 													>
-														<a className="dropdown-item" href="#">
+														<a className="dropdown-item" href="/profile">
 															<i className="fa fa-user"></i> View Profile
 														</a>
 														<a className="dropdown-item" href="#">

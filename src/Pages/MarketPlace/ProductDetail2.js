@@ -23,7 +23,7 @@ import { Link, useNavigate } from "react-router-dom";
 const ProductDetail2 = () => {
 	const [nav1, setNav1] = useState();
 	const [nav2, setNav2] = useState();
-	let [count, setCount] = useState(1);
+	const [count, setCount] = useState(1);
 	const navigate = useNavigate();
 
 	function incrementCount() {
