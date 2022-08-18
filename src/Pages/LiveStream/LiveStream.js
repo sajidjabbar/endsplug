@@ -3,13 +3,13 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import "../../assets/css/live-stream.css";
 import InputEmoji from "react-input-emoji";
-import { liveStream, weedEmoji, WeedIcon } from "../../constant";
+import { Leaf, liveStream, weedEmoji, WeedIcon, Spinner } from "../../constant";
 import $ from "jquery";
-import Switch from "@mui/material/Switch";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
 const LiveStream = () => {
+	const [setting, SetSetting] = useState(false);
 	const [text, setText] = useState("");
 
 	function handleOnEnter(text) {
@@ -58,6 +58,15 @@ const LiveStream = () => {
 									<figure>
 										<img src={liveStream} alt="" className="img-fluid" />
 									</figure>
+									<div className="spinner">
+										<button
+											type="button"
+											data-bs-toggle="modal"
+											data-bs-target="#SpinnerCoins"
+										>
+											<img src={Spinner} alt="" className="img" />
+										</button>
+									</div>
 								</div>
 								<div className="title-wrapper">
 									<div className="left">
@@ -90,7 +99,7 @@ const LiveStream = () => {
 							</div>
 						</div>
 						<div className="col-lg-4 pl-0">
-							<div className="live-chat">
+							<div className={setting ? "live-chat hide" : "live-chat show"}>
 								<div className="close">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +118,7 @@ const LiveStream = () => {
 								</div>
 								<div className="heading-wrapper">
 									<h3>Live Chat</h3>
-									<button className="setting">
+									<button className="setting" onClick={() => SetSetting(true)}>
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											width="34.131"
@@ -340,8 +349,12 @@ const LiveStream = () => {
 									</div>
 								</div>
 							</div>
-							<div className="stream-setting">
-								<button className="setting">
+							<div
+								className={
+									setting ? "stream-setting show" : "stream-setting hide"
+								}
+							>
+								<button className="setting" onClick={() => SetSetting(false)}>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="34.131"
@@ -378,9 +391,14 @@ const LiveStream = () => {
 										/>
 									</div>
 									<div className="add-stream">
-										<button className="btn">
+										<button
+											type="button"
+											className="btn"
+											data-bs-toggle="modal"
+											data-bs-target="#addStreamerModal"
+										>
 											<svg
-												xmlns="http://www.w3.org/2000/svg"
+												xmlns="http	://www.w3.org/2000/svg"
 												width="10.058"
 												height="10.058"
 												viewBox="0 0 10.058 10.058"
@@ -420,143 +438,54 @@ const LiveStream = () => {
 									<ul className="toggle-setting">
 										<li>
 											<span>
-												Comments
-												<svg
-													xmlns="http://www.w3.org/2000/svg"
-													width="214"
-													height="143"
-													viewBox="0 0 214 143"
-												>
-													<text
-														id="Push_Notifications_L"
-														data-name="Push Notifications L"
-														fill="#fff"
-														font-size="16"
-														font-family="Poppins-Regular, Poppins"
-														letter-spacing="0.019em"
-													>
-														<tspan x="0" y="17">
-															Comments
-														</tspan>
-														<tspan x="0" y="57">
-															Stream Title
-														</tspan>
-														<tspan x="0" y="97">
-															Rotate camera
-														</tspan>
-														<tspan x="0" y="137">
-															Turn on flash
-														</tspan>
-													</text>
-												</svg>
-											</span>{" "}
-											<Switch {...label} />
+												<ruby>Comments</ruby>
+												<img src={Leaf} alt="" className="img-fluid" />
+											</span>
+											<label class="switch">
+												<input type="checkbox" />
+												<span class="slider"></span>
+											</label>
 										</li>
 										<li>
 											<span>
-												Stream Title
-												<svg
-													xmlns="http://www.w3.org/2000/svg"
-													width="214"
-													height="143"
-													viewBox="0 0 214 143"
-												>
-													<text
-														id="Push_Notifications_L"
-														data-name="Push Notifications L"
-														fill="#fff"
-														font-size="16"
-														font-family="Poppins-Regular, Poppins"
-														letter-spacing="0.019em"
-													>
-														<tspan x="0" y="17">
-															Comments
-														</tspan>
-														<tspan x="0" y="57">
-															Stream Title
-														</tspan>
-														<tspan x="0" y="97">
-															Rotate camera
-														</tspan>
-														<tspan x="0" y="137">
-															Turn on flash
-														</tspan>
-													</text>
-												</svg>
-											</span>{" "}
-											<Switch {...label} />
+												<ruby>Stream Title</ruby>
+												<img src={Leaf} alt="" className="img-fluid" />
+											</span>
+											<label class="switch">
+												<input type="checkbox" />
+												<span class="slider"></span>
+											</label>
 										</li>
 										<li>
 											<span>
-												Rotate camera
-												<svg
-													xmlns="http://www.w3.org/2000/svg"
-													width="214"
-													height="143"
-													viewBox="0 0 214 143"
-												>
-													<text
-														id="Push_Notifications_L"
-														data-name="Push Notifications L"
-														fill="#fff"
-														font-size="16"
-														font-family="Poppins-Regular, Poppins"
-														letter-spacing="0.019em"
-													>
-														<tspan x="0" y="17">
-															Comments
-														</tspan>
-														<tspan x="0" y="57">
-															Stream Title
-														</tspan>
-														<tspan x="0" y="97">
-															Rotate camera
-														</tspan>
-														<tspan x="0" y="137">
-															Turn on flash
-														</tspan>
-													</text>
-												</svg>
-											</span>{" "}
-											<Switch {...label} />
+												<ruby>Rotate camera</ruby>
+												<img src={Leaf} alt="" className="img-fluid" />
+											</span>
+											<label class="switch">
+												<input type="checkbox" />
+												<span class="slider"></span>
+											</label>
 										</li>
 										<li>
 											<span>
-												Turn on flash
-												<svg
-													xmlns="http://www.w3.org/2000/svg"
-													width="214"
-													height="143"
-													viewBox="0 0 214 143"
-												>
-													<text
-														id="Push_Notifications_L"
-														data-name="Push Notifications L"
-														fill="#fff"
-														font-size="16"
-														font-family="Poppins-Regular, Poppins"
-														letter-spacing="0.019em"
-													>
-														<tspan x="0" y="17">
-															Comments
-														</tspan>
-														<tspan x="0" y="57">
-															Stream Title
-														</tspan>
-														<tspan x="0" y="97">
-															Rotate camera
-														</tspan>
-														<tspan x="0" y="137">
-															Turn on flash
-														</tspan>
-													</text>
-												</svg>
-											</span>{" "}
-											<Switch {...label} />
+												<ruby>Turn on flash</ruby>
+												<img src={Leaf} alt="" className="img-fluid" />
+											</span>
+											<label class="switch">
+												<input type="checkbox" />
+												<span class="slider"></span>
+											</label>
 										</li>
 									</ul>
 									<div className="button-group">
-										<button className="btn">END LIVE SESSION</button>
+										<button
+											type="button"
+											className="btn"
+											data-bs-toggle="modal"
+											data-bs-target="#analyticsModal"
+										>
+											END LIVE SESSION
+										</button>
 									</div>
 								</form>
 							</div>

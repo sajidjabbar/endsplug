@@ -36,6 +36,10 @@ import LiveStream from "../Pages/LiveStream/LiveStream";
 import GroupStream from "../Pages/LiveStream/GroupStream";
 import ProductDetail2 from "../Pages/MarketPlace/ProductDetail2";
 import WriteReview from "../Pages/MarketPlace/WriteReview";
+import Cart from "../Pages/Cart/Cart";
+import Checkout from "../Pages/Checkout/Checkout";
+import ThankYou from "../Pages/ThankYou/ThankYou";
+import Blocklist from "../Pages/BlockList/Blocklist";
 
 const PublicRoutes = () => {
 	return (
@@ -59,6 +63,7 @@ const PublicRoutes = () => {
 				<Route path="/profile" element={<ProfilePost />} />
 				<Route path="/profile-followers" element={<ProfileFollowers />} />
 				<Route path="/profile-following" element={<ProfileFollowing />} />
+				<Route path="/blocklist" element={<Blocklist />} />
 
 				{/* User Profile */}
 				<Route path="/user-profile" element={<UserProfile />} />
@@ -69,6 +74,9 @@ const PublicRoutes = () => {
 				{/* Product */}
 				<Route path="/products" element={<MyProducts />} />
 				<Route path="/product-detail" element={<ProductDetail />} />
+				<Route path="/shopping-cart" element={<Cart />} />
+				<Route path="/checkout" element={<Checkout />} />
+				<Route path="/thank-you" element={<ThankYou />} />
 
 				{/* Market Place */}
 				<Route path="/market-place" element={<MarketPlace />} />

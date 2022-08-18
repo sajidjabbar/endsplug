@@ -121,6 +121,28 @@ import reviewimg2 from "../assets/img/review2.png";
 import reviewimg3 from "../assets/img/review3.png";
 import WriteReviewImg from "../assets/img/writereview1.png";
 import WeedIcon from "../assets/img/weed-icon.png";
+import Leaf from "../assets/img/leaf.png";
+import CartImg1 from "../assets/img/cart1.png";
+import CartProduct1 from "../assets/img/cartproduct1.png";
+import VisaCard from "../assets/img/visa.png";
+import StreamerImg from "../assets/img/streamer-img.png";
+import NewFollower1 from "../assets/img/new-follower1.png";
+import NewFollower2 from "../assets/img/new-follower2.png";
+import NewFollower3 from "../assets/img/new-follower3.png";
+import NewFollower4 from "../assets/img/new-follower4.png";
+import NewFollower5 from "../assets/img/new-follower5.png";
+import Nug1 from "../assets/img/nig1.png";
+import Nug2 from "../assets/img/nig2.png";
+import Nug3 from "../assets/img/nig3.png";
+import StoryBack1 from "../assets/img/back1.png";
+import StoryBack2 from "../assets/img/back2.png";
+import StoryBack3 from "../assets/img/back3.png";
+import StoryBack4 from "../assets/img/back4.png";
+import StoryBack5 from "../assets/img/back5.png";
+import SelectedBack from "../assets/img/story-back.png";
+import Spinner from "../assets/img/spinner.png";
+import Coin from "../assets/img/coins.png";
+import WinnerImg from "../assets/img/winner.png";
 
 export {
 	videoPlayer,
@@ -246,4 +268,26 @@ export {
 	reviewimg3,
 	WriteReviewImg,
 	WeedIcon,
+	Leaf,
+	CartImg1,
+	CartProduct1,
+	VisaCard,
+	StreamerImg,
+	NewFollower1,
+	NewFollower2,
+	NewFollower3,
+	NewFollower4,
+	NewFollower5,
+	Nug1,
+	Nug2,
+	Nug3,
+	StoryBack1,
+	StoryBack2,
+	StoryBack3,
+	StoryBack4,
+	StoryBack5,
+	SelectedBack,
+	Spinner,
+	Coin,
+	WinnerImg,
 };

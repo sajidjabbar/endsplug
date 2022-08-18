@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 
 @font-face {
 	font-family: "nexa-bold";
@@ -145,7 +146,7 @@ header .dropdown-toggle::after {
 	font-size: 18px;
 	font-weight: 400;
 }
-#header .navbar-profile-icon-wrapper .dropdown-menu {
+#header .navbar-profile-icon-wrapper .profile-dropdown .dropdown-menu {
 	max-width: 230px !important;
 	position: absolute !important;
 	left: -60px !important;
@@ -427,6 +428,13 @@ header .dropdown-toggle::after {
 	background: #202020;
 	border-radius: 0px 0px 9px 9px;
 	padding-bottom: 1px;
+}
+.stories-sec .create-story-card-wrapper .create-story-content-wrapper button {
+	border: 0;
+	background: transparent;
+	border: 0;
+	color: #fff;
+	margin-top: -10px;
 }
 .stories-sec {
 	padding: 50px 0px;
@@ -1083,3 +1091,363 @@ div#copyright p {
 	text-align: center;
 }
 /* create Post ends here */
+
+/* Brodcast Modal Css Start Here */
+#BrodcastModal .stream-setting {
+	background: #242526;
+}
+#BrodcastModal .heading-wrapper {
+	justify-content: center;
+}
+#BrodcastModal .modal-dialog {
+	max-width: 600px;
+}
+#BrodcastModal .modal-dialog .modal-content {
+	background: transparent;
+	box-shadow: none;
+	border: 0;
+}
+#BrodcastModal input.form-control {
+	text-align: center;
+	border-bottom: 1px solid #636363;
+	padding: 0 0 10px;
+	max-width: 70%;
+	margin: 0px auto;
+}
+#BrodcastModal .button-group {
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+#BrodcastModal .button-group button {
+	background-image: linear-gradient(
+		to right top,
+		#fe5b25,
+		#fe6c1e,
+		#fd7c18,
+		#fb8b14,
+		#f99914
+	);
+	font-size: 14px;
+	color: #ffffff;
+	padding: 11px 50px;
+	margin-top: 15px;
+	width: 100%;
+	border-radius: 10px;
+	border: 0;
+}
+/* Brodcast Modal Css End Here */
+
+/* Story Modal Sec Start Here */
+#AddStory {
+	background: #ffffff0a;
+	backdrop-filter: blur(11px);
+}
+#AddStory .modal-dialog {
+	max-width: 600px;
+}
+#AddStory .modal-content {
+	background: #242526;
+	padding: 10px 10px;
+	border-radius: 15px;
+}
+#AddStory .heading-wrapper {
+	text-align: center;
+	border-bottom: 1px solid #444444;
+	position: relative;
+}
+#AddStory .heading-wrapper h4 {
+	color: #d9d9d9;
+	font-weight: 500;
+}
+#AddStory .heading-wrapper button.close {
+	background: #646464;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	top: -10px;
+	opacity: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#AddStory .form-group .form-control {
+	display: flex;
+	align-items: center;
+	padding: 170px 30px;
+	text-align: center;
+	background-image: url("../img/story-back.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 0;
+	color: #fff;
+	font-size: 27px;
+	font-weight: 600;
+	resize: none;
+}
+#AddStory .form-group .form-control::placeholder {
+	color: #fff;
+	font-weight: inherit;
+}
+#AddStory .bottom-bar {
+	padding-top: 10px;
+}
+#AddStory .bottom-bar .backgrounds label {
+	color: #9c9c9c;
+	font-size: 17px;
+	margin-bottom: 15px;
+}
+#AddStory .bottom-bar .backgrounds ul.backgrounds-color {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+#AddStory .bottom-bar .backgrounds ul.backgrounds-color li {
+	display: inline-block;
+	margin-right: 25px;
+}
+#AddStory
+	.bottom-bar
+	.backgrounds
+	ul.backgrounds-color
+	li
+	label.background-container
+	input:checked
+	~ span.checkmark
+	figure {
+	box-shadow: 0px 0px 0px 2px #fff;
+}
+#AddStory
+	.bottom-bar
+	.backgrounds
+	ul.backgrounds-color
+	li
+	label.background-container
+	span.checkmark
+	figure {
+	border-radius: 50%;
+	border: 2px solid #242526;
+	margin: 0;
+}
+#AddStory .bottom-bar button.btn {
+	background-image: linear-gradient(
+		to right top,
+		#fe5b25,
+		#fe6c1e,
+		#fd7c18,
+		#fb8b14,
+		#f99914
+	);
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 50px;
+	margin-top: 15px;
+	width: 100%;
+	border-radius: 6px;
+	font-weight: 500;
+}
+/* Story Modal Sec End Here */
+
+/* Coins Modal Css Start Here */
+.live-stream .stream .video {
+	position: relative;
+}
+.live-stream .stream .video .spinner {
+	position: absolute;
+	top: 115px;
+	right: -5px;
+}
+.live-stream .stream .video .spinner img {
+	width: 70%;
+}
+.live-stream .stream .video .spinner button {
+	background: transparent;
+	border: 0;
+	padding: 0 6px;
+}
+#SpinnerCoins {
+	background: #ffffff12;
+	backdrop-filter: blur(11px);
+}
+#SpinnerCoins .coins-detail {
+	text-align: center;
+}
+#SpinnerCoins .modal-content {
+	background: transparent;
+	border: 0;
+}
+#SpinnerCoins .coins-detail .coins {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#SpinnerCoins .coins-detail .coins figure {
+	width: 80px;
+}
+#SpinnerCoins .coins-detail .coins h3 {
+	margin-left: 15px;
+	font-size: 52px;
+	color: #ffffff;
+	font-weight: 400;
+}
+#SpinnerCoins .coins-detail p {
+	font-size: 24px;
+	color: #ffffff;
+}
+#SpinnerCoins .coins-detail .button-group button.btn {
+	background-image: linear-gradient(
+		to right top,
+		#fe5b25,
+		#fe6c1e,
+		#fd7c18,
+		#fb8b14,
+		#f99914
+	);
+	font-size: 14px;
+	color: #ffffff;
+	padding: 13px 50px;
+	margin-top: 15px;
+	width: 70%;
+	border-radius: 10px;
+	margin: 0px auto;
+}
+#SpinnerCoins button.close {
+	opacity: 1;
+	position: absolute;
+	right: -80%;
+	top: -60%;
+}
+/* Coins Modal Css Start Here */
+
+/* Winner Css Start Here */
+header#header {
+	position: relative;
+	z-index: 9999;
+}
+#winnerModal {
+	background: #111111;
+	padding-top: 90px;
+}
+#winnerModal .modal-dialog {
+	max-width: 50%;
+	background: transparent;
+}
+#winnerModal .modal-dialog .modal-content {
+	background: transparent;
+	border: 0;
+}
+#winnerModal .winner-box .heading {
+	text-align: center;
+	padding-bottom: 15px;
+}
+#winnerModal .winner-box .heading h2 {
+	font-size: 50px;
+	font-weight: 700;
+}
+#winnerModal button.close {
+	opacity: 1 !important;
+	position: absolute;
+	right: -30%;
+	top: -5%;
+}
+#winnerModal .winner-box .winner-img img {
+	border-radius: 10px;
+	border: 2px solid #f99914;
+}
+#winnerModal .winner-box .name {
+	text-align: center;
+}
+#winnerModal .winner-box .name h4 {
+	font-size: 20px;
+	font-family: "Poppins";
+	font-weight: 400;
+}
+/* Winner Css End Here */
+
+/* Tier Detail Modal Css Start Here */
+#TierModal {
+	background: #000;
+}
+#TierModal .modal-dialog {
+	max-width: 85%;
+}
+#TierModal .modal-dialog .modal-content {
+	background: transparent;
+	border: 0;
+}
+#TierModal .modal-dialog .modal-content button.close {
+	opacity: 1;
+	position: absolute;
+	right: 0;
+	top: -10%;
+	opacity: 1;
+}
+#TierModal .modal-dialog .modal-content button.close svg {
+	width: 20px;
+	height: 20px;
+}
+#TierModal .heading {
+	text-align: center;
+	padding-bottom: 10px;
+}
+#TierModal .heading h3 {
+	font-size: 27px;
+	font-weight: 600;
+}
+#TierModal .tier-box {
+	background-image: linear-gradient(
+		to right top,
+		#fe5b25,
+		#fe6c1e,
+		#fd7c18,
+		#fb8b14,
+		#f99914
+	);
+	padding: 20px 0px 5px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+#TierModal .tier-box h3.title {
+	padding-left: 40px;
+	font-size: 27px;
+	font-family: "Poppins";
+	font-weight: 600;
+}
+#TierModal .tier-box table.table tr td {
+	border: 0;
+	color: #fff;
+	font-family: "Poppins";
+	font-size: 18px;
+	border-bottom: 1px solid #fff;
+}
+#TierModal .tier-box ul.tiers-detail li {
+	display: flex;
+	align-items: center;
+}
+#TierModal .tier-box ul.tiers-detail li h5.property {
+	width: 200px;
+}
+#TierModal .tier-box table.table tr td {
+	border: 0;
+	color: #fff;
+	font-family: "Poppins";
+	font-size: 16px;
+	border-bottom: 1px solid #fafafa8a;
+	width: 50%;
+	border-right: 1px solid #fafafa8a;
+	padding-left: 40px;
+	padding: 5px 0 5px 55px;
+}
+#TierModal .tier-box table.table tr:last-child td {
+	border-bottom: 0;
+}
+footer#footer li button {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	color: #fff;
+	font-weight: 300;
+	margin: 4px 0px;
+}
+/* Tier Detail Modal Css End Here */
