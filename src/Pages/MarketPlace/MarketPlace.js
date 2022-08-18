@@ -267,7 +267,9 @@ const MarketPlace = () => {
 									<div className="product-box">
 										<div className="pro-img">
 											<figure>
-												<img src={pro?.img} alt="" className="img-fluid" />
+												<a href="/product-detail2">
+													<img src={pro?.img} alt="" className="img-fluid" />
+												</a>
 											</figure>
 										</div>
 										<div className="content-wrapper">
@@ -285,11 +287,11 @@ const MarketPlace = () => {
 													);
 												})}
 											</ul>
-											<div className="button-group">
+											{/* <div className="button-group">
 												<a href="#" className="btn">
 													View Product
 												</a>
-											</div>
+											</div> */}
 										</div>
 									</div>
 								</div>

@@ -169,6 +169,10 @@ header .dropdown-toggle::after {
 	margin: 0;
 	text-decoration: none;
 }
+header#header .icon-wrapper button.nav-link {
+	background: transparent;
+	border: 0px;
+}
 #header .navbar-profile-icon-wrapper .dropdown-menu .profile figure {
 	margin: 0 15px 0 0px;
 }
@@ -187,6 +191,255 @@ header .dropdown-toggle::after {
 	text-decoration: none;
 	color: #fff;
 }
+/* messages starts here */
+header#header .header-messages-wrapper {
+	width: 430px;
+	height: 600px;
+	position: absolute;
+	right: 51%;
+	z-index: 15;
+	top: 98%;
+	background: #111111;
+	padding: 20px;
+	overflow-y: scroll;
+}
+header#header .header-messages-wrapper::-webkit-scrollbar {
+	width: 0px;
+}
+.messsages-profile-wrapper .stori-wrappper .profile-wrp button.msg-btn {
+	background: transparent;
+	border: 0px;
+	position: relative;
+	text-align: center;
+}
+.messsages-profile-wrapper .profile-wrp img {
+	height: 45px;
+	width: 45px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: 0px auto;
+}
+.messsages-profile-wrapper .profile-wrp h6 {
+	color: #fff;
+	font-size: 9px;
+	text-overflow: ellipsis;
+}
+.messsages-profile-wrapper .profile-wrp .online {
+	background: #7ed321;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	position: absolute;
+	right: 11%;
+	bottom: 46%;
+}
+.messsages-profile-wrapper .profile-wrp .online figure {
+	position: relative;
+}
+.messsages-profile-wrapper
+	.stori-wrappper
+	.profile-wrp
+	button.msg-btn
+	.name-wrapper {
+	text-align: center;
+}
+.header-messages-wrapper .profile-wrp {
+	text-align: center;
+}
+header#header .header-messages-wrapper .heading-wrapper h6 {
+	font-size: 24px;
+	font-weight: 500;
+}
+header#header .header-messages-wrapper .heading-wrapper {
+	margin-bottom: 22px;
+}
+.header-messages-wrapper .messages-wrapper .single-msg-wrapper {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 9px 0px;
+}
+.header-messages-wrapper
+	.messages-wrapper
+	.single-msg-wrapper
+	.msg-name-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.header-messages-wrapper
+	.messages-wrapper
+	.single-msg-wrapper
+	.msg-name-wrapper
+	h6 {
+	flex: 0 0 50%;
+	font-size: 18px;
+	font-family: "Poppins";
+	font-weight: 500;
+}
+.header-messages-wrapper
+	.messages-wrapper
+	.single-msg-wrapper
+	.msg-name-wrapper
+	span {
+	flex: 0 0 50%;
+	color: #7a7a7a;
+	text-align: end;
+	font-size: 12px;
+	font-family: "Poppins";
+}
+.header-messages-wrapper .messages-wrapper .single-msg-wrapper .img-wrapper {
+	flex: 0 0 20%;
+	position: relative;
+}
+.header-messages-wrapper
+	.messages-wrapper
+	.single-msg-wrapper
+	.mg-content-wrapper {
+	flex: 0 0 80%;
+}
+.header-messages-wrapper
+	.messages-wrapper
+	.single-msg-wrapper
+	.mg-content-wrapper
+	.msg-wrappper
+	p {
+	font-size: 14px;
+	font-weight: 300;
+}
+.header-messages-wrapper
+	.messages-wrapper
+	.single-msg-wrapper
+	.img-wrapper
+	span.totalmsg {
+	position: absolute;
+	background: #ff8c00;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10px;
+	outline: 2px solid #fff;
+	right: 23%;
+	bottom: 18%;
+}
+/* messages ends here */
+/* notification starts here */
+header#header .notification-card-wrapper {
+	width: 422px;
+	height: 492px;
+	position: absolute;
+	right: 46%;
+	z-index: 15;
+	top: 98%;
+	background: #111111;
+	padding: 0px;
+	overflow-y: scroll;
+}
+header#header .notification-card-wrapper::-webkit-scrollbar {
+	width: 0px;
+}
+header#header .notification-card-wrapper .notification-heading-wrapper {
+	padding: 20px;
+}
+header#header .notification-card-wrapper .notification-heading-wrapper h6 {
+	font-family: "Poppins";
+	font-size: 24px;
+	font-weight: 500;
+	margin: 0px;
+}
+.notification-card-wrapper .notifications-wrapper .single-notification-wrapper {
+	display: flex;
+	padding: 10px;
+	align-items: center;
+	margin: 4px 0px;
+}
+.notification-card-wrapper
+	.notifications-wrapper
+	.single-notification-wrapper
+	.img-wrapper {
+	flex: 0 0 19%;
+	text-align: center;
+}
+.notification-card-wrapper
+	.notifications-wrapper
+	.single-notification-wrapper
+	.notification-content-wrapper {
+	flex: 0 0 81%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.notification-card-wrapper
+	.notifications-wrapper
+	.single-notification-wrapper
+	.notification-content-wrapper
+	h5 {
+	font-size: 14px;
+	margin: 0px;
+}
+.notification-card-wrapper
+	.notifications-wrapper
+	.single-notification-wrapper
+	span {
+	color: #7a7a7a;
+	font-size: 12px;
+}
+.notification-card-wrapper
+	.notifications-wrapper
+	.single-notification-wrapper
+	.img-wrapper
+	img {
+	height: 35px;
+	width: 35px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.notification-card-wrapper
+	.notifications-wrapper
+	.single-notification-wrapper
+	.notification-content-wrapper
+	button.btn {
+	background: linear-gradient(
+		to left,
+		#fe5b25,
+		#fe6c1e,
+		#fd7c18,
+		#fb8b14,
+		#f99914
+	);
+	border-radius: 24px;
+	padding: 5px 28px;
+	color: #fff;
+	font-family: "Poppins";
+	font-size: 10px;
+	font-weight: 600;
+}
+.notification-card-wrapper
+	.notifications-wrapper
+	.single-notification-wrapper:first-child {
+	background: #2a2a2a;
+}
+.notification-card-wrapper
+	.notifications-wrapper
+	.single-notification-wrapper:nth-child(2) {
+	background: #2a2a2a;
+}
+.notification-card-wrapper
+	.notifications-wrapper
+	.single-notification-wrapper
+	.img-wrapper
+	figure {
+	margin: 0px;
+}
+.notification-card-wrapper
+	.notifications-wrapper
+	.single-notification-wrapper:nth-child(4) {
+	background: #2a2a2a;
+}
+/* notification starts here */
 /* header css ends here */
 /* live stream wrapper starts here */
 .live-steam-sec .stream-card-wrapper {

@@ -326,7 +326,10 @@ const Home = () => {
 							<div className="stream-list-wrapper">
 								{stream_list.map((data, index) => {
 									return (
-										<div className={"stream-card-wrapper star" + index}>
+										<div
+											key={index}
+											className={"stream-card-wrapper star" + index}
+										>
 											<div className="stream-img-wrapper">
 												<img
 													src={data?.thumbnail}
@@ -386,7 +389,10 @@ const Home = () => {
 							<div className="stream-list-wrapper">
 								{stream_list2.map((data, index) => {
 									return (
-										<div className={"stream-card-wrapper star" + index}>
+										<div
+											key={index}
+											className={"stream-card-wrapper star" + index}
+										>
 											<div className="stream-img-wrapper">
 												<img
 													src={data?.thumbnail}
@@ -459,7 +465,7 @@ const Home = () => {
 					<div className="row">
 						{Follwoing.map((data, index) => {
 							return (
-								<div className="col-lg-3">
+								<div key={index} className="col-lg-3">
 									<div className="stream-list-wrapper">
 										<div className={"stream-card-wrapper star" + index}>
 											<div className="stream-img-wrapper">
@@ -1293,7 +1299,7 @@ const Home = () => {
 					{filesContent.map((file, index) => (
 						<>
 							{console.log(file)}
-							<div>
+							<div key={index}>
 								<h2>{file.name}</h2>
 								{/* <div key={index}>{file.content}</div> */}
 								{/* <img source={{ uri: Base64.decode(file.content) }} /> */}

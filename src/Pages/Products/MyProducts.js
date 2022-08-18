@@ -164,7 +164,7 @@ const MyProducts = () => {
 											})}
 										</ul>
 										<div className="button-group">
-											<a href="#" className="btn">
+											<a href="/product-detail" className="btn">
 												View Product
 											</a>
 										</div>

@@ -121,9 +121,41 @@ import reviewimg2 from "../assets/img/review2.png";
 import reviewimg3 from "../assets/img/review3.png";
 import WriteReviewImg from "../assets/img/writereview1.png";
 import WeedIcon from "../assets/img/weed-icon.png";
+import msg1 from "../assets/img/msg1.png";
+import msg2 from "../assets/img/msg2.png";
+import msg3 from "../assets/img/msg3.png";
+import msg4 from "../assets/img/msg4.png";
+import msg5 from "../assets/img/msg5.png";
+import con1 from "../assets/img/con1.png";
+import con2 from "../assets/img/con2.png";
+import con3 from "../assets/img/con3.png";
+import con4 from "../assets/img/con4.png";
+import con5 from "../assets/img/con5.png";
+import no1 from "../assets/img/no1.png";
+import no2 from "../assets/img/no2.png";
+import no3 from "../assets/img/no3.png";
+import no4 from "../assets/img/no4.png";
+import no5 from "../assets/img/no5.png";
+import notification_img from "../assets/img/notification-img.png";
 
 export {
 	videoPlayer,
+	msg1,
+	msg2,
+	msg3,
+	msg4,
+	msg5,
+	con1,
+	con2,
+	con3,
+	con4,
+	con5,
+	no1,
+	no2,
+	no3,
+	no4,
+	no5,
+	notification_img,
 	member_img,
 	upload_icon,
 	password_eye,
