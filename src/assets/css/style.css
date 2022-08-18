@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 @font-face {
 	font-family: "nexa-bold";
@@ -19,6 +19,10 @@ body {
 	color: #fff !important;
 	font-family: "poppins" !important;
 	transition: all 0.4s ease-in-out;
+}
+button {
+	box-shadow: none !important;
+	outline: none !important;
 }
 /* universal css ends here */
 /* header css starts here */
@@ -140,6 +144,48 @@ header .dropdown-toggle::after {
 	color: #fff;
 	font-size: 18px;
 	font-weight: 400;
+}
+#header .navbar-profile-icon-wrapper .dropdown-menu {
+	max-width: 230px !important;
+	position: absolute !important;
+	left: -60px !important;
+	background: #292929;
+	border-radius: 10px;
+}
+#header .navbar-profile-icon-wrapper .dropdown-menu .profile {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #3e3e3e;
+	padding: 0 15px 15px;
+}
+#header .navbar-profile-icon-wrapper .dropdown-menu .profile h4 {
+	color: #ffffff;
+	font-size: 16px;
+	margin: 0;
+}
+#header .navbar-profile-icon-wrapper .dropdown-menu .profile p a {
+	color: #ababab;
+	font-size: 13px;
+	margin: 0;
+	text-decoration: none;
+}
+#header .navbar-profile-icon-wrapper .dropdown-menu .profile figure {
+	margin: 0 15px 0 0px;
+}
+#header .navbar-profile-icon-wrapper .profile-dropdown {
+	padding: 10px 0;
+}
+#header .navbar-profile-icon-wrapper .dropdown-menu ul.list {
+	padding: 10px 20px 0;
+	list-style: none;
+	margin: 0;
+}
+#header .navbar-profile-icon-wrapper .dropdown-menu ul.list li {
+	margin-bottom: 7px;
+}
+#header .navbar-profile-icon-wrapper .dropdown-menu ul.list li a {
+	text-decoration: none;
+	color: #fff;
 }
 /* header css ends here */
 /* live stream wrapper starts here */
@@ -672,6 +718,7 @@ header .dropdown-toggle::after {
 	background: transparent;
 	border: 0px;
 	color: #fff;
+	box-shadow: none;
 }
 .post-comment-wrapper .post-content-wrapper input::placeholder {
 	color: #fff;
@@ -780,7 +827,7 @@ header .dropdown-toggle::after {
 .budddies-wrapper .buddy-name-wrapper .dropdown-menu a {
 	color: #fff;
 }
-.newsfeed .pagination-list-wrapper ul button.pagination-btn {
+.pagination-list-wrapper ul button.pagination-btn {
 	background: #1f1f1f;
 	border: 0px;
 	width: 57px;
@@ -791,7 +838,7 @@ header .dropdown-toggle::after {
 	color: #fff;
 	font-family: "nexa-regular";
 }
-.newsfeed .pagination-list-wrapper ul button.pagination-btn.active {
+.pagination-list-wrapper ul button.pagination-btn.active {
 	background: #fc6721;
 }
 .pagination-list-wrapper ul li.pagination-item .next-btn {

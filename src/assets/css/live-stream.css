@@ -1,0 +1,418 @@
+/* Live Stream Css Start Here */
+.live-stream {
+	padding: 50px 0;
+}
+.live-stream {
+	padding: 50px 0;
+}
+.live-stream .stream .title-wrapper {
+	padding-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.live-stream .stream .title-wrapper .left h4 {
+	font-size: 16px;
+	color: #ffffffa8;
+	font-family: "Poppins";
+	font-weight: 400;
+	margin: 0;
+}
+.live-stream .stream .title-wrapper .left h2 {
+	font-size: 32px;
+	font-weight: 400;
+}
+.live-stream .stream p.hashtag span {
+	font-size: 16px;
+	color: #ffffffb5;
+	margin-right: 15px;
+}
+
+.live-stream .stream p.description {
+	font-size: 14px;
+	color: #ffffffcf;
+}
+.live-stream .stream .title-wrapper .action-btn .btn {
+	font-family: "Poppins";
+	color: #fff;
+	border: 1px solid #fff;
+	margin-left: 15px;
+	padding: 10px 20px;
+	border-radius: 12px;
+	transition: 0.6s;
+}
+.live-stream .stream .title-wrapper .action-btn .btn:hover {
+	background: #ff0000;
+	border-color: #ff0000;
+}
+.live-chat {
+	background: #1c1c1c;
+	padding: 20px 0;
+	border-radius: 15px;
+}
+.live-chat .heading-wrapper {
+	border-bottom: 1px solid #2f293a;
+	text-align: center;
+	padding-bottom: 5px;
+	position: relative;
+}
+.live-chat .heading-wrapper h3 {
+	font-size: 25px;
+	font-weight: 500;
+	font-family: "Poppins";
+	text-transform: capitalize;
+}
+.live-chat .heading-wrapper {
+	border-bottom: 1px solid #2f293a;
+	text-align: center;
+	padding-bottom: 5px;
+	position: relative;
+}
+.live-chat .heading-wrapper button.setting {
+	border: 0;
+	background: transparent;
+	box-shadow: none;
+	outline: none;
+	position: absolute;
+	right: 30px;
+	top: -5px;
+}
+.live-chat {
+	background: #1c1c1c;
+	padding: 20px 0;
+}
+.live-chat .close {
+	background: #dd4141;
+	opacity: 1;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 34px;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	top: -10px;
+}
+.live-chat ul.messages {
+	padding: 20px 15px;
+}
+.live-chat ul.messages {
+	padding: 15px 15px;
+	list-style: none;
+	height: 600px;
+	overflow: auto;
+}
+.live-chat ul.messages::-webkit-scrollbar {
+	width: 1em;
+}
+.live-chat ul.messages li .dropdown button.btn {
+	white-space: unset;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	border: 0;
+	box-shadow: none !important;
+	outline: none !important;
+	font-size: 13px;
+}
+.live-chat ul.messages li .dropdown button.btn::after {
+	display: none;
+}
+.live-chat ul.messages li .dropdown button.btn span {
+	color: #ff8484;
+}
+.live-chat ul.messages li .dropdown ul.dropdown-menu {
+	width: 100%;
+}
+.live-chat ul.messages li .dropdown ul.dropdown-menu:before {
+	content: "";
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid #363636;
+	position: absolute;
+	top: -16px;
+	left: 20px;
+}
+.live-chat ul.messages li .dropdown ul.dropdown-menu a.dropdown-item {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #2d2d2d;
+	padding: 7px 30px;
+}
+.live-chat ul.messages li .dropdown ul.dropdown-menu a.dropdown-item svg {
+	margin-right: 13px;
+}
+.live-chat ul.messages li .dropdown ul.dropdown-menu a.dropdown-item span {
+	color: #9f9f9f;
+}
+.live-chat
+	ul.messages
+	li
+	.dropdown
+	ul.dropdown-menu
+	li:last-child
+	a.dropdown-item {
+	border: 0;
+}
+.live-chat ul.messages li {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.live-chat ul.messages li span.green {
+	color: #c6ff84;
+}
+.live-chat ul.messages li span.purple {
+	color: #98a4ff;
+}
+.live-chat ul.messages li span.pnk {
+	color: #ff9aec;
+}
+.live-chat ul.messages li.back-purple {
+	background: #a4b6ff75;
+	padding: 7px 8px;
+	border-radius: 6px;
+}
+.live-chat ul.messages li.orange-back span.yellow {
+	color: #ffbf00;
+}
+.live-chat ul.messages li.orange-back {
+	background: #fb7c1bad;
+	padding: 7px 8px;
+	border-radius: 6px;
+}
+.live-chat ul.messages li span.lght-purple {
+	color: #cb8aff;
+}
+.live-chat ul.messages li span.pinkish {
+	color: #ff9898;
+}
+.live-chat .bottom-bar {
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+.live-chat .bottom-bar .emoji {
+	background: #0000009e;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 55px;
+	cursor: pointer;
+	z-index: 2;
+}
+.live-chat .bottom-bar .form-group {
+	flex: 1;
+	display: flex;
+	position: relative;
+}
+.live-chat .bottom-bar .form-group button.react-input-emoji--button {
+	position: absolute;
+	right: 35px;
+	z-index: 1;
+}
+.live-chat .bottom-bar .form-group button.react-input-emoji--button svg {
+	fill: #fff;
+}
+.live-chat .bottom-bar .form-group button.btn {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-shadow: none !important;
+	outline: none !important;
+	position: absolute;
+	right: 12px;
+	top: 17px;
+	cursor: pointer;
+	z-index: 1;
+}
+.live-chat .bottom-bar .form-group .react-input-emoji--container {
+	background: #3e3e3e;
+	border: 0;
+	padding: 5px 10px;
+	color: #ffffff;
+	border-radius: 50px !important;
+}
+.live-chat
+	.bottom-bar
+	.form-group
+	.react-input-emoji--container
+	.react-input-emoji--placeholder {
+	font-family: "Poppins";
+}
+div.hearts {
+	width: 200px;
+	height: 600px;
+	position: absolute;
+	bottom: 0;
+	left: 20%;
+	margin-left: -50px;
+}
+div.heart {
+	width: 30px;
+	height: 30px;
+	opacity: 1;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+div.heart i {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 1;
+}
+.colOne {
+	color: #fb7c1bad;
+}
+.colTwo {
+	color: #fb7c1bad;
+}
+.colThree {
+	color: #fb7c1bad;
+}
+.colFour {
+	color: #fb7c1bad;
+}
+.colFive {
+	color: #fb7c1bad;
+}
+.colSix {
+	color: #fb7c1bad;
+}
+@keyframes flowOne {
+	0% {
+		opacity: 0;
+		bottom: 0;
+		left: 14%;
+	}
+	40% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 1;
+		left: 0;
+	}
+	60% {
+		opacity: 0.2;
+	}
+	80% {
+		bottom: 80%;
+	}
+	100% {
+		opacity: 0;
+		bottom: 100%;
+		left: 18%;
+	}
+}
+@keyframes flowTwo {
+	0% {
+		opacity: 0;
+		bottom: 0;
+		left: 0;
+	}
+	40% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 1;
+		left: 11%;
+	}
+	60% {
+		opacity: 0.2;
+	}
+	80% {
+		bottom: 60%;
+	}
+	100% {
+		opacity: 0;
+		bottom: 80%;
+		left: 0;
+	}
+}
+@keyframes flowThree {
+	0% {
+		opacity: 0;
+		bottom: 0;
+		left: 0;
+	}
+	40% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 1;
+		left: 30%;
+	}
+	60% {
+		opacity: 0.2;
+	}
+	80% {
+		bottom: 70%;
+	}
+	100% {
+		opacity: 0;
+		bottom: 90%;
+		left: 0;
+	}
+}
+.stream-setting {
+	background: #1c1c1c;
+	padding: 40px 40px;
+	border-radius: 20px;
+	position: relative;
+}
+.stream-setting button.setting {
+	border: 0;
+	background: transparent;
+	outline: none;
+	box-shadow: none;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+.stream-setting .heading-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.stream-setting .heading-wrapper h3.txt {
+	font-size: 20px;
+	margin: 0;
+}
+.stream-setting form .form-group .form-control {
+	border: 0;
+	background: transparent;
+	border-bottom: 2px solid #ffffff;
+	border-radius: 0;
+	padding: 0 0;
+	color: #fff;
+}
+.stream-setting form .form-group .form-control::placeholder {
+	color: #d9d9d9;
+}
+.stream-setting form .add-stream {
+	padding: 10px 0 30px;
+}
+.stream-setting form .add-stream button.btn {
+	background: #373737;
+	color: #fff;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	padding: 8px 25px;
+}
+.stream-setting form .add-stream button.btn svg {
+	margin-right: 4px;
+}
+.stream-setting form ul.toggle-setting {
+	padding: 0;
+	list-style: none;
+}
+.stream-setting form ul.toggle-setting span {
+	font-size: 14px;
+}
+/* Live Stream Css End Here */

@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import Newsletter from "../../components/Newslettter";
 import "../../assets/css/EditProduct.css";
 
 const UploadProduct = () => {
@@ -192,6 +193,10 @@ const UploadProduct = () => {
 				</div>
 			</section>
 			{/* Edit Product Sec End Here */}
+
+			{/* Newsletter */}
+			<Newsletter />
+			{/* Newsletter */}
 
 			{/* Footer */}
 			<Footer />

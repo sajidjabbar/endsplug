@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import Newsletter from "../../components/Newslettter";
 import "../../assets/css/EditProduct.css";
 
 const EditProduct = () => {
@@ -9,7 +10,6 @@ const EditProduct = () => {
 			{/* Header */}
 			<Header />
 			{/* Header */}
-
 			{/* Edit Product Sec Start Here */}
 			<section className="eidt-product">
 				<div className="container">
@@ -192,6 +192,10 @@ const EditProduct = () => {
 				</div>
 			</section>
 			{/* Edit Product Sec End Here */}
+
+			{/* Newsletter */}
+			<Newsletter />
+			{/* Newsletter */}
 
 			{/* Footer */}
 			<Footer />

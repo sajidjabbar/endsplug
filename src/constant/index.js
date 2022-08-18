@@ -74,6 +74,53 @@ import upload_icon from "../assets/img/upload-icon.png";
 import member_img from "../assets/img/member-img.png";
 import videoPlayer from "../assets/img/videoplayer.png";
 import wishlist from "../assets/img/wishlist-pro.png";
+import profileImg from "../assets/img/profile1.png";
+import postimg1 from "../assets/img/postimg1.png";
+import postimg2 from "../assets/img/postimg2.png";
+import postimg3 from "../assets/img/postimg3.png";
+import postimg4 from "../assets/img/postimg4.png";
+import postimg5 from "../assets/img/postimg5.png";
+import postimg6 from "../assets/img/postimg6.png";
+import ShutEmoji from "../assets/img/shut.png";
+import Follower1 from "../assets/img/follower1.png";
+import Follower2 from "../assets/img/follower2.png";
+import Follower3 from "../assets/img/follower3.png";
+import Follower4 from "../assets/img/follower4.png";
+import Follower5 from "../assets/img/follower5.png";
+import Follower6 from "../assets/img/follower6.png";
+import Follower7 from "../assets/img/follower7.png";
+import Follower8 from "../assets/img/follower8.png";
+import Follower9 from "../assets/img/follower9.png";
+import Follower10 from "../assets/img/follower10.png";
+import Follower11 from "../assets/img/follower11.png";
+import Follower12 from "../assets/img/follower12.png";
+import Follower13 from "../assets/img/follower13.png";
+import Follower14 from "../assets/img/follower14.png";
+import userProfile from "../assets/img/user-profile.png";
+import Product1 from "../assets/img/product1.png";
+import Product2 from "../assets/img/product2.png";
+import Product3 from "../assets/img/product3.png";
+import Product4 from "../assets/img/product4.png";
+import Product_Detail from "../assets/img/product-detail.png";
+import productslick1 from "../assets/img/product-slick1.png";
+import productslick2 from "../assets/img/product-slick2.png";
+import productslick3 from "../assets/img/product-slick3.png";
+import productslick4 from "../assets/img/product-slick4.png";
+import cat1 from "../assets/img/cate1.png";
+import cat2 from "../assets/img/cate2.png";
+import cat3 from "../assets/img/cate3.png";
+import Merchand1 from "../assets/img/merchand1.png";
+import Merchand2 from "../assets/img/merchand2.png";
+import Merchand3 from "../assets/img/merchand3.png";
+import Merchand4 from "../assets/img/merchand4.png";
+import liveStream from "../assets/img/livestream1.png";
+import weedEmoji from "../assets/img/emoji.png";
+import GroupStreamImg from "../assets/img/group-live.png";
+import reviewimg1 from "../assets/img/review1.png";
+import reviewimg2 from "../assets/img/review2.png";
+import reviewimg3 from "../assets/img/review3.png";
+import WriteReviewImg from "../assets/img/writereview1.png";
+import WeedIcon from "../assets/img/weed-icon.png";
 
 export {
 	videoPlayer,
@@ -151,5 +198,52 @@ export {
 	vietnam,
 	blue_flag,
 	profile_img,
+	profileImg,
 	wishlist,
+	postimg1,
+	postimg2,
+	postimg3,
+	postimg4,
+	postimg5,
+	postimg6,
+	ShutEmoji,
+	Follower1,
+	Follower2,
+	Follower3,
+	Follower4,
+	Follower5,
+	Follower6,
+	Follower7,
+	Follower8,
+	Follower9,
+	Follower10,
+	Follower11,
+	Follower12,
+	Follower13,
+	Follower14,
+	userProfile,
+	Product1,
+	Product2,
+	Product3,
+	Product4,
+	Product_Detail,
+	productslick1,
+	productslick2,
+	productslick3,
+	productslick4,
+	cat1,
+	cat2,
+	cat3,
+	Merchand1,
+	Merchand2,
+	Merchand3,
+	Merchand4,
+	liveStream,
+	GroupStreamImg,
+	weedEmoji,
+	reviewimg1,
+	reviewimg2,
+	reviewimg3,
+	WriteReviewImg,
+	WeedIcon,
 };
