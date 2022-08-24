@@ -54,6 +54,11 @@ import {
 	StoryBack5,
 	Coin,
 	WinnerImg,
+	m1,
+	m2,
+	m3,
+	m4,
+	m5,
 } from "../constant";
 
 const Header = () => {
@@ -1396,18 +1401,18 @@ const Header = () => {
 								</form>
 								<div className="bottom-bar">
 									<div className="backgrounds">
-										<label>Background</label>
+										{/* <label>Background</label> */}
 										<ul className="backgrounds-color">
 											<li>
 												<label class="background-container">
-													<input
+													{/* <input
 														class="form-check-input"
 														type="radio"
 														hidden
 														checked
 														name="Storyradio"
-													/>
-													<span class="checkmark">
+													/> */}
+													<span class="checkmark cursor_pointer">
 														<figure>
 															<img
 																src={StoryBack1}
@@ -1420,18 +1425,18 @@ const Header = () => {
 											</li>
 											<li>
 												<label class="background-container">
-													<input
+													{/* <input
 														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/>
+													/> */}
 													<span class="checkmark">
 														<figure>
 															<img
-																src={StoryBack2}
+																src={m1}
 																alt=""
-																className="img-fluid"
+																className="img-fluid cursor_pointer"
 															/>
 														</figure>
 													</span>
@@ -1439,18 +1444,18 @@ const Header = () => {
 											</li>
 											<li>
 												<label class="background-container">
-													<input
+													{/* <input
 														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/>
+													/> */}
 													<span class="checkmark">
 														<figure>
 															<img
-																src={StoryBack3}
+																src={m2}
 																alt=""
-																className="img-fluid"
+																className="img-fluid cursor_pointer"
 															/>
 														</figure>
 													</span>
@@ -1458,18 +1463,18 @@ const Header = () => {
 											</li>
 											<li>
 												<label class="background-container">
-													<input
+													{/* <input
 														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/>
+													/> */}
 													<span class="checkmark">
 														<figure>
 															<img
-																src={StoryBack4}
+																src={m3}
 																alt=""
-																className="img-fluid"
+																className="img-fluid cursor_pointer"
 															/>
 														</figure>
 													</span>
@@ -1477,18 +1482,37 @@ const Header = () => {
 											</li>
 											<li>
 												<label class="background-container">
-													<input
+													{/* <input
 														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/>
+													/> */}
 													<span class="checkmark">
 														<figure>
 															<img
-																src={StoryBack5}
+																src={m4}
 																alt=""
-																className="img-fluid"
+																className="img-fluid cursor_pointer"
+															/>
+														</figure>
+													</span>
+												</label>
+											</li>
+											<li>
+												<label class="background-container">
+													{/* <input
+														class="form-check-input"
+														type="radio"
+														hidden
+														name="Storyradio"
+													/> */}
+													<span class="checkmark">
+														<figure>
+															<img
+																src={m5}
+																alt=""
+																className="img-fluid cursor_pointer"
 															/>
 														</figure>
 													</span>
@@ -1639,29 +1663,44 @@ const Header = () => {
 								</svg>
 							</button>
 							<div className="row">
-								<div className="col-lg-3"></div>
-								<div className="col-lg-6">
+								<div className="col-lg-12">
 									<div className="heading">
 										<h3>Tiers System</h3>
 									</div>
+								</div>
+								<div className="col-lg-6">
 									<div className="tier-box">
-										<h3 className="title">Referrals</h3>
+										<h3 className="title mb-5">Referrals</h3>
 										<table className="table">
 											<tr>
-												<td>Tier 1</td>
-												<td>Consultant</td>
+												<td className="tier1_tier">Tier 1</td>
+												<td>
+													<p className="mb-2">Consultant</p>
+													<button className="btn btn-light bt-white-apply-tier">Apply</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+												</td>
 											</tr>
 											<tr>
-												<td>Tier 2</td>
-												<td>Ambassador 1K</td>
+												<td className="tier1_tier">Tier 2</td>
+												<td>
+													<p className="mb-2">Ambassador 1K</p> 
+													<button className="btn btn-light bt-white-apply-tier">Apply</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+												</td>
 											</tr>
 											<tr>
-												<td>Tier 2</td>
-												<td>Content Creator Broadcasters Entrepreneurs</td>
+												<td className="tier1_tier">Tier 3</td>
+												<td>
+												<p className="mb-2 pr-5">Content Creator Broadcasters Entrepreneurs</p> 
+													<button className="btn btn-light bt-white-apply-tier">Apply</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+												</td>
 											</tr>
 										</table>
 									</div>
-									<div className="tier-box">
+								</div>
+								<div className="col-lg-6">
+									{/* <div className="tier-box">
 										<h3 className="title">Broadcaster</h3>
 										<table className="table">
 											<tr>
@@ -1675,6 +1714,35 @@ const Header = () => {
 											<tr>
 												<td>Tier 2</td>
 												<td>VIP</td>
+											</tr>
+										</table>
+									</div> */}
+									<div className="tier-box">
+										<h3 className="title mb-5">Broadcaster</h3>
+										<table className="table">
+											<tr>
+												<td className="tier1_tier">Tier 1</td>
+												<td>
+													<p className="mb-2">Basic Live</p>
+													<button className="btn btn-light bt-white-apply-tier">Apply</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+												</td>
+											</tr>
+											<tr>
+												<td className="tier1_tier">Tier 2</td>
+												<td className="pl-5">
+													<p className="mb-2">Live for 2 hours</p> 
+													<button className="btn btn-light bt-white-apply-tier">Apply</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+												</td>
+											</tr>
+											<tr>
+												<td className="tier1_tier">Tier 3</td>
+												<td>
+												<p className="mb-2 pr-5">VIP</p> 
+													<button className="btn btn-light bt-white-apply-tier">Apply</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+												</td>
 											</tr>
 										</table>
 									</div>

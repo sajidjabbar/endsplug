@@ -159,8 +159,18 @@ import SelectedBack from "../assets/img/story-back.png";
 import Spinner from "../assets/img/spinner.png";
 import Coin from "../assets/img/coins.png";
 import WinnerImg from "../assets/img/winner.png";
+import m1 from "../assets/img/m1.png";
+import m2 from "../assets/img/m2.png";
+import m3 from "../assets/img/m3.png";
+import m4 from "../assets/img/m4.png";
+import m5 from "../assets/img/m5.png";
 
 export {
+	m1,
+	m2,
+	m3,
+	m4,
+	m5,
 	videoPlayer,
 	msg1,
 	msg2,

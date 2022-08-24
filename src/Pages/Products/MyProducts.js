@@ -20,6 +20,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: false,
 		},
 		{
 			id: 2,
@@ -29,6 +30,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 3,
@@ -38,6 +40,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 4,
@@ -47,6 +50,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 5,
@@ -56,6 +60,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 6,
@@ -65,6 +70,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 7,
@@ -74,6 +80,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 8,
@@ -83,6 +90,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 9,
@@ -92,6 +100,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 	];
 	return (
@@ -166,9 +175,12 @@ const MyProducts = () => {
 											})}
 										</ul>
 										<div className="button-group">
-											<a href="/product-detail" className="btn">
+											{pro.active ? <a disabled href="/product-detail" className="btn">
 												View Product
-											</a>
+											</a> : <button disabled className="btn btn-light mt-3">Not Available  </button> }
+											{/* <a disabled href="/product-detail" className="btn">
+												View Product
+											</a> */}
 										</div>
 									</div>
 								</div>
