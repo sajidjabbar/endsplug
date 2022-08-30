@@ -443,6 +443,21 @@ header#header .notification-card-wrapper .notification-heading-wrapper h6 {
 }
 /* notification starts here */
 /* header css ends here */
+/* header responsive starts here */
+@media (max-width: 1440px) {
+	#header .navbar-profile-icon-wrapper .navbar-wrapper {
+		flex: 0 0 35%;
+	}
+	#header .navbar-profile-icon-wrapper .navbar-icon-wrapper {
+		flex: 0 0 30%;
+	}
+	#header .navbar-profile-icon-wrapper .language-icon-wrapper {
+		flex: 0 0 35%;
+	}
+	#header .navbar-profile-icon-wrapper .navbar-wrapper ul li a {
+		font-size: 16px;
+	}
+}
 /* live stream wrapper starts here */
 .live-steam-sec .stream-card-wrapper {
 	position: relative;
@@ -1709,24 +1724,23 @@ footer#footer li button {
 
 /* zaam work starts */
 
-.cursor_pointer{
+.cursor_pointer {
 	cursor: pointer;
 }
 
-.tier-box .tier1_tier{
+.tier-box .tier1_tier {
 	min-width: 150px !important;
 	padding-top: 20px;
 }
 
-.tier-box .bt-white-apply-tier{
+.tier-box .bt-white-apply-tier {
 	font-size: 15px;
 	padding: 0.6rem 2.5rem;
 	border-radius: 11px;
-
 }
-.tier-box .bt-black-apply-tier{
+.tier-box .bt-black-apply-tier {
 	background-color: #000;
-	border: unset	;
+	border: unset;
 	color: white;
 	font-size: 15px;
 	margin-left: 5px;
@@ -1736,76 +1750,82 @@ footer#footer li button {
 
 /* radio orange product page css */
 
-.UploadProduct_Page .checkbox-custom, .radio-custom {
-    opacity: 0;
-    position: absolute;   
+.UploadProduct_Page .checkbox-custom,
+.radio-custom {
+	opacity: 0;
+	position: absolute;
 }
 
-.UploadProduct_Page .checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 5px;
-    cursor: pointer;
+.UploadProduct_Page .checkbox-custom,
+.checkbox-custom-label,
+.radio-custom,
+.radio-custom-label {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+	cursor: pointer;
 }
 
-.UploadProduct_Page .checkbox-custom-label, .radio-custom-label {
-    position: relative;
+.UploadProduct_Page .checkbox-custom-label,
+.radio-custom-label {
+	position: relative;
 }
 
-.UploadProduct_Page .checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
-    content: '';
-    background: transparent;
-    border: 2px solid #f78324;
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    padding: 2px;
-    margin-right: 10px;
-    text-align: center;
+.UploadProduct_Page .checkbox-custom + .checkbox-custom-label:before,
+.radio-custom + .radio-custom-label:before {
+	content: "";
+	background: transparent;
+	border: 2px solid #f78324;
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	padding: 2px;
+	margin-right: 10px;
+	text-align: center;
 }
 
 .UploadProduct_Page .checkbox-custom:checked + .checkbox-custom-label:before {
-    background: rebeccapurple;
-    box-shadow: inset 0px 0px 0px 4px #fff;
+	background: rebeccapurple;
+	box-shadow: inset 0px 0px 0px 4px #fff;
 }
 
 .UploadProduct_Page .radio-custom + .radio-custom-label:before {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 
 .UploadProduct_Page .radio-custom:checked + .radio-custom-label:before {
-    background: #f85e29;
-    box-shadow: inset 0px 0px 0px 0px #f85e29;
+	background: #f85e29;
+	box-shadow: inset 0px 0px 0px 0px #f85e29;
 }
 
-.UploadProduct_Page .radio-custom-label:focus{
+.UploadProduct_Page .radio-custom-label:focus {
 	outline: none;
 }
 
-.UploadProduct_Page .checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
-  outline: 1px solid #ddd; /* focus style */
+.UploadProduct_Page .checkbox-custom:focus + .checkbox-custom-label,
+.radio-custom:focus + .radio-custom-label {
+	outline: 1px solid #ddd; /* focus style */
 }
 
-.UploadProduct_Page .brdr-Right_radio_uplpoad_product{
+.UploadProduct_Page .brdr-Right_radio_uplpoad_product {
 	border-right: 2px solid #d3d3d336;
-    margin-right: 1rem;
+	margin-right: 1rem;
 	max-height: 105px;
 }
 
-.UploadProduct_Page .radio_main_div{
+.UploadProduct_Page .radio_main_div {
 	border: 2px solid #d3d3d374;
 	padding: 2rem 1rem;
 	display: flex;
 	border-radius: 15px;
 	background-color: #31323394;
 }
-.UploadProduct_Page .nineinec_prod{
+.UploadProduct_Page .nineinec_prod {
 	color: #858585;
 	margin-bottom: 3rem;
 }
 
 /* radio orange product page css */
-
 
 /* zaam work ends */

@@ -128,6 +128,23 @@ const Wallet = () => {
 									Copy Code
 								</button>
 							</div>
+							<div className="referal pt-0">
+								<div className="form-group">
+									<label>
+										People referred : <span>123</span>
+									</label>
+									<label>
+										Revenue generated : <span>1432,00</span>
+									</label>
+								</div>
+								<button
+									data-bs-dismiss="modal"
+									type="button"
+									onClick={copyToClipboard}
+								>
+									Cash Out
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>

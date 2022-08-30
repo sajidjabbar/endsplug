@@ -1676,24 +1676,38 @@ const Header = () => {
 												<td className="tier1_tier">Tier 1</td>
 												<td>
 													<p className="mb-2">Consultant</p>
-													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more
+													</button>
 												</td>
 											</tr>
 											<tr>
 												<td className="tier1_tier">Tier 2</td>
 												<td>
-													<p className="mb-2">Ambassador 1K</p> 
-													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<p className="mb-2">Ambassador 1K</p>
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more
+													</button>
 												</td>
 											</tr>
 											<tr>
 												<td className="tier1_tier">Tier 3</td>
 												<td>
-												<p className="mb-2 pr-5">Content Creator Broadcasters Entrepreneurs</p> 
-													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<p className="mb-2 pr-5">
+														Content Creator Broadcasters Entrepreneurs
+													</p>
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more
+													</button>
 												</td>
 											</tr>
 										</table>
@@ -1724,24 +1738,36 @@ const Header = () => {
 												<td className="tier1_tier">Tier 1</td>
 												<td>
 													<p className="mb-2">Basic Live</p>
-													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more
+													</button>
 												</td>
 											</tr>
 											<tr>
 												<td className="tier1_tier">Tier 2</td>
 												<td className="pl-5">
-													<p className="mb-2">Live for 2 hours</p> 
-													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<p className="mb-2">Live for 2 hours</p>
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more
+													</button>
 												</td>
 											</tr>
 											<tr>
 												<td className="tier1_tier">Tier 3</td>
 												<td>
-												<p className="mb-2 pr-5">VIP</p> 
-													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<p className="mb-2 pr-5">VIP</p>
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more
+													</button>
 												</td>
 											</tr>
 										</table>
