@@ -117,4 +117,8 @@
 	right: -10px;
 	top: -10px;
 }
+.wallet-sec .wallet-box .heading-wrapper a {
+	color: #fff;
+	text-decoration: none;
+}
 /* Wallet Css End Here */
