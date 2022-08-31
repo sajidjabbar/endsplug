@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import "../../assets/css/wallet.css";
+import { Link } from "react-router-dom";
 
 const Wallet = () => {
 	const [copySuccess, setCopySuccess] = useState("");
@@ -29,7 +30,9 @@ const Wallet = () => {
 						<div className="col-md-8">
 							<div className="wallet-box">
 								<div className="heading-wrapper">
-									<h2>My Wallet</h2>
+									<Link to="/products">
+										<h2>My Wallet</h2>
+									</Link>
 								</div>
 								<ul className="prices">
 									<li>
@@ -126,6 +129,23 @@ const Wallet = () => {
 									onClick={copyToClipboard}
 								>
 									Copy Code
+								</button>
+							</div>
+							<div className="referal pt-0">
+								<div className="form-group">
+									<label>
+										People referred : <span>123</span>
+									</label>
+									<label>
+										Revenue generated : <span>1432,00</span>
+									</label>
+								</div>
+								<button
+									data-bs-dismiss="modal"
+									type="button"
+									onClick={copyToClipboard}
+								>
+									Cash Out
 								</button>
 							</div>
 						</div>

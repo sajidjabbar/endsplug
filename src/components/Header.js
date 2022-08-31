@@ -1713,12 +1713,14 @@ const Header = () => {
 													<button className="btn btn-light bt-white-apply-tier">Apply</button>
 													<button className="btn btn-light bt-black-apply-tier">Learn more about</button>
 													<button className="btn btn-light bt-white-apply-tier">Become a</button>
+
 												</td>
 											</tr>
 											<tr>
 												<td className="tier1_tier">Tier 2</td>
 												<td>
 													<p className="mb-2">Ambassador 1K</p>
+
 													<button className="btn btn-light bt-white-apply-tier">Apply</button>
 													<button className="btn btn-light bt-black-apply-tier">Learn more about</button>
 													<button className="btn btn-light bt-white-apply-tier">Become a</button>
@@ -1731,6 +1733,10 @@ const Header = () => {
 													<button className="btn btn-light bt-white-apply-tier">Apply</button>
 													<button className="btn btn-light bt-black-apply-tier">Learn more about</button>
 													<button className="btn btn-light bt-white-apply-tier">Become a</button>
+													{/* <p className="mb-2 pr-5">
+														Content Creator Broadcasters Entrepreneurs
+													</p> */}
+
 												</td>
 											</tr>
 										</table>
