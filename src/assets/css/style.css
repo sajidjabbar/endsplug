@@ -1719,8 +1719,8 @@ footer#footer li button {
 }
 
 .tier-box .bt-white-apply-tier{
-	font-size: 15px;
-	padding: 0.6rem 2.5rem;
+	font-size: 13px;
+	padding: 0.6rem 1rem;
 	border-radius: 11px;
 
 }
@@ -1728,10 +1728,23 @@ footer#footer li button {
 	background-color: #000;
 	border: unset	;
 	color: white;
-	font-size: 15px;
+	font-size: 13px;
 	margin-left: 5px;
 	border-radius: 11px;
-	padding: 0.65rem 2.5rem;
+	padding: 0.6rem 1rem;
+	margin-right: 5px;
+}
+
+.product-detail .product-box .product-content button.btn.edit-product{
+	max-width: 220px!important;
+}
+
+.product-detail .product-box .product-content button.btn.delete-product{
+	max-width: 220px!important;
+}
+
+.product-detail .product-box .product-content button.btn.clr_gry_btzz{
+	background: grey!important;
 }
 
 /* radio orange product page css */
@@ -1803,6 +1816,25 @@ footer#footer li button {
 .UploadProduct_Page .nineinec_prod{
 	color: #858585;
 	margin-bottom: 3rem;
+}
+
+.faemojii{
+	background-color: #5d5d5d;
+    color: #ffffff70;
+    padding: 4px 11px;
+    border-radius: 50%;
+    font-size: 23px;
+    cursor: pointer;
+    /* height: 30px; */
+    /* width: 30px; */
+    /* display: flow-root; */
+    display: block;
+	position: relative;
+	top: 2px;
+}
+
+.cursor_pointer{
+	cursor: pointer;
 }
 
 /* radio orange product page css */

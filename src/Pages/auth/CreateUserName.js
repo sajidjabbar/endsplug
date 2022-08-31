@@ -2,7 +2,7 @@ import React from "react";
 import "../../assets/css/login.css";
 import { login_header_logo, logo, password_eye } from "../../constant";
 
-const CreatePassword = () => {
+const CreateUserName = () => {
 	return (
 		<>
 			{/* header logo starts here */}
@@ -28,7 +28,7 @@ const CreatePassword = () => {
 						<div className="col-lg-6">
 							<div className="login-card-wrapper">
 								<div className="login-heading-wrapper">
-									<h3>Create New Password</h3>
+									<h3>Create New Username</h3>
 									<p className="text-center">
 										You will receive a 4 digit authentication code on your Email
 										Thomas*****@gmail.com
@@ -59,4 +59,4 @@ const CreatePassword = () => {
 	);
 };
 
-export default CreatePassword;
+export default CreateUserName;

@@ -52,10 +52,10 @@ const Wallet = () => {
 										<span className="property">Store Earnings</span>
 										<span className="value">$1000/-</span>
 									</li>
-									<li>
+									{/* <li>
 										<span className="property">Total Balance</span>
 										<span className="value">$2060/-</span>
-									</li>
+									</li> */}
 								</ul>
 								<div className="bottom">
 									<p>

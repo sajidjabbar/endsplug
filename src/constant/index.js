@@ -164,6 +164,8 @@ import m2 from "../assets/img/m2.png";
 import m3 from "../assets/img/m3.png";
 import m4 from "../assets/img/m4.png";
 import m5 from "../assets/img/m5.png";
+import m6 from "../assets/img/m6.png";
+
 
 export {
 	m1,
@@ -171,6 +173,7 @@ export {
 	m3,
 	m4,
 	m5,
+	m6,
 	videoPlayer,
 	msg1,
 	msg2,

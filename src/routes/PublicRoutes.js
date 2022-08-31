@@ -41,6 +41,7 @@ import Cart from "../Pages/Cart/Cart";
 import Checkout from "../Pages/Checkout/Checkout";
 import ThankYou from "../Pages/ThankYou/ThankYou";
 import Blocklist from "../Pages/BlockList/Blocklist";
+import CreateUserName from "../Pages/auth/CreateUserName";
 
 const PublicRoutes = () => {
 	return (
@@ -96,6 +97,9 @@ const PublicRoutes = () => {
 				<Route path="/DigitCode" element={<DigitCode />} />
 				<Route path="/NewPassword" element={<NewPassword />} />
 				<Route path="/CreateAccount" element={<CreateAccount />} />
+				<Route path="/CreateUserName" element={<CreateUserName />} />
+
+				
 				<Route path="/BecomeMember" element={<BecomeMember />} />
 				<Route path="/contact-us" element={<ContactUs />} />
 			</Routes>

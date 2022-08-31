@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import Slider from "react-slick";
 import { Link, useNavigate } from "react-router-dom";
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 import {
 	blue_flag,
 	cambridge,
@@ -59,6 +61,7 @@ import {
 	m3,
 	m4,
 	m5,
+	m6,
 } from "../constant";
 
 const Header = () => {
@@ -1331,8 +1334,13 @@ const Header = () => {
 											</label>
 										</li>
 										<li>
+
 											<span>
-												<ruby>Nug Jar</ruby>
+												<ruby>Bug Jar <Tooltip placement="top" title="Bug jar details here">
+													<IconButton>
+														<i class="fa fa-info-circle text-white" aria-hidden="true"></i>
+													</IconButton>
+												</Tooltip> </ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
 											<label class="switch">
@@ -1518,6 +1526,32 @@ const Header = () => {
 													</span>
 												</label>
 											</li>
+											<li>
+
+												{/* <input
+														class="form-check-input"
+														type="radio"
+														hidden
+														name="Storyradio"
+													/> */}
+												<span class="checkmark faemojii">
+													<figure style={{ marginBottom: "0px" }}>
+														<i class="fa fa-smile-o" aria-hidden="true"></i>
+													</figure>
+												</span>
+
+											</li>
+											<li>
+
+												{/* <input
+														class="form-check-input"
+														type="radio"
+														hidden
+														name="Storyradio"
+													/> */}
+												<img className="cursor_pointer" alt="m6" width={100} src={m6} />
+											</li>
+
 										</ul>
 									</div>
 									<div className="button-group">
@@ -1677,23 +1711,26 @@ const Header = () => {
 												<td>
 													<p className="mb-2">Consultant</p>
 													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more about</button>
+													<button className="btn btn-light bt-white-apply-tier">Become a</button>
 												</td>
 											</tr>
 											<tr>
 												<td className="tier1_tier">Tier 2</td>
 												<td>
-													<p className="mb-2">Ambassador 1K</p> 
+													<p className="mb-2">Ambassador 1K</p>
 													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more about</button>
+													<button className="btn btn-light bt-white-apply-tier">Become a</button>
 												</td>
 											</tr>
 											<tr>
 												<td className="tier1_tier">Tier 3</td>
 												<td>
-												<p className="mb-2 pr-5">Content Creator Broadcasters Entrepreneurs</p> 
+													<p className="mb-2 pr-5">Content Creator Broadcasters Entrepreneurs</p>
 													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more about</button>
+													<button className="btn btn-light bt-white-apply-tier">Become a</button>
 												</td>
 											</tr>
 										</table>
@@ -1725,23 +1762,26 @@ const Header = () => {
 												<td>
 													<p className="mb-2">Basic Live</p>
 													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more about</button>
+													<button className="btn btn-light bt-white-apply-tier">Become a</button>
 												</td>
 											</tr>
 											<tr>
 												<td className="tier1_tier">Tier 2</td>
 												<td className="pl-5">
-													<p className="mb-2">Live for 2 hours</p> 
+													<p className="mb-2">Live for 2 hours</p>
 													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more about</button>
+													<button className="btn btn-light bt-white-apply-tier">Become a</button>
 												</td>
 											</tr>
 											<tr>
 												<td className="tier1_tier">Tier 3</td>
 												<td>
-												<p className="mb-2 pr-5">VIP</p> 
+													<p className="mb-2 pr-5">VIP</p>
 													<button className="btn btn-light bt-white-apply-tier">Apply</button>
-													<button className="btn btn-light bt-black-apply-tier">Learn more</button>
+													<button className="btn btn-light bt-black-apply-tier">Learn more about</button>
+													<button className="btn btn-light bt-white-apply-tier">Become a</button>
 												</td>
 											</tr>
 										</table>
