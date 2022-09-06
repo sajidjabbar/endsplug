@@ -143,6 +143,9 @@ import SelectedBack from "../assets/img/story-back.png";
 import Spinner from "../assets/img/spinner.png";
 import Coin from "../assets/img/coins.png";
 import WinnerImg from "../assets/img/winner.png";
+import BankLogo from "../assets/img/bank.png";
+import CardSim from "../assets/img/cardSim.png";
+import CardSlash from "../assets/img/card-slash.png";
 
 export {
 	videoPlayer,
@@ -290,4 +293,7 @@ export {
 	Spinner,
 	Coin,
 	WinnerImg,
+	BankLogo,
+	CardSim,
+	CardSlash,
 };

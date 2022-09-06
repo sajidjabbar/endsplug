@@ -47,7 +47,7 @@ const InviteLink = () => {
 						<div className="col-md-3"></div>
 						<div className="col-md-6">
 							<div className="link-box">
-								<div id="inviteCode" class="invite-page">
+								<div id="inviteCode" className="invite-page">
 									<input
 										id="link"
 										value="https://xd.adobe.com/view/040b5b14-018f-4667/"
@@ -55,7 +55,7 @@ const InviteLink = () => {
 									/>
 									<div id="copy">
 										<i
-											class="fa fa-clipboard"
+											className="fa fa-clipboard"
 											aria-hidden="true"
 											data-copytarget="#link"
 										></i>

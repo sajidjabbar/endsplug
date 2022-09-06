@@ -46,8 +46,8 @@ const Wishlist = () => {
 														transform="translate(13094.708 11390.709)"
 														fill="none"
 														stroke="#fff"
-														stroke-linecap="round"
-														stroke-width="2"
+														strokeLinecap="round"
+														strokeWidth="2"
 													/>
 												</svg>
 											</button>
@@ -86,8 +86,8 @@ const Wishlist = () => {
 														transform="translate(13094.708 11390.709)"
 														fill="none"
 														stroke="#fff"
-														stroke-linecap="round"
-														stroke-width="2"
+														strokeLinecap="round"
+														strokeWidth="2"
 													/>
 												</svg>
 											</button>
@@ -126,8 +126,8 @@ const Wishlist = () => {
 														transform="translate(13094.708 11390.709)"
 														fill="none"
 														stroke="#fff"
-														stroke-linecap="round"
-														stroke-width="2"
+														strokeLinecap="round"
+														strokeWidth="2"
 													/>
 												</svg>
 											</button>
@@ -166,8 +166,8 @@ const Wishlist = () => {
 														transform="translate(13094.708 11390.709)"
 														fill="none"
 														stroke="#fff"
-														stroke-linecap="round"
-														stroke-width="2"
+														strokeLinecap="round"
+														strokeWidth="2"
 													/>
 												</svg>
 											</button>
@@ -194,7 +194,7 @@ const Wishlist = () => {
 						<ul className="pagination">
 							<li className="arrow">
 								<a href="#">
-									<i class="fa fa-angle-left" aria-hidden="true"></i>
+									<i className="fa fa-angle-left" aria-hidden="true"></i>
 								</a>
 							</li>
 							<li className="pagi">
@@ -211,7 +211,7 @@ const Wishlist = () => {
 							</li>
 							<li className="arrow">
 								<a href="#">
-									<i class="fa fa-angle-right" aria-hidden="true"></i>
+									<i className="fa fa-angle-right" aria-hidden="true"></i>
 								</a>
 							</li>
 						</ul>

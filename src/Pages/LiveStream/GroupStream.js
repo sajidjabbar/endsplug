@@ -20,13 +20,13 @@ const GroupStream = () => {
 			var a = ["colOne", "colTwo", "colThree", "colFour", "colFive", "colSix"];
 			var c = (Math.random() * (1.6 - 1.2) + 1.2).toFixed(1);
 			$(
-				'<div class="heart part-' +
+				'<div className="heart part-' +
 					b +
 					" " +
 					a[Math.floor(Math.random() * 6)] +
 					'" style="font-size:' +
 					Math.floor(Math.random() * (50 - 22) + 22) +
-					'px;"><i class="fa fa-heart"></i></div>',
+					'px;"><i className="fa fa-heart"></i></div>',
 			)
 				.appendTo(".hearts")
 				.css({
@@ -109,9 +109,9 @@ const GroupStream = () => {
 								</div>
 								<ul className="messages">
 									<li>
-										<div class="dropdown">
+										<div className="dropdown">
 											<button
-												class="btn btn-secondary dropdown-toggle"
+												className="btn btn-secondary dropdown-toggle"
 												type="button"
 												id="dropdownMenuButton1"
 												data-bs-toggle="dropdown"
@@ -121,11 +121,11 @@ const GroupStream = () => {
 												patch before the TI
 											</button>
 											<ul
-												class="dropdown-menu"
+												className="dropdown-menu"
 												aria-labelledby="dropdownMenuButton1"
 											>
 												<li>
-													<a class="dropdown-item" href="#">
+													<a className="dropdown-item" href="#">
 														<svg
 															xmlns="http://www.w3.org/2000/svg"
 															width="15.752"
@@ -144,7 +144,7 @@ const GroupStream = () => {
 													</a>
 												</li>
 												<li>
-													<a class="dropdown-item" href="#">
+													<a className="dropdown-item" href="#">
 														<svg
 															xmlns="http://www.w3.org/2000/svg"
 															width="17.059"
@@ -185,7 +185,7 @@ const GroupStream = () => {
 													</a>
 												</li>
 												<li>
-													<a class="dropdown-item" href="#">
+													<a className="dropdown-item" href="#">
 														<svg
 															xmlns="http://www.w3.org/2000/svg"
 															width="12.698"
@@ -202,7 +202,7 @@ const GroupStream = () => {
 													</a>
 												</li>
 												<li>
-													<a class="dropdown-item" href="#">
+													<a className="dropdown-item" href="#">
 														<svg
 															xmlns="http://www.w3.org/2000/svg"
 															width="15.483"
@@ -221,7 +221,7 @@ const GroupStream = () => {
 													</a>
 												</li>
 												<li>
-													<a class="dropdown-item" href="#">
+													<a className="dropdown-item" href="#">
 														<svg
 															xmlns="http://www.w3.org/2000/svg"
 															width="15.651"
@@ -281,7 +281,7 @@ const GroupStream = () => {
 									</li>
 								</ul>
 								<div className="bottom-bar">
-									<div class="hearts"></div>
+									<div className="hearts"></div>
 									<div className="emoji">
 										<img src={weedEmoji} alt="" className="img-fluid" />
 									</div>

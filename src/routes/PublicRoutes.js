@@ -40,6 +40,11 @@ import Cart from "../Pages/Cart/Cart";
 import Checkout from "../Pages/Checkout/Checkout";
 import ThankYou from "../Pages/ThankYou/ThankYou";
 import Blocklist from "../Pages/BlockList/Blocklist";
+import Dashboard from "../Pages/WalletDashboard/Dashboard";
+import Coin from "../Pages/WalletDashboard/Coin";
+import Nugs from "../Pages/WalletDashboard/Nugs";
+import Referal from "../Pages/WalletDashboard/Referal";
+import Payment from "../Pages/WalletDashboard/Payment";
 
 const PublicRoutes = () => {
 	return (
@@ -96,6 +101,13 @@ const PublicRoutes = () => {
 				<Route path="/NewPassword" element={<NewPassword />} />
 				<Route path="/CreateAccount" element={<CreateAccount />} />
 				<Route path="/BecomeMember" element={<BecomeMember />} />
+
+				{/* Wallet Dashboard */}
+				<Route path="/wallet-dashboard" element={<Dashboard />} />
+				<Route path="/wallet-coin" element={<Coin />} />
+				<Route path="/wallet-nugs" element={<Nugs />} />
+				<Route path="/wallet-referal" element={<Referal />} />
+				<Route path="/wallet-payment" element={<Payment />} />
 			</Routes>
 		</BrowserRouter>
 	);

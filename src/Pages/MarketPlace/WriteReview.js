@@ -208,9 +208,9 @@ const WriteReview = () => {
 														d="M18.621,11.561A7.061,7.061,0,1,1,11.561,4.5,7.061,7.061,0,0,1,18.621,11.561Z"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 													<path
 														id="Path_23"
@@ -219,9 +219,9 @@ const WriteReview = () => {
 														transform="translate(-8.428 -8.428)"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 													<path
 														id="Path_24"
@@ -230,9 +230,9 @@ const WriteReview = () => {
 														transform="translate(-4.939 -3.087)"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 													<path
 														id="Path_25"
@@ -241,9 +241,9 @@ const WriteReview = () => {
 														transform="translate(-3.087 -4.939)"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 												</g>
 											</svg>
@@ -268,19 +268,19 @@ const WriteReview = () => {
 									<div className="reviews">
 										<ul className="stars">
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 										</ul>
 										<p>5 Reviews </p>
@@ -293,7 +293,10 @@ const WriteReview = () => {
 											<label htmlFor="Quantity">Quantity:</label>
 											<div className="form-group">
 												<button className="minus" onClick={decrementCount}>
-													<i class="fa fa-angle-left" aria-hidden="true"></i>
+													<i
+														className="fa fa-angle-left"
+														aria-hidden="true"
+													></i>
 												</button>
 												<input
 													type="text"
@@ -302,7 +305,10 @@ const WriteReview = () => {
 													className="form-control"
 												/>
 												<button className="minus" onClick={incrementCount}>
-													<i class="fa fa-angle-right" aria-hidden="true"></i>
+													<i
+														className="fa fa-angle-right"
+														aria-hidden="true"
+													></i>
 												</button>
 											</div>
 										</div>
@@ -317,7 +323,7 @@ const WriteReview = () => {
 									</div>
 									<div className="wishlist">
 										<Link to="/wishlist">
-											<i class="fa fa-heart" aria-hidden="true"></i> Add To
+											<i className="fa fa-heart" aria-hidden="true"></i> Add To
 											Wishlist
 										</Link>
 									</div>

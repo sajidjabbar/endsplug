@@ -208,9 +208,9 @@ const ProductDetail2 = () => {
 														d="M18.621,11.561A7.061,7.061,0,1,1,11.561,4.5,7.061,7.061,0,0,1,18.621,11.561Z"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 													<path
 														id="Path_23"
@@ -219,9 +219,9 @@ const ProductDetail2 = () => {
 														transform="translate(-8.428 -8.428)"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 													<path
 														id="Path_24"
@@ -230,9 +230,9 @@ const ProductDetail2 = () => {
 														transform="translate(-4.939 -3.087)"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 													<path
 														id="Path_25"
@@ -241,9 +241,9 @@ const ProductDetail2 = () => {
 														transform="translate(-3.087 -4.939)"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 												</g>
 											</svg>
@@ -268,19 +268,19 @@ const ProductDetail2 = () => {
 									<div className="reviews">
 										<ul className="stars">
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 										</ul>
 										<p>5 Reviews </p>
@@ -293,7 +293,10 @@ const ProductDetail2 = () => {
 											<label htmlFor="Quantity">Quantity:</label>
 											<div className="form-group">
 												<button className="minus" onClick={decrementCount}>
-													<i class="fa fa-angle-left" aria-hidden="true"></i>
+													<i
+														className="fa fa-angle-left"
+														aria-hidden="true"
+													></i>
 												</button>
 												<input
 													type="text"
@@ -302,7 +305,10 @@ const ProductDetail2 = () => {
 													className="form-control"
 												/>
 												<button className="minus" onClick={incrementCount}>
-													<i class="fa fa-angle-right" aria-hidden="true"></i>
+													<i
+														className="fa fa-angle-right"
+														aria-hidden="true"
+													></i>
 												</button>
 											</div>
 										</div>
@@ -317,7 +323,7 @@ const ProductDetail2 = () => {
 									</div>
 									<div className="wishlist">
 										<Link to="/wishlist">
-											<i class="fa fa-heart" aria-hidden="true"></i> Add To
+											<i className="fa fa-heart" aria-hidden="true"></i> Add To
 											Wishlist
 										</Link>
 									</div>
@@ -362,19 +368,19 @@ const ProductDetail2 = () => {
 								<h2>4.0</h2>
 								<ul className="stars">
 									<li>
-										<i class="fa fa-star" aria-hidden="true"></i>
+										<i className="fa fa-star" aria-hidden="true"></i>
 									</li>
 									<li>
-										<i class="fa fa-star" aria-hidden="true"></i>
+										<i className="fa fa-star" aria-hidden="true"></i>
 									</li>
 									<li>
-										<i class="fa fa-star" aria-hidden="true"></i>
+										<i className="fa fa-star" aria-hidden="true"></i>
 									</li>
 									<li>
-										<i class="fa fa-star" aria-hidden="true"></i>
+										<i className="fa fa-star" aria-hidden="true"></i>
 									</li>
 									<li>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+										<i className="fa fa-star-half-o" aria-hidden="true"></i>
 									</li>
 								</ul>
 								<p>
@@ -387,9 +393,9 @@ const ProductDetail2 = () => {
 						<div className="col-lg-5">
 							<div className="progress-bar-rating">
 								<label>Excellent</label>
-								<div class="progress">
+								<div className="progress">
 									<div
-										class="progress-bar"
+										className="progress-bar"
 										role="progressbar"
 										style={{ width: "85%" }}
 										aria-valuenow="85"
@@ -400,9 +406,9 @@ const ProductDetail2 = () => {
 							</div>
 							<div className="progress-bar-rating">
 								<label>Good</label>
-								<div class="progress">
+								<div className="progress">
 									<div
-										class="progress-bar"
+										className="progress-bar"
 										role="progressbar"
 										style={{ width: "70%" }}
 										aria-valuenow="70"
@@ -413,9 +419,9 @@ const ProductDetail2 = () => {
 							</div>
 							<div className="progress-bar-rating">
 								<label>Average</label>
-								<div class="progress">
+								<div className="progress">
 									<div
-										class="progress-bar"
+										className="progress-bar"
 										role="progressbar"
 										style={{ width: "70%" }}
 										aria-valuenow="60"
@@ -426,9 +432,9 @@ const ProductDetail2 = () => {
 							</div>
 							<div className="progress-bar-rating">
 								<label>Below Average</label>
-								<div class="progress">
+								<div className="progress">
 									<div
-										class="progress-bar"
+										className="progress-bar"
 										role="progressbar"
 										style={{ width: "40%" }}
 										aria-valuenow="40"
@@ -439,9 +445,9 @@ const ProductDetail2 = () => {
 							</div>
 							<div className="progress-bar-rating">
 								<label>Poor</label>
-								<div class="progress">
+								<div className="progress">
 									<div
-										class="progress-bar"
+										className="progress-bar"
 										role="progressbar"
 										style={{ width: "30%" }}
 										aria-valuenow="30"
@@ -463,19 +469,19 @@ const ProductDetail2 = () => {
 									<div className="rating">
 										<ul>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star-half-o" aria-hidden="true"></i>
+												<i className="fa fa-star-half-o" aria-hidden="true"></i>
 											</li>
 										</ul>
 										<p>5.0</p>
@@ -497,19 +503,19 @@ const ProductDetail2 = () => {
 									<div className="rating">
 										<ul>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star-half-o" aria-hidden="true"></i>
+												<i className="fa fa-star-half-o" aria-hidden="true"></i>
 											</li>
 										</ul>
 										<p>5.0</p>
@@ -531,19 +537,19 @@ const ProductDetail2 = () => {
 									<div className="rating">
 										<ul>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star-half-o" aria-hidden="true"></i>
+												<i className="fa fa-star-half-o" aria-hidden="true"></i>
 											</li>
 										</ul>
 										<p>5.0</p>

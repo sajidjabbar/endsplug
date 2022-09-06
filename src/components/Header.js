@@ -244,14 +244,14 @@ const Header = () => {
 
 			{/* Analytics Modal Start Here */}
 			<div
-				class="modal fade"
+				className="modal fade"
 				id="analyticsModal"
-				tabindex="-1"
+				tabIndex="-1"
 				aria-labelledby="analyticsModalLabel"
 				aria-hidden="true"
 			>
-				<div class="modal-dialog">
-					<div class="modal-content">
+				<div className="modal-dialog">
+					<div className="modal-content">
 						<div className="close">
 							<button className="close-btn" data-bs-dismiss="modal">
 								<svg
@@ -270,7 +270,7 @@ const Header = () => {
 								</svg>
 							</button>
 						</div>
-						<div class="modal-body">
+						<div className="modal-body">
 							<div className="analytics-box">
 								<div className="heading-wrapper">
 									<span className="icon">
@@ -377,14 +377,14 @@ const Header = () => {
 
 			{/* Add Streamer Modal Start Here */}
 			<div
-				class="modal fade"
+				className="modal fade"
 				id="addStreamerModal"
-				tabindex="-1"
+				tabIndex="-1"
 				aria-labelledby="addStreamerModalLabel"
 				aria-hidden="true"
 			>
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
+				<div className="modal-dialog modal-dialog-centered">
+					<div className="modal-content">
 						<div className="close">
 							<button className="close-btn" data-bs-dismiss="modal">
 								<svg
@@ -420,7 +420,7 @@ const Header = () => {
 								</svg>
 							</button>
 						</div>
-						<div class="modal-body">
+						<div className="modal-body">
 							<div className="add-streamer-box">
 								<div className="sarch-bar">
 									<div className="form-group">
@@ -449,9 +449,9 @@ const Header = () => {
 													transform="translate(-4.5 -4.5)"
 													fill="none"
 													stroke="#fff"
-													stroke-linecap="round"
-													stroke-linejoin="round"
-													stroke-width="1"
+													strokeLinecap="round"
+													strokeLinejoin="round"
+													strokeWidth="1"
 												/>
 												<path
 													id="Path_693"
@@ -460,18 +460,18 @@ const Header = () => {
 													transform="translate(-14.686 -14.686)"
 													fill="none"
 													stroke="#fff"
-													stroke-linecap="round"
-													stroke-linejoin="round"
-													stroke-width="1"
+													strokeLinecap="round"
+													strokeLinejoin="round"
+													strokeWidth="1"
 												/>
 											</g>
 										</svg>
 									</button>
 								</div>
 								<div className="all-streamer">
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden checked name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -489,9 +489,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -509,9 +509,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -529,9 +529,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -549,9 +549,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -569,9 +569,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -589,9 +589,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -609,9 +609,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -629,9 +629,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -649,9 +649,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -669,9 +669,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -689,9 +689,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -709,9 +709,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -729,9 +729,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -749,9 +749,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -769,9 +769,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -789,9 +789,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -809,9 +809,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -829,9 +829,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -849,9 +849,9 @@ const Header = () => {
 											</div>
 										</span>
 									</label>
-									<label class="streamer-container">
+									<label className="streamer-container">
 										<input type="radio" hidden name="StreamerRadio" />
-										<span class="checkmark">
+										<span className="checkmark">
 											<div className="streamer-box">
 												<div className="left">
 													<figure>
@@ -884,17 +884,17 @@ const Header = () => {
 
 			{/* Bordcast Modal */}
 			<div
-				class="modal fade"
+				className="modal fade"
 				id="BrodcastModal"
 				data-bs-backdrop="static"
 				data-bs-keyboard="false"
-				tabindex="-1"
+				tabIndex="-1"
 				aria-labelledby="BrodcastModal"
 				aria-hidden="true"
 			>
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<div class="modal-body">
+				<div className="modal-dialog modal-dialog-centered">
+					<div className="modal-content">
+						<div className="modal-body">
 							<div className="stream-setting">
 								<div className="heading-wrapper">
 									<span className="icon">
@@ -939,9 +939,9 @@ const Header = () => {
 														transform="translate(-6.471)"
 														fill="none"
 														stroke="#fff"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="2"
 													/>
 													<path
 														id="Path_691"
@@ -950,9 +950,9 @@ const Header = () => {
 														transform="translate(0 -6.471)"
 														fill="none"
 														stroke="#fff"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="2"
 													/>
 												</g>
 											</svg>
@@ -965,9 +965,9 @@ const Header = () => {
 												<ruby>Comments</ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
-											<label class="switch">
+											<label className="switch">
 												<input type="checkbox" />
-												<span class="slider"></span>
+												<span className="slider"></span>
 											</label>
 										</li>
 										<li>
@@ -975,9 +975,9 @@ const Header = () => {
 												<ruby>Mute</ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
-											<label class="switch">
+											<label className="switch">
 												<input type="checkbox" />
-												<span class="slider"></span>
+												<span className="slider"></span>
 											</label>
 										</li>
 										<li>
@@ -985,9 +985,9 @@ const Header = () => {
 												<ruby>Rotate camera</ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
-											<label class="switch">
+											<label className="switch">
 												<input type="checkbox" />
-												<span class="slider"></span>
+												<span className="slider"></span>
 											</label>
 										</li>
 										<li>
@@ -995,9 +995,9 @@ const Header = () => {
 												<ruby>Video</ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
-											<label class="switch">
+											<label className="switch">
 												<input type="checkbox" />
-												<span class="slider"></span>
+												<span className="slider"></span>
 											</label>
 										</li>
 										<li>
@@ -1005,9 +1005,9 @@ const Header = () => {
 												<ruby>Turn on flash</ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
-											<label class="switch">
+											<label className="switch">
 												<input type="checkbox" />
-												<span class="slider"></span>
+												<span className="slider"></span>
 											</label>
 										</li>
 										<li>
@@ -1015,9 +1015,9 @@ const Header = () => {
 												<ruby>Nug Jar</ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
-											<label class="switch">
+											<label className="switch">
 												<input type="checkbox" />
-												<span class="slider"></span>
+												<span className="slider"></span>
 											</label>
 										</li>
 									</ul>
@@ -1040,17 +1040,17 @@ const Header = () => {
 
 			{/* Bordcast Modal */}
 			<div
-				class="modal fade"
+				className="modal fade"
 				id="AddStory"
 				data-bs-backdrop="static"
 				data-bs-keyboard="false"
-				tabindex="-1"
+				tabIndex="-1"
 				aria-labelledby="AddStory"
 				aria-hidden="true"
 			>
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<div class="modal-body">
+				<div className="modal-dialog modal-dialog-centered">
+					<div className="modal-content">
+						<div className="modal-body">
 							<div className="story-box">
 								<div className="heading-wrapper">
 									<h4>Add Story</h4>
@@ -1084,15 +1084,15 @@ const Header = () => {
 										<label>Background</label>
 										<ul className="backgrounds-color">
 											<li>
-												<label class="background-container">
+												<label className="background-container">
 													<input
-														class="form-check-input"
+														className="form-check-input"
 														type="radio"
 														hidden
 														checked
 														name="Storyradio"
 													/>
-													<span class="checkmark">
+													<span className="checkmark">
 														<figure>
 															<img
 																src={StoryBack1}
@@ -1104,14 +1104,14 @@ const Header = () => {
 												</label>
 											</li>
 											<li>
-												<label class="background-container">
+												<label className="background-container">
 													<input
-														class="form-check-input"
+														className="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
 													/>
-													<span class="checkmark">
+													<span className="checkmark">
 														<figure>
 															<img
 																src={StoryBack2}
@@ -1123,14 +1123,14 @@ const Header = () => {
 												</label>
 											</li>
 											<li>
-												<label class="background-container">
+												<label className="background-container">
 													<input
-														class="form-check-input"
+														className="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
 													/>
-													<span class="checkmark">
+													<span className="checkmark">
 														<figure>
 															<img
 																src={StoryBack3}
@@ -1142,14 +1142,14 @@ const Header = () => {
 												</label>
 											</li>
 											<li>
-												<label class="background-container">
+												<label className="background-container">
 													<input
-														class="form-check-input"
+														className="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
 													/>
-													<span class="checkmark">
+													<span className="checkmark">
 														<figure>
 															<img
 																src={StoryBack4}
@@ -1161,14 +1161,14 @@ const Header = () => {
 												</label>
 											</li>
 											<li>
-												<label class="background-container">
+												<label className="background-container">
 													<input
-														class="form-check-input"
+														className="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
 													/>
-													<span class="checkmark">
+													<span className="checkmark">
 														<figure>
 															<img
 																src={StoryBack5}
@@ -1200,15 +1200,15 @@ const Header = () => {
 
 			{/* Spinner Coins */}
 			<div
-				class="modal fade"
+				className="modal fade"
 				id="SpinnerCoins"
-				tabindex="-1"
+				tabIndex="-1"
 				aria-labelledby="SpinnerCoins"
 				aria-hidden="true"
 			>
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<div class="modal-body">
+				<div className="modal-dialog modal-dialog-centered">
+					<div className="modal-content">
+						<div className="modal-body">
 							<button className="close" data-bs-dismiss="modal">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -1252,15 +1252,15 @@ const Header = () => {
 
 			{/* Winner Modal */}
 			<div
-				class="modal fade"
+				className="modal fade"
 				id="winnerModal"
-				tabindex="-1"
+				tabIndex="-1"
 				aria-labelledby="winnerModal"
 				aria-hidden="true"
 			>
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<div class="modal-body">
+				<div className="modal-dialog modal-dialog-centered">
+					<div className="modal-content">
+						<div className="modal-body">
 							<button className="close" data-bs-dismiss="modal">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -1298,15 +1298,15 @@ const Header = () => {
 
 			{/* Tier Modal */}
 			<div
-				class="modal fade"
+				className="modal fade"
 				id="TierModal"
-				tabindex="-1"
+				tabIndex="-1"
 				aria-labelledby="TierModal"
 				aria-hidden="true"
 			>
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<div class="modal-body">
+				<div className="modal-dialog modal-dialog-centered">
+					<div className="modal-content">
+						<div className="modal-body">
 							<button className="close" data-bs-dismiss="modal">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"

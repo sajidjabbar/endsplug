@@ -23,13 +23,13 @@ const LiveStream = () => {
 			var a = ["colOne", "colTwo", "colThree", "colFour", "colFive", "colSix"];
 			var c = (Math.random() * (1.6 - 1.2) + 1.2).toFixed(1);
 			$(
-				'<div class="heart part-' +
+				'<div className="heart part-' +
 					b +
 					" " +
 					a[Math.floor(Math.random() * 6)] +
 					'" style="font-size:' +
 					Math.floor(Math.random() * (50 - 22) + 22) +
-					'px;"><i class="fa fa-heart"></i></div>',
+					'px;"><i className="fa fa-heart"></i></div>',
 			)
 				.appendTo(".hearts")
 				.css({
@@ -138,7 +138,7 @@ const LiveStream = () => {
 													fill="#fff"
 													stroke="rgba(0,0,0,0)"
 													stroke-miterlimit="10"
-													stroke-width="1"
+													strokeWidth="1"
 												/>
 											</g>
 										</svg>
@@ -146,9 +146,9 @@ const LiveStream = () => {
 								</div>
 								<ul className="messages">
 									<li>
-										<div class="dropdown">
+										<div className="dropdown">
 											<button
-												class="btn btn-secondary dropdown-toggle"
+												className="btn btn-secondary dropdown-toggle"
 												type="button"
 												id="dropdownMenuButton1"
 												data-bs-toggle="dropdown"
@@ -158,11 +158,11 @@ const LiveStream = () => {
 												patch before the TI
 											</button>
 											<ul
-												class="dropdown-menu"
+												className="dropdown-menu"
 												aria-labelledby="dropdownMenuButton1"
 											>
 												<li>
-													<a class="dropdown-item" href="#">
+													<a className="dropdown-item" href="#">
 														<svg
 															xmlns="http://www.w3.org/2000/svg"
 															width="15.752"
@@ -181,7 +181,7 @@ const LiveStream = () => {
 													</a>
 												</li>
 												<li>
-													<a class="dropdown-item" href="#">
+													<a className="dropdown-item" href="#">
 														<svg
 															xmlns="http://www.w3.org/2000/svg"
 															width="17.059"
@@ -222,7 +222,7 @@ const LiveStream = () => {
 													</a>
 												</li>
 												<li>
-													<a class="dropdown-item" href="#">
+													<a className="dropdown-item" href="#">
 														<svg
 															xmlns="http://www.w3.org/2000/svg"
 															width="12.698"
@@ -239,7 +239,7 @@ const LiveStream = () => {
 													</a>
 												</li>
 												<li>
-													<a class="dropdown-item" href="#">
+													<a className="dropdown-item" href="#">
 														<svg
 															xmlns="http://www.w3.org/2000/svg"
 															width="15.483"
@@ -258,7 +258,7 @@ const LiveStream = () => {
 													</a>
 												</li>
 												<li>
-													<a class="dropdown-item" href="#">
+													<a className="dropdown-item" href="#">
 														<svg
 															xmlns="http://www.w3.org/2000/svg"
 															width="15.651"
@@ -318,7 +318,7 @@ const LiveStream = () => {
 									</li>
 								</ul>
 								<div className="bottom-bar">
-									<div class="hearts"></div>
+									<div className="hearts"></div>
 									<div className="emoji">
 										<img src={weedEmoji} alt="" className="img-fluid" />
 									</div>
@@ -369,7 +369,7 @@ const LiveStream = () => {
 											fill="#fff"
 											stroke="rgba(0,0,0,0)"
 											stroke-miterlimit="10"
-											stroke-width="1"
+											strokeWidth="1"
 										/>
 									</svg>
 								</button>
@@ -415,9 +415,9 @@ const LiveStream = () => {
 														transform="translate(-6.471)"
 														fill="none"
 														stroke="#fff"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="2"
 													/>
 													<path
 														id="Path_691"
@@ -426,9 +426,9 @@ const LiveStream = () => {
 														transform="translate(0 -6.471)"
 														fill="none"
 														stroke="#fff"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="2"
 													/>
 												</g>
 											</svg>
@@ -441,9 +441,9 @@ const LiveStream = () => {
 												<ruby>Comments</ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
-											<label class="switch">
+											<label className="switch">
 												<input type="checkbox" />
-												<span class="slider"></span>
+												<span className="slider"></span>
 											</label>
 										</li>
 										<li>
@@ -451,9 +451,9 @@ const LiveStream = () => {
 												<ruby>Stream Title</ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
-											<label class="switch">
+											<label className="switch">
 												<input type="checkbox" />
-												<span class="slider"></span>
+												<span className="slider"></span>
 											</label>
 										</li>
 										<li>
@@ -461,9 +461,9 @@ const LiveStream = () => {
 												<ruby>Rotate camera</ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
-											<label class="switch">
+											<label className="switch">
 												<input type="checkbox" />
-												<span class="slider"></span>
+												<span className="slider"></span>
 											</label>
 										</li>
 										<li>
@@ -471,9 +471,9 @@ const LiveStream = () => {
 												<ruby>Turn on flash</ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
-											<label class="switch">
+											<label className="switch">
 												<input type="checkbox" />
-												<span class="slider"></span>
+												<span className="slider"></span>
 											</label>
 										</li>
 									</ul>

@@ -81,7 +81,7 @@ const Cart = () => {
 															transform="translate(-4.25 -4.25)"
 															fill="#2c1800"
 															stroke="#2c1800"
-															stroke-width="0.5"
+															strokeWidth="0.5"
 															fill-rule="evenodd"
 														/>
 													</svg>
@@ -106,8 +106,8 @@ const Cart = () => {
 															transform="translate(0.753 0.753)"
 															fill="none"
 															stroke="#000"
-															stroke-linecap="round"
-															stroke-width="1.5"
+															strokeLinecap="round"
+															strokeWidth="1.5"
 														/>
 													</svg>
 												</button>
@@ -162,7 +162,7 @@ const Cart = () => {
 															transform="translate(-4.25 -4.25)"
 															fill="#2c1800"
 															stroke="#2c1800"
-															stroke-width="0.5"
+															strokeWidth="0.5"
 															fill-rule="evenodd"
 														/>
 													</svg>
@@ -187,8 +187,8 @@ const Cart = () => {
 															transform="translate(0.753 0.753)"
 															fill="none"
 															stroke="#000"
-															stroke-linecap="round"
-															stroke-width="1.5"
+															strokeLinecap="round"
+															strokeWidth="1.5"
 														/>
 													</svg>
 												</button>

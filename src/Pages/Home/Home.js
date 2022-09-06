@@ -365,7 +365,7 @@ const Home = () => {
 														cy="30"
 														r="20"
 														stroke="black"
-														stroke-width="3"
+														strokeWidth="3"
 														fill="red"
 													/>
 												</svg> */}
@@ -425,7 +425,7 @@ const Home = () => {
 														cy="30"
 														r="20"
 														stroke="black"
-														stroke-width="3"
+														strokeWidth="3"
 														fill="red"
 													/>
 												</svg> */}
@@ -640,7 +640,7 @@ const Home = () => {
 									<div className="live-btn-wrapper">
 										<button
 											type="button"
-											class="btn"
+											className="btn"
 											data-bs-toggle="modal"
 											data-bs-target="#BrodcastModal"
 										>
@@ -1247,7 +1247,7 @@ const Home = () => {
 								<h5>Darrell Bailey</h5>
 								<select name="" id="">
 									<option value="Public">
-										<i class="fa fa-globe" aria-hidden="true"></i> Public{" "}
+										<i className="fa fa-globe" aria-hidden="true"></i> Public{" "}
 									</option>
 								</select>
 							</div>

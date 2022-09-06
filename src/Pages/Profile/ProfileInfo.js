@@ -32,7 +32,7 @@ const ProfileInfo = () => {
 						<button className="btn message">Message</button>
 						<button
 							type="button"
-							class="btn follow"
+							className="btn follow"
 							data-bs-toggle="modal"
 							data-bs-target="#unfollow"
 						>
@@ -79,17 +79,17 @@ const ProfileInfo = () => {
 
 			{/* Follow Modal */}
 			<div
-				class="modal fade"
+				className="modal fade"
 				id="unfollow"
 				data-bs-backdrop="static"
 				data-bs-keyboard="false"
-				tabindex="-1"
+				tabIndex="-1"
 				aria-labelledby="unfollowLabel"
 				aria-hidden="true"
 			>
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<div class="modal-body">
+				<div className="modal-dialog modal-dialog-centered">
+					<div className="modal-content">
+						<div className="modal-body">
 							<h2>
 								We Wont Tell Them
 								<figure>

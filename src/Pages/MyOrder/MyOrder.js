@@ -263,7 +263,7 @@ const MyOrder = () => {
 					<ul className="pagination">
 						<li className="arrow">
 							<a href="#">
-								<i class="fa fa-angle-left" aria-hidden="true"></i>
+								<i className="fa fa-angle-left" aria-hidden="true"></i>
 							</a>
 						</li>
 						<li className="pagi">
@@ -280,7 +280,7 @@ const MyOrder = () => {
 						</li>
 						<li className="arrow">
 							<a href="#">
-								<i class="fa fa-angle-right" aria-hidden="true"></i>
+								<i className="fa fa-angle-right" aria-hidden="true"></i>
 							</a>
 						</li>
 					</ul>

@@ -991,7 +991,7 @@ const Home2 = () => {
 								<h5>Darrell Bailey</h5>
 								<select name="" id="">
 									<option value="Public">
-										<i class="fa fa-globe" aria-hidden="true"></i> Public{" "}
+										<i className="fa fa-globe" aria-hidden="true"></i> Public{" "}
 									</option>
 								</select>
 							</div>

@@ -151,9 +151,9 @@ const ProductDetail = () => {
 														d="M18.621,11.561A7.061,7.061,0,1,1,11.561,4.5,7.061,7.061,0,0,1,18.621,11.561Z"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 													<path
 														id="Path_23"
@@ -162,9 +162,9 @@ const ProductDetail = () => {
 														transform="translate(-8.428 -8.428)"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 													<path
 														id="Path_24"
@@ -173,9 +173,9 @@ const ProductDetail = () => {
 														transform="translate(-4.939 -3.087)"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 													<path
 														id="Path_25"
@@ -184,9 +184,9 @@ const ProductDetail = () => {
 														transform="translate(-3.087 -4.939)"
 														fill="none"
 														stroke="#878787"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="1"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="1"
 													/>
 												</g>
 											</svg>
@@ -211,19 +211,19 @@ const ProductDetail = () => {
 									<div className="reviews">
 										<ul className="stars">
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 											<li>
-												<i class="fa fa-star" aria-hidden="true"></i>
+												<i className="fa fa-star" aria-hidden="true"></i>
 											</li>
 										</ul>
 										<p>5 Reviews </p>
@@ -233,7 +233,7 @@ const ProductDetail = () => {
 									</div>
 									<ul className="variation">
 										<li>
-											<label class="varai-container">
+											<label className="varai-container">
 												<input
 													type="radio"
 													hidden
@@ -241,48 +241,48 @@ const ProductDetail = () => {
 													checked="checked"
 													name="variationRadio"
 												/>
-												<span class="checkmark">
+												<span className="checkmark">
 													<p>S</p>
 												</span>
 											</label>
 										</li>
 										<li>
-											<label class="varai-container">
+											<label className="varai-container">
 												<input
 													type="radio"
 													hidden
 													className="input-group-text"
 													name="variationRadio"
 												/>
-												<span class="checkmark">
+												<span className="checkmark">
 													<p>M</p>
 												</span>
 											</label>
 										</li>
 										<li>
-											<label class="varai-container">
+											<label className="varai-container">
 												<input
 													type="radio"
 													hidden
 													className="input-group-text"
 													name="variationRadio"
 												/>
-												<span class="checkmark">
-													<span class="checkmark">
+												<span className="checkmark">
+													<span className="checkmark">
 														<p>L</p>
 													</span>
 												</span>
 											</label>
 										</li>
 										<li>
-											<label class="varai-container">
+											<label className="varai-container">
 												<input
 													type="radio"
 													hidden
 													className="input-group-text"
 													name="variationRadio"
 												/>
-												<span class="checkmark">
+												<span className="checkmark">
 													<p>XL</p>
 												</span>
 											</label>
