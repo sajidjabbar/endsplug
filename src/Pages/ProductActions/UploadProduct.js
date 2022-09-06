@@ -6,11 +6,17 @@ import "../../assets/css/EditProduct.css";
 
 const UploadProduct = () => {
 	return (
-		<>
+		<div className="UploadProduct_Page">
 			{/* Header */}
 			<Header />
 			{/* Header */}
-
+			<div className="container">
+				<div className="row">
+					<div className="col-lg-12 text-center mt-5 mb-1">
+						<h2>Upload Product</h2>
+					</div>
+				</div>
+			</div>
 			{/* Edit Product Sec Start Here */}
 			<section className="eidt-product">
 				<div className="container">
@@ -142,6 +148,28 @@ const UploadProduct = () => {
 										</select>
 									</div>
 								</div>
+								<div className="col-md-6">
+									<div className="form-group">
+										<label>Product Condition*</label>
+										<select className="form-control">
+											<option selected>Select type</option>
+											<option>Product Condition 1</option>
+											<option>Product Condition 2</option>
+											<option>Product Condition 3</option>
+										</select>
+									</div>
+								</div>
+								<div className="col-md-6">
+									<div className="form-group">
+										<label>Delivery Method*</label>
+										<select className="form-control">
+											<option selected>Select type</option>
+											<option>Delivery Method 1</option>
+											<option>Delivery Method 2</option>
+											<option>Delivery Method 3</option>
+										</select>
+									</div>
+								</div>
 								<div className="col-md-12">
 									<div className="form-group">
 										<label>Product Description</label>
@@ -183,8 +211,80 @@ const UploadProduct = () => {
 									</div>
 								</div>
 								<div className="col-md-12">
-									<div className="button-group">
-										<button className="btn">Submit & Preview</button>
+									<div className="form-group">
+										<label>Select Package</label>
+									</div>
+								</div>
+								<div className="col-md-4">
+									<div className="form-group">
+										<div className="radio_main_div">
+											<div>
+												<input id="radio-1" class="radio-custom" name="radio-group" type="radio" />
+												<label for="radio-1" class="radio-custom-label"></label>
+											</div>
+											<div className="brdr-Right_radio_uplpoad_product">
+
+											</div>
+											<div>
+												<div>
+													<label>Basic</label>
+												</div>
+												<p className="nineinec_prod">
+													99c 10 products
+												</p>
+											</div>
+										</div>
+										<div className="button-group mt-3 ml-1">
+											<button className="btn">Submit & Preview</button>
+										</div>
+									</div>
+								</div>
+								<div className="col-md-4">
+									<div className="form-group">
+										<div className="radio_main_div">
+											<div>
+												<input id="radio-2" class="radio-custom" name="radio-group" type="radio" />
+												<label for="radio-2" class="radio-custom-label"></label>
+											</div>
+											<div className="brdr-Right_radio_uplpoad_product">
+
+											</div>
+											<div>
+												<div>
+													<label>Boss</label>
+												</div>
+												<p className="nineinec_prod mb-0">
+													5.99 30 products
+												</p>
+												<p className="nineinec_prod mb-0">3 free ad spaces a month</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className="col-md-4">
+									<div className="form-group">
+										<div className="radio_main_div">
+											<div>
+												<input id="radio-3" class="radio-custom" name="radio-group" type="radio" />
+												<label for="radio-3" class="radio-custom-label"></label>
+											</div>
+											<div className="brdr-Right_radio_uplpoad_product">
+
+											</div>
+											<div>
+												<div>
+													<label>mogul </label>
+												</div>
+												<p className="nineinec_prod mb-0">
+													14.99 20 Free ads <br />
+													Unlimited Post <br />
+													Free Acess to Ganja prenure community <br />
+													Products listing optimization <br />
+													Exclusive Networking Operrunites
+												</p>
+
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -201,7 +301,7 @@ const UploadProduct = () => {
 			{/* Footer */}
 			<Footer />
 			{/* Footer */}
-		</>
+		</div>
 	);
 };
 

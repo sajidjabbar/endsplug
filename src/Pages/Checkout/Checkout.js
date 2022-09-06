@@ -12,12 +12,12 @@ const Checkout = () => {
 			{/* Header */}
 
 			{/* <!-- Checkout Start Here --> */}
-			<section className="checkout">
-				<div className="container">
-					<form action="thank-you.php">
-						<div className="row">
-							<div className="col-lg-6">
-								<div className="first-top-bar">
+			<section class="checkout">
+				<div class="container">
+					<form action="/thank-you">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="first-top-bar">
 									<h3>Shipment Details</h3>
 								</div>
 								<div className="saved-address">

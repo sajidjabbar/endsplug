@@ -185,4 +185,20 @@
 	font-family: "Poppins";
 	font-weight: 600;
 }
+.cart-sec .right-side a.btn-checkout {
+	background-image: linear-gradient(
+		to right top,
+		#fe5b25,
+		#fe6c1e,
+		#fd7c18,
+		#fb8b14,
+		#f99914
+	);
+	font-size: 16px;
+	color: #ffffff;
+	padding: 10px 35px;
+	border-radius: 7px;
+	height: 43px;
+	font-weight: 600;
+}
 /* Cart Css End Here */

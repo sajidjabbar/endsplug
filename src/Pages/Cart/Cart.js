@@ -232,6 +232,9 @@ const Cart = () => {
 										<h4 className="value">$343.48</h4>
 									</div>
 								</div>
+								<a href="/checkout" className="btn btn-checkout form-control">
+									Checkout
+								</a>
 							</div>
 						</div>
 					</div>

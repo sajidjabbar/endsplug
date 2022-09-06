@@ -20,6 +20,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: false,
 		},
 		{
 			id: 2,
@@ -29,6 +30,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 3,
@@ -38,6 +40,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 4,
@@ -47,6 +50,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 5,
@@ -56,6 +60,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 6,
@@ -65,6 +70,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 7,
@@ -74,6 +80,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 8,
@@ -83,6 +90,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 		{
 			id: 9,
@@ -92,6 +100,7 @@ const MyProducts = () => {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
 			price: "$18",
 			rating: "5",
+			active: true,
 		},
 	];
 	return (
@@ -121,23 +130,25 @@ const MyProducts = () => {
 					<div className="row">
 						<div className="col-lg-3 col-md-4">
 							<div className="add-new">
-								<div className="iner">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="34.986"
-										height="34.986"
-										viewBox="0 0 34.986 34.986"
-									>
-										<path
-											id="Icon_awesome-plus"
-											data-name="Icon awesome-plus"
-											d="M32.487,15.995H21.242V4.749a2.5,2.5,0,0,0-2.5-2.5h-2.5a2.5,2.5,0,0,0-2.5,2.5V15.995H2.5a2.5,2.5,0,0,0-2.5,2.5v2.5a2.5,2.5,0,0,0,2.5,2.5H13.745V34.737a2.5,2.5,0,0,0,2.5,2.5h2.5a2.5,2.5,0,0,0,2.5-2.5V23.492H32.487a2.5,2.5,0,0,0,2.5-2.5v-2.5A2.5,2.5,0,0,0,32.487,15.995Z"
-											transform="translate(0 -2.25)"
-											fill="#fff"
-										/>
-									</svg>
-									<h4>Add New Product</h4>
-								</div>
+								<a href="/upload-product">
+									<div className="iner">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="34.986"
+											height="34.986"
+											viewBox="0 0 34.986 34.986"
+										>
+											<path
+												id="Icon_awesome-plus"
+												data-name="Icon awesome-plus"
+												d="M32.487,15.995H21.242V4.749a2.5,2.5,0,0,0-2.5-2.5h-2.5a2.5,2.5,0,0,0-2.5,2.5V15.995H2.5a2.5,2.5,0,0,0-2.5,2.5v2.5a2.5,2.5,0,0,0,2.5,2.5H13.745V34.737a2.5,2.5,0,0,0,2.5,2.5h2.5a2.5,2.5,0,0,0,2.5-2.5V23.492H32.487a2.5,2.5,0,0,0,2.5-2.5v-2.5A2.5,2.5,0,0,0,32.487,15.995Z"
+												transform="translate(0 -2.25)"
+												fill="#fff"
+											/>
+										</svg>
+										<h4>Add New Product</h4>
+									</div>
+								</a>
 							</div>
 						</div>
 						{product?.map((pro, index) => (
@@ -164,9 +175,12 @@ const MyProducts = () => {
 											})}
 										</ul>
 										<div className="button-group">
-											<a href="#" className="btn">
+											{pro.active ? <a disabled href="/product-detail" className="btn">
 												View Product
-											</a>
+											</a> : <button disabled className="btn btn-light mt-3">Not Available  </button> }
+											{/* <a disabled href="/product-detail" className="btn">
+												View Product
+											</a> */}
 										</div>
 									</div>
 								</div>

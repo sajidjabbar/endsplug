@@ -1,5 +1,9 @@
 import React from "react";
+import { useState } from "react";
+import Slider from "react-slick";
 import { Link, useNavigate } from "react-router-dom";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
 import {
 	blue_flag,
 	cambridge,
@@ -15,6 +19,22 @@ import {
 	usa,
 	vietnam,
 	profile_img,
+	msg1,
+	msg2,
+	msg3,
+	msg4,
+	msg5,
+	con1,
+	con2,
+	con3,
+	con4,
+	con5,
+	no1,
+	no2,
+	notification_img,
+	no3,
+	no4,
+	no5,
 	Leaf,
 	liveStream,
 	NewFollower1,
@@ -36,9 +56,124 @@ import {
 	StoryBack5,
 	Coin,
 	WinnerImg,
+	m1,
+	m2,
+	m3,
+	m4,
+	m5,
+	m6,
 } from "../constant";
 
 const Header = () => {
+	const [open, setOpen] = useState(false);
+	const [notification, setnotification] = useState(false);
+	const handleopenmsg = () => {
+		setOpen(true);
+	};
+	const handleclosemsg = () => {
+		setOpen(false);
+	};
+	const handleopennoti = () => {
+		setnotification(true);
+	};
+	const handleclosenoti = () => {
+		setnotification(false);
+	};
+	const messsage = {
+		dots: false,
+		arrows: false,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+	};
+	const messages_profile = [
+		{
+			id: 1,
+			name: "Christopher",
+			profile: msg1,
+			is_active: true,
+		},
+		{
+			id: 2,
+			name: "Reese",
+			profile: msg2,
+			is_active: true,
+		},
+		{
+			id: 3,
+			name: "Christopher",
+			profile: msg3,
+			is_active: true,
+		},
+		{
+			id: 4,
+			name: "Laura",
+			profile: msg4,
+			is_active: true,
+		},
+		{
+			id: 5,
+			name: "Maldo",
+			profile: msg5,
+			is_active: true,
+		},
+		{
+			id: 6,
+			name: "Christopher",
+			profile: msg1,
+			is_active: true,
+		},
+		{
+			id: 5,
+			name: "Reese",
+			profile: msg2,
+			is_active: true,
+		},
+	];
+	const Conversation = [
+		{
+			id: 1,
+			name: "Herman Pope",
+			msg: "Hey! How's it going?",
+			time: "04:04AM",
+			img: con1,
+			total_msg: 3,
+		},
+		{
+			id: 2,
+			name: "Sue Caldwell",
+			msg: "What kind of music do you like? ",
+			time: "08:58PM",
+			img: con2,
+			total_msg: 1,
+		},
+		{
+			id: 3,
+			name: "Ada Reyes",
+			msg: "Sounds good to me!",
+			time: "11:33PM",
+			img: con3,
+			total_msg: 0,
+		},
+		{
+			id: 4,
+			name: "Hallie Sandoval",
+			msg: "Hi Tina. How's your night going?",
+			time: "06:58PM",
+			img: con4,
+			total_msg: 0,
+		},
+		{
+			id: 5,
+			name: "Dean Warren",
+			msg: "What did you do over the weekend?",
+			time: "09:43PM",
+			img: con5,
+			total_msg: 0,
+		},
+	];
+
 	const navigate = useNavigate();
 	return (
 		<>
@@ -72,17 +207,17 @@ const Header = () => {
 								<div className="navbar-wrapper">
 									<ul className="navbar-nav mr-auto">
 										<li className="nav-item">
-											<Link className="nav-link" to="#">
+											<Link className="nav-link" to="/">
 												Home
 											</Link>
 										</li>
 										<li className="nav-item">
-											<Link className="nav-link" to="#">
+											<Link className="nav-link" to="/products">
 												My Product
 											</Link>
 										</li>
 										<li className="nav-item">
-											<Link className="nav-link" to="#">
+											<Link className="nav-link" to="/market-place">
 												Merch
 											</Link>
 										</li>
@@ -92,25 +227,33 @@ const Header = () => {
 									<div className="icon-wrapper">
 										<ul className="navbar-nav mr-auto">
 											<li className="nav-item">
-												<Link className="nav-link" to="#">
+												<Link className="nav-link" to="/shopping-cart">
 													<img src={navbar_cart} className="img-fluid" />
 													<span className="count">2</span>
 												</Link>
 											</li>
 											<li className="nav-item">
-												<Link className="nav-link" to="#">
+												<button
+													onMouseEnter={handleopenmsg}
+													className="nav-link"
+													to="javascript:void(0)"
+												>
 													<img src={navbar_chat} className="img-fluid" />
 													<span className="count">2</span>
-												</Link>
+												</button>
 											</li>
 											<li className="nav-item">
-												<Link className="nav-link" to="#">
+												<button
+													onMouseEnter={handleopennoti}
+													className="nav-link"
+													to="#"
+												>
 													<img
 														src={navbar_notification}
 														className="img-fluid"
 													/>
 													<span className="count">2</span>
-												</Link>
+												</button>
 											</li>
 										</ul>
 									</div>
@@ -197,19 +340,19 @@ const Header = () => {
 														</div>
 														<ul className="list">
 															<li>
-																<Link to="#">Money</Link>
+																<Link to="/wallet">Money</Link>
 															</li>
 															<li>
-																<Link to="#">Earned Nugs</Link>
+																<Link to="/privacy">Earned Nugs</Link>
 															</li>
 															<li>
-																<Link to="#">My Products</Link>
+																<Link to="/products">My Products</Link>
 															</li>
 															<li>
-																<Link to="#">Market place</Link>
+																<Link to="/market-place">Market place</Link>
 															</li>
 															<li>
-																<Link to="#">Help & Feedback</Link>
+																<Link to="/faqs">Help & Feedback</Link>
 															</li>
 															<li>
 																<Link to="#">Notification Settings</Link>
@@ -218,13 +361,24 @@ const Header = () => {
 																<Link to="#">Follows</Link>
 															</li>
 															<li>
-																<Link to="#">Blocked List</Link>
+																<Link to="/blocklist">Blocked List</Link>
 															</li>
 															<li>
 																<Link to="#">Privacy Settings</Link>
 															</li>
 															<li>
 																<Link to="#">Polices</Link>
+															</li>
+															<li>
+																<Link to="/report-problem">
+																	Report a Problem
+																</Link>
+															</li>
+															<li>
+																<Link to="/CreateAccount">Sign up</Link>
+															</li>
+															<li>
+																<Link to="/Login">Login</Link>
 															</li>
 															<li>
 																<Link to="#">Log Out</Link>
@@ -236,6 +390,175 @@ const Header = () => {
 										</ul>
 									</div>
 								</div>
+								{/* Messages header starts here */}
+								{open == true ? (
+									<div
+										onMouseLeave={handleclosemsg}
+										className="header-messages-wrapper"
+									>
+										<div className="heading-wrapper">
+											<h6>Messages</h6>
+										</div>
+										<div className="messsages-profile-wrapper">
+											<div className="stori-wrappper">
+												<Slider {...messsage}>
+													{messages_profile.map((data, index) => {
+														return (
+															<div key={index} className="profile-wrp">
+																<button className="msg-btn">
+																	<figure>
+																		<img src={data?.profile} alt="" />
+																		{data?.is_active ? (
+																			<div className="online"></div>
+																		) : (
+																			<div className="offline"></div>
+																		)}
+																	</figure>
+																	<div className="name-wrapper">
+																		<h6>{data?.name}</h6>
+																	</div>
+																</button>
+															</div>
+														);
+													})}
+												</Slider>
+											</div>
+										</div>
+										<div className="messages-wrapper">
+											{Conversation.map((data, index) => {
+												return (
+													<div key={index} className="single-msg-wrapper">
+														<div className="img-wrapper">
+															<figure>
+																<img src={data?.img} alt="" />
+																{data?.total_msg == 0 ? (
+																	""
+																) : (
+																	<span className="totalmsg">
+																		{" "}
+																		{data?.total_msg}{" "}
+																	</span>
+																)}
+															</figure>
+														</div>
+														<div className="mg-content-wrapper">
+															<div className="msg-name-wrapper">
+																<h6>{data?.name}</h6>
+																<span>{data?.time}</span>
+															</div>
+															<div className="msg-wrappper">
+																<p>{data?.msg}</p>
+															</div>
+														</div>
+													</div>
+												);
+											})}
+										</div>
+									</div>
+								) : (
+									""
+								)}
+								{/* Messages header ends here */}
+								{/* Notifications starts here */}
+								{notification == true ? (
+									<div
+										onMouseLeave={handleclosenoti}
+										className="notification-card-wrapper"
+									>
+										<div className="notification-heading-wrapper">
+											<h6>Notifications</h6>
+										</div>
+										<div className="notifications-wrapper">
+											<div className="single-notification-wrapper">
+												<div className="img-wrapper">
+													<figure>
+														<img src={no1} alt="" />
+													</figure>
+												</div>
+												<div className="notification-content-wrapper">
+													<div className="head-wrapper">
+														<h5>Jimmy Nilson followed you</h5>
+														<span>28 minutes ago</span>
+													</div>
+													<div className="btn-wrapper">
+														<button className="btn">Follow</button>
+													</div>
+												</div>
+											</div>
+											<div className="single-notification-wrapper">
+												<div className="img-wrapper">
+													<figure>
+														<img src={no2} alt="" />
+													</figure>
+												</div>
+												<div className="notification-content-wrapper">
+													<div className="head-wrapper">
+														<h5>Katie Malone liked 3 your photos</h5>
+														<span>2 hours ago</span>
+													</div>
+													<div className="btn-wrapper">
+														<figure>
+															<img src={notification_img} alt="" />
+														</figure>
+													</div>
+												</div>
+											</div>
+											<div className="single-notification-wrapper">
+												<div className="img-wrapper">
+													<figure>
+														<img src={no3} alt="" />
+													</figure>
+												</div>
+												<div className="notification-content-wrapper">
+													<div className="head-wrapper">
+														<h5>
+															Ola Gonzales react for story "Killin’ chillin" to
+															your timeline
+														</h5>
+														<span>2 hours ago</span>
+													</div>
+													<div className="btn-wrapper"></div>
+												</div>
+											</div>
+											<div className="single-notification-wrapper">
+												<div className="img-wrapper">
+													<figure>
+														<img src={no4} alt="" />
+													</figure>
+												</div>
+												<div className="notification-content-wrapper">
+													<div className="head-wrapper">
+														<h6>@gorlova commented on photo</h6>
+														<h5>
+															The Luxury Of Traveling With Yacht Charter
+															Companies
+														</h5>
+														<span>2 hours ago</span>
+													</div>
+													<div className="btn-wrapper"></div>
+												</div>
+											</div>
+											<div className="single-notification-wrapper">
+												<div className="img-wrapper">
+													<figure>
+														<img src={no5} alt="" />
+													</figure>
+												</div>
+												<div className="notification-content-wrapper">
+													<div className="head-wrapper">
+														<h5>Austin Gonzales added 5 photos</h5>
+														<span>2 hours ago</span>
+													</div>
+													<div className="btn-wrapper"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								) : (
+									""
+								)}
+
+								{/* Notifications ends here */}
 							</div>
 						</div>
 					</div>
@@ -1012,7 +1335,17 @@ const Header = () => {
 										</li>
 										<li>
 											<span>
-												<ruby>Nug Jar</ruby>
+												<ruby>
+													Bug Jar{" "}
+													<Tooltip placement="top" title="Bug jar details here">
+														<IconButton>
+															<i
+																class="fa fa-info-circle text-white"
+																aria-hidden="true"
+															></i>
+														</IconButton>
+													</Tooltip>{" "}
+												</ruby>
 												<img src={Leaf} alt="" className="img-fluid" />
 											</span>
 											<label className="switch">
@@ -1081,18 +1414,18 @@ const Header = () => {
 								</form>
 								<div className="bottom-bar">
 									<div className="backgrounds">
-										<label>Background</label>
+										{/* <label>Background</label> */}
 										<ul className="backgrounds-color">
 											<li>
-												<label className="background-container">
-													<input
-														className="form-check-input"
+												<label class="background-container">
+													{/* <input
+														class="form-check-input"
 														type="radio"
 														hidden
 														checked
 														name="Storyradio"
-													/>
-													<span className="checkmark">
+													/> */}
+													<span class="checkmark cursor_pointer">
 														<figure>
 															<img
 																src={StoryBack1}
@@ -1104,80 +1437,134 @@ const Header = () => {
 												</label>
 											</li>
 											<li>
-												<label className="background-container">
-													<input
-														className="form-check-input"
+												<label class="background-container">
+													{/* <input
+														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/>
-													<span className="checkmark">
+													/> */}
+													<span class="checkmark">
 														<figure>
 															<img
-																src={StoryBack2}
+																src={m1}
 																alt=""
-																className="img-fluid"
+																className="img-fluid cursor_pointer"
 															/>
 														</figure>
 													</span>
 												</label>
 											</li>
 											<li>
-												<label className="background-container">
-													<input
-														className="form-check-input"
+												<label class="background-container">
+													{/* <input
+														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/>
-													<span className="checkmark">
+													/> */}
+													<span class="checkmark">
 														<figure>
 															<img
-																src={StoryBack3}
+																src={m2}
 																alt=""
-																className="img-fluid"
+																className="img-fluid cursor_pointer"
 															/>
 														</figure>
 													</span>
 												</label>
 											</li>
 											<li>
-												<label className="background-container">
+												{/* <label className="background-container">
 													<input
 														className="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
 													/>
-													<span className="checkmark">
+													<span className="checkmark"> */}
+												<label class="background-container">
+													{/* <input
+														class="form-check-input"
+														type="radio"
+														hidden
+														name="Storyradio"
+													/> */}
+													<span class="checkmark">
 														<figure>
 															<img
-																src={StoryBack4}
+																src={m3}
 																alt=""
-																className="img-fluid"
+																className="img-fluid cursor_pointer"
 															/>
 														</figure>
 													</span>
 												</label>
 											</li>
 											<li>
-												<label className="background-container">
-													<input
-														className="form-check-input"
+												<label class="background-container">
+													{/* <input
+														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/>
-													<span className="checkmark">
+													/> */}
+													<span class="checkmark">
 														<figure>
 															<img
-																src={StoryBack5}
+																src={m4}
 																alt=""
-																className="img-fluid"
+																className="img-fluid cursor_pointer"
 															/>
 														</figure>
 													</span>
 												</label>
+											</li>
+											<li>
+												<label class="background-container">
+													{/* <input
+														class="form-check-input"
+														type="radio"
+														hidden
+														name="Storyradio"
+													/> */}
+													<span class="checkmark">
+														<figure>
+															<img
+																src={m5}
+																alt=""
+																className="img-fluid cursor_pointer"
+															/>
+														</figure>
+													</span>
+												</label>
+											</li>
+											<li>
+												{/* <input
+														class="form-check-input"
+														type="radio"
+														hidden
+														name="Storyradio"
+													/> */}
+												<span class="checkmark faemojii">
+													<figure style={{ marginBottom: "0px" }}>
+														<i class="fa fa-smile-o" aria-hidden="true"></i>
+													</figure>
+												</span>
+											</li>
+											<li>
+												{/* <input
+														class="form-check-input"
+														type="radio"
+														hidden
+														name="Storyradio"
+													/> */}
+												<img
+													className="cursor_pointer"
+													alt="m6"
+													width={100}
+													src={m6}
+												/>
 											</li>
 										</ul>
 									</div>
@@ -1324,29 +1711,71 @@ const Header = () => {
 								</svg>
 							</button>
 							<div className="row">
-								<div className="col-lg-3"></div>
-								<div className="col-lg-6">
+								<div className="col-lg-12">
 									<div className="heading">
 										<h3>Tiers System</h3>
 									</div>
+								</div>
+								<div className="col-lg-6">
 									<div className="tier-box">
-										<h3 className="title">Referrals</h3>
+										<h3 className="title mb-5">Referrals</h3>
 										<table className="table">
 											<tr>
-												<td>Tier 1</td>
-												<td>Consultant</td>
+												<td className="tier1_tier">Tier 1</td>
+												<td>
+													<p className="mb-2">Consultant</p>
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more about
+													</button>
+													<button className="btn btn-light bt-white-apply-tier">
+														Become a
+													</button>
+												</td>
 											</tr>
 											<tr>
-												<td>Tier 2</td>
-												<td>Ambassador 1K</td>
+												<td className="tier1_tier">Tier 2</td>
+												<td>
+													<p className="mb-2">Ambassador 1K</p>
+
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more about
+													</button>
+													<button className="btn btn-light bt-white-apply-tier">
+														Become a
+													</button>
+												</td>
 											</tr>
 											<tr>
-												<td>Tier 2</td>
-												<td>Content Creator Broadcasters Entrepreneurs</td>
+												<td className="tier1_tier">Tier 3</td>
+												<td>
+													<p className="mb-2 pr-5">
+														Content Creator Broadcasters Entrepreneurs
+													</p>
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more about
+													</button>
+													<button className="btn btn-light bt-white-apply-tier">
+														Become a
+													</button>
+													{/* <p className="mb-2 pr-5">
+														Content Creator Broadcasters Entrepreneurs
+													</p> */}
+												</td>
 											</tr>
 										</table>
 									</div>
-									<div className="tier-box">
+								</div>
+								<div className="col-lg-6">
+									{/* <div className="tier-box">
 										<h3 className="title">Broadcaster</h3>
 										<table className="table">
 											<tr>
@@ -1360,6 +1789,56 @@ const Header = () => {
 											<tr>
 												<td>Tier 2</td>
 												<td>VIP</td>
+											</tr>
+										</table>
+									</div> */}
+									<div className="tier-box">
+										<h3 className="title mb-5">Broadcaster</h3>
+										<table className="table">
+											<tr>
+												<td className="tier1_tier">Tier 1</td>
+												<td>
+													<p className="mb-2">Basic Live</p>
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more about
+													</button>
+													<button className="btn btn-light bt-white-apply-tier">
+														Become a
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td className="tier1_tier">Tier 2</td>
+												<td className="pl-5">
+													<p className="mb-2">Live for 2 hours</p>
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more about
+													</button>
+													<button className="btn btn-light bt-white-apply-tier">
+														Become a
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td className="tier1_tier">Tier 3</td>
+												<td>
+													<p className="mb-2 pr-5">VIP</p>
+													<button className="btn btn-light bt-white-apply-tier">
+														Apply
+													</button>
+													<button className="btn btn-light bt-black-apply-tier">
+														Learn more about
+													</button>
+													<button className="btn btn-light bt-white-apply-tier">
+														Become a
+													</button>
+												</td>
 											</tr>
 										</table>
 									</div>

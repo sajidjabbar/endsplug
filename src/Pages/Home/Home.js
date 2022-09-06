@@ -326,7 +326,10 @@ const Home = () => {
 							<div className="stream-list-wrapper">
 								{stream_list.map((data, index) => {
 									return (
-										<div className={"stream-card-wrapper star" + index}>
+										<div
+											key={index}
+											className={"stream-card-wrapper star" + index}
+										>
 											<div className="stream-img-wrapper">
 												<img
 													src={data?.thumbnail}
@@ -386,7 +389,10 @@ const Home = () => {
 							<div className="stream-list-wrapper">
 								{stream_list2.map((data, index) => {
 									return (
-										<div className={"stream-card-wrapper star" + index}>
+										<div
+											key={index}
+											className={"stream-card-wrapper star" + index}
+										>
 											<div className="stream-img-wrapper">
 												<img
 													src={data?.thumbnail}
@@ -459,7 +465,7 @@ const Home = () => {
 					<div className="row">
 						{Follwoing.map((data, index) => {
 							return (
-								<div className="col-lg-3">
+								<div key={index} className="col-lg-3">
 									<div className="stream-list-wrapper">
 										<div className={"stream-card-wrapper star" + index}>
 											<div className="stream-img-wrapper">
@@ -721,7 +727,7 @@ const Home = () => {
 												<a className="dropdown-item" href="#">
 													hide
 												</a>
-												<a className="dropdown-item" href="#">
+												<a className="dropdown-item" href="/invite-link">
 													share
 												</a>
 												<a className="dropdown-item" href="#">
@@ -1208,7 +1214,7 @@ const Home = () => {
 														className="dropdown-menu"
 														aria-labelledby="dropdownMenuButton"
 													>
-														<a className="dropdown-item" href="#">
+														<a className="dropdown-item" href="/profile">
 															<i className="fa fa-user"></i> View Profile
 														</a>
 														<a className="dropdown-item" href="#">
@@ -1304,7 +1310,7 @@ const Home = () => {
 					{filesContent.map((file, index) => (
 						<>
 							{console.log(file)}
-							<div>
+							<div key={index}>
 								<h2>{file.name}</h2>
 								{/* <div key={index}>{file.content}</div> */}
 								{/* <img source={{ uri: Base64.decode(file.content) }} /> */}

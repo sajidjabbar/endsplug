@@ -14,6 +14,7 @@ import NewPassword from "../Pages/auth/NewPassword";
 import CreateAccount from "../Pages/auth/CreateAccount";
 import Test from "../Pages/auth/AccountStep/test";
 import BecomeMember from "../Pages/auth/AccountStep/BecomeMember";
+import ContactUs from "../Pages/contact-us/ContactUs";
 import ReportProblem from "../Pages/Report/ReportProblem";
 import Support from "../Pages/Report/Support";
 import Help from "../Pages/Report/Help";
@@ -45,6 +46,7 @@ import Coin from "../Pages/WalletDashboard/Coin";
 import Nugs from "../Pages/WalletDashboard/Nugs";
 import Referal from "../Pages/WalletDashboard/Referal";
 import Payment from "../Pages/WalletDashboard/Payment";
+import CreateUserName from "../Pages/auth/CreateUserName";
 
 const PublicRoutes = () => {
 	return (
@@ -100,6 +102,8 @@ const PublicRoutes = () => {
 				<Route path="/DigitCode" element={<DigitCode />} />
 				<Route path="/NewPassword" element={<NewPassword />} />
 				<Route path="/CreateAccount" element={<CreateAccount />} />
+				<Route path="/CreateUserName" element={<CreateUserName />} />
+
 				<Route path="/BecomeMember" element={<BecomeMember />} />
 
 				{/* Wallet Dashboard */}
@@ -108,6 +112,7 @@ const PublicRoutes = () => {
 				<Route path="/wallet-nugs" element={<Nugs />} />
 				<Route path="/wallet-referal" element={<Referal />} />
 				<Route path="/wallet-payment" element={<Payment />} />
+				<Route path="/contact-us" element={<ContactUs />} />
 			</Routes>
 		</BrowserRouter>
 	);

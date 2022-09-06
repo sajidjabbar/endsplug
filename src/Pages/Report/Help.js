@@ -1,8 +1,12 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import "../../assets/css/help.css";
 
 const Help = () => {
+	const customer = () => {
+		window.location.href = "/support";
+	};
 	return (
 		<>
 			{/* Header */}
@@ -115,7 +119,9 @@ const Help = () => {
 						</p>
 						<div className="button-group">
 							<button className="btn yes">Yes</button>
-							<button className="btn no">No</button>
+							<button onClick={customer} className="btn no">
+								No
+							</button>
 						</div>
 					</div>
 				</div>

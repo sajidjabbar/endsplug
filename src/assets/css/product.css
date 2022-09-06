@@ -120,4 +120,8 @@
 .product-sec .add-new svg {
 	margin-bottom: 30px;
 }
+.product-sec .add-new a {
+	color: inherit;
+	text-decoration: inherit;
+}
 /* Product Css End Here */

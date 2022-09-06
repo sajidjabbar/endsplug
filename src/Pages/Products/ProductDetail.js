@@ -289,12 +289,20 @@ const ProductDetail = () => {
 										</li>
 									</ul>
 									<div className="button-group">
-										<button
-											onClick={() => navigate("/edit-product")}
-											className="btn edit-product"
-										>
-											Edit Product
-										</button>
+										<div className="d-flex">
+											<button
+												onClick={() => navigate("/edit-product")}
+												className="btn edit-product mr-2"
+											>
+												Edit Product
+											</button>
+											<button
+												// onClick={() => navigate("/edit-product")}
+												className="btn edit-product clr_gry_btzz"
+											>
+												Unpulish Item
+											</button>
+										</div>
 										<br />
 										<button className="btn delete-product">
 											Delete Product

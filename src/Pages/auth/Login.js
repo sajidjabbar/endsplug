@@ -69,6 +69,9 @@ const Login = () => {
 										<div className="forget-pass-text">
 											<a href="/CreatePassword">Forgot your password?</a>
 										</div>
+										<div className="forget-pass-text">
+											<a href="/CreateUsername">Forgot your Username?</a>
+										</div>
 									</form>
 								</div>
 							</div>
