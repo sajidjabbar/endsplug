@@ -343,7 +343,7 @@ const Header = () => {
 																<Link to="/wallet">Money</Link>
 															</li>
 															<li>
-																<Link to="/privacy">Earned Nugs</Link>
+																<Link to="/wallet-dashboard">Earned Nugs</Link>
 															</li>
 															<li>
 																<Link to="/products">My Products</Link>
