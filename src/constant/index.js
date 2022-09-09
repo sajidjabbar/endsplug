@@ -168,6 +168,7 @@ import m3 from "../assets/img/m3.png";
 import m4 from "../assets/img/m4.png";
 import m5 from "../assets/img/m5.png";
 import m6 from "../assets/img/m6.png";
+import WalletNugsBack from "../assets/img/wallet-nug.png";
 
 export {
 	m1,

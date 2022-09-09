@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
+	const pathname = window.location.pathname;
+	console.log(pathname);
 	return (
 		<>
 			<div className="wallet-sdiebar">
@@ -10,27 +12,54 @@ const Sidebar = () => {
 				</div>
 				<ul className="wallert-list">
 					<li className="menu-items">
-						<Link to="/wallet-dashboard" className="menu-link">
+						<Link
+							to="/wallet-dashboard"
+							className={
+								pathname == "/wallet-dashboard"
+									? "menu-link active"
+									: "menu-link"
+							}
+						>
 							Dashboard
 						</Link>
 					</li>
 					<li className="menu-items">
-						<Link to="/wallet-coin" className="menu-link">
+						<Link
+							to="/wallet-coin"
+							className={
+								pathname == "/wallet-coin" ? "menu-link active" : "menu-link"
+							}
+						>
 							My Coin
 						</Link>
 					</li>
 					<li className="menu-items">
-						<Link to="/wallet-nugs" className="menu-link">
+						<Link
+							to="/wallet-nugs"
+							className={
+								pathname == "/wallet-nugs" ? "menu-link active" : "menu-link"
+							}
+						>
 							My Nugs
 						</Link>
 					</li>
 					<li className="menu-items">
-						<Link to="/wallet-payment" className="menu-link">
+						<Link
+							to="/wallet-payment"
+							className={
+								pathname == "/wallet-payment" ? "menu-link active" : "menu-link"
+							}
+						>
 							Payment
 						</Link>
 					</li>
 					<li className="menu-items">
-						<Link to="/wallet-referal" className="menu-link">
+						<Link
+							to="/wallet-referal"
+							className={
+								pathname == "/wallet-referal" ? "menu-link active" : "menu-link"
+							}
+						>
 							Referral Earnings
 						</Link>
 					</li>

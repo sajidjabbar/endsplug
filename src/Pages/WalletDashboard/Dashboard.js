@@ -128,15 +128,6 @@ const Dashboard = () => {
 											<span className="minus">-</span> $100
 										</p>
 									</div>
-									<div className="transaction-box">
-										<p className="comment">
-											Earn By Order Number #1489651168511
-										</p>
-										<p className="date">Apr 06, 2022</p>
-										<p className="price">
-											<span className="plus">+</span> $25
-										</p>
-									</div>
 									<div className="see-more">
 										<a href="#">see more</a>
 									</div>

@@ -109,6 +109,11 @@ const Payment = () => {
 										</div>
 									</div>
 								</div>
+								<div className="col-lg-12">
+									<div className="button-group">
+										<button className="add-new-card">Add new card</button>
+									</div>
+								</div>
 							</div>
 							<div className="my-transaction">
 								<div className="title">
