@@ -56,7 +56,7 @@ const Footer = () => {
 											About History Ents-plug <br /> Work With Us
 										</li>
 										<li>Contact us on Map</li>
-										<li>
+										{/* <li>
 											<a href="#">Learn more</a>
 										</li>
 										<li>
@@ -67,13 +67,13 @@ const Footer = () => {
 											>
 												Tier
 											</button>
-										</li>
+										</li> */}
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div className="col-lg-4">
-							<div className="footer-widget-wrapper">
+							<div className="footer-widget-wrapper lst-footer">
 								<div className="footer-heading-wrapper">
 									<h5>Recent Posts</h5>
 									<p></p>
