@@ -372,8 +372,11 @@ const Home2 = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-8">
-							<div className="status-card-wrapper" onClick={handleShow}>
-								<div className="status-field-and-profile-wrapper">
+							<div className="status-card-wrapper">
+								<div
+									className="status-field-and-profile-wrapper"
+									onClick={handleShow}
+								>
 									<div className="status-profile-wrapper">
 										<img src={profile_img} className="img-fluid" alt="" />
 									</div>
@@ -387,7 +390,12 @@ const Home2 = () => {
 								</div>
 								<div className="status-list-wrapper">
 									<div className="live-btn-wrapper">
-										<button type="button">
+										<button
+											type="button"
+											className="btn"
+											data-bs-toggle="modal"
+											data-bs-target="#BrodcastModal"
+										>
 											<img src={live} className="img-fluid" alt="" />
 											Live video
 										</button>
