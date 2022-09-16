@@ -63,6 +63,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useFilePicker } from "use-file-picker";
+import { useNavigate } from "react-router-dom";
 
 const Home2 = () => {
 	const [openFileSelector, { filesContent, loading }] = useFilePicker({
@@ -94,6 +95,9 @@ const Home2 = () => {
 			star: Star_img,
 		},
 	];
+
+	const navigate = useNavigate();
+
 	const stream_list2 = [
 		{
 			id: 2,
@@ -338,6 +342,7 @@ const Home2 = () => {
 												return (
 													<>
 														<div
+															onClick={() => navigate("/story")}
 															key={index}
 															className="friends-story-card-wrapper"
 														>
@@ -420,7 +425,12 @@ const Home2 = () => {
 								<div className="invited-heading-wrapper">
 									<h5>Invite Friend</h5>
 									<h6>Invite Earn 1000 nugs.</h6>
-									<button className="btn">Invite friends</button>
+									<button
+										className="btn"
+										onClick={() => navigate("/invite-link")}
+									>
+										Invite friends
+									</button>
 								</div>
 							</div>
 						</div>

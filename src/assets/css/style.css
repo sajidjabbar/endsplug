@@ -17,6 +17,12 @@
 }
 
 /* universal css starts here */
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
 body {
 	background-color: #171717 !important;
 	color: #fff !important;
@@ -236,9 +242,9 @@ header#header .header-messages-wrapper {
 	width: 430px;
 	height: 600px;
 	position: absolute;
-	right: 51%;
+	right: 25%;
 	z-index: 15;
-	top: 98%;
+	top: 95%;
 	background: #111111;
 	padding: 20px;
 	overflow-y: scroll;
@@ -390,7 +396,7 @@ header#header .notification-card-wrapper {
 	width: 422px;
 	height: 492px;
 	position: absolute;
-	right: 46%;
+	right: 20%;
 	z-index: 15;
 	top: 98%;
 	background: #111111;
@@ -889,6 +895,7 @@ header#header .notification-card-wrapper .notification-heading-wrapper h6 {
 	width: 186px;
 	height: 245px;
 	margin: 0px auto;
+	cursor: pointer;
 }
 
 .slider-and-create-story-wrapper .slick-prev {
@@ -954,7 +961,9 @@ header#header .notification-card-wrapper .notification-heading-wrapper h6 {
 	margin-top: 14px;
 	border-top: 1px solid #4f4f4f;
 }
-
+.status-sec .status-card-wrapper .status-list-wrapper button.btn {
+	color: #fff;
+}
 .status-field-and-profile-wrapper .status-field-wrapper input.form-control {
 	background: #313233;
 	border: 0px;

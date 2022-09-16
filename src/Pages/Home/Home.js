@@ -63,6 +63,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useFilePicker } from "use-file-picker";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Home = () => {
 	const [openFileSelector, { filesContent, loading }] = useFilePicker({
@@ -71,6 +72,8 @@ const Home = () => {
 		limitFilesConfig: { min: 2, max: 3 },
 	});
 	const [show, setShow] = useState(false);
+
+	const navigate = useNavigate();
 
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
@@ -595,6 +598,7 @@ const Home = () => {
 												return (
 													<>
 														<div
+															onClick={() => navigate("/story")}
 															key={index}
 															className="friends-story-card-wrapper"
 														>
@@ -674,7 +678,12 @@ const Home = () => {
 								<div className="invited-heading-wrapper">
 									<h5>Invite Friend</h5>
 									<h6>Invite Earn 1000 nugs.</h6>
-									<button className="btn">Invite friends</button>
+									<button
+										className="btn"
+										onClick={() => navigate("/invite-link")}
+									>
+										Invite friends
+									</button>
 								</div>
 							</div>
 						</div>

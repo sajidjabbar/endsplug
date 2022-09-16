@@ -67,18 +67,18 @@ import {
 const Header = () => {
 	const [open, setOpen] = useState(false);
 	const [notification, setnotification] = useState(false);
-	const handleopenmsg = () => {
-		setOpen(true);
-	};
-	const handleclosemsg = () => {
-		setOpen(false);
-	};
-	const handleopennoti = () => {
-		setnotification(true);
-	};
-	const handleclosenoti = () => {
-		setnotification(false);
-	};
+	// const handleopenmsg = () => {
+	// 	setOpen(true);
+	// };
+	// const handleclosemsg = () => {
+	// 	setOpen(false);
+	// };
+	// const handleopennoti = () => {
+	// 	setnotification(true);
+	// };
+	// const handleclosenoti = () => {
+	// 	setnotification(false);
+	// };
 	const messsage = {
 		dots: false,
 		arrows: false,
@@ -232,28 +232,190 @@ const Header = () => {
 													<span className="count">2</span>
 												</Link>
 											</li>
-											<li className="nav-item">
-												<button
-													onMouseEnter={handleopenmsg}
-													className="nav-link"
-													to="javascript:void(0)"
-												>
+											<li
+												className="nav-item"
+												onMouseEnter={() => setOpen(true)}
+												onMouseLeave={() => setOpen(false)}
+											>
+												<button className="nav-link" to="javascript:void(0)">
 													<img src={navbar_chat} className="img-fluid" />
 													<span className="count">2</span>
 												</button>
-											</li>
-											<li className="nav-item">
-												<button
-													onMouseEnter={handleopennoti}
-													className="nav-link"
-													to="#"
+												<div
+													className={
+														open
+															? "header-messages-wrapper show"
+															: "header-messages-wrapper hide"
+													}
 												>
+													<div className="heading-wrapper">
+														<h6>Messages</h6>
+													</div>
+													<div className="messsages-profile-wrapper">
+														<div className="stori-wrappper">
+															<Slider {...messsage}>
+																{messages_profile.map((data, index) => {
+																	return (
+																		<div key={index} className="profile-wrp">
+																			<button className="msg-btn">
+																				<figure>
+																					<img src={data?.profile} alt="" />
+																					{data?.is_active ? (
+																						<div className="online"></div>
+																					) : (
+																						<div className="offline"></div>
+																					)}
+																				</figure>
+																				<div className="name-wrapper">
+																					<h6>{data?.name}</h6>
+																				</div>
+																			</button>
+																		</div>
+																	);
+																})}
+															</Slider>
+														</div>
+													</div>
+													<div className="messages-wrapper">
+														{Conversation.map((data, index) => {
+															return (
+																<div key={index} className="single-msg-wrapper">
+																	<div className="img-wrapper">
+																		<figure>
+																			<img src={data?.img} alt="" />
+																			{data?.total_msg == 0 ? (
+																				""
+																			) : (
+																				<span className="totalmsg">
+																					{" "}
+																					{data?.total_msg}{" "}
+																				</span>
+																			)}
+																		</figure>
+																	</div>
+																	<div className="mg-content-wrapper">
+																		<div className="msg-name-wrapper">
+																			<h6>{data?.name}</h6>
+																			<span>{data?.time}</span>
+																		</div>
+																		<div className="msg-wrappper">
+																			<p>{data?.msg}</p>
+																		</div>
+																	</div>
+																</div>
+															);
+														})}
+													</div>
+												</div>
+											</li>
+											<li
+												className="nav-item"
+												onMouseEnter={() => setnotification(true)}
+												onMouseLeave={() => setnotification(false)}
+											>
+												<button className="nav-link">
 													<img
 														src={navbar_notification}
 														className="img-fluid"
 													/>
 													<span className="count">2</span>
 												</button>
+												<div
+													className={
+														notification
+															? "notification-card-wrapper show"
+															: "notification-card-wrapper hide"
+													}
+												>
+													<div className="notification-heading-wrapper">
+														<h6>Notifications</h6>
+													</div>
+													<div className="notifications-wrapper">
+														<div className="single-notification-wrapper">
+															<div className="img-wrapper">
+																<figure>
+																	<img src={no1} alt="" />
+																</figure>
+															</div>
+															<div className="notification-content-wrapper">
+																<div className="head-wrapper">
+																	<h5>Jimmy Nilson followed you</h5>
+																	<span>28 minutes ago</span>
+																</div>
+																<div className="btn-wrapper">
+																	<button className="btn">Follow</button>
+																</div>
+															</div>
+														</div>
+														<div className="single-notification-wrapper">
+															<div className="img-wrapper">
+																<figure>
+																	<img src={no2} alt="" />
+																</figure>
+															</div>
+															<div className="notification-content-wrapper">
+																<div className="head-wrapper">
+																	<h5>Katie Malone liked 3 your photos</h5>
+																	<span>2 hours ago</span>
+																</div>
+																<div className="btn-wrapper">
+																	<figure>
+																		<img src={notification_img} alt="" />
+																	</figure>
+																</div>
+															</div>
+														</div>
+														<div className="single-notification-wrapper">
+															<div className="img-wrapper">
+																<figure>
+																	<img src={no3} alt="" />
+																</figure>
+															</div>
+															<div className="notification-content-wrapper">
+																<div className="head-wrapper">
+																	<h5>
+																		Ola Gonzales react for story "Killin’
+																		chillin" to your timeline
+																	</h5>
+																	<span>2 hours ago</span>
+																</div>
+																<div className="btn-wrapper"></div>
+															</div>
+														</div>
+														<div className="single-notification-wrapper">
+															<div className="img-wrapper">
+																<figure>
+																	<img src={no4} alt="" />
+																</figure>
+															</div>
+															<div className="notification-content-wrapper">
+																<div className="head-wrapper">
+																	<h6>@gorlova commented on photo</h6>
+																	<h5>
+																		The Luxury Of Traveling With Yacht Charter
+																		Companies
+																	</h5>
+																	<span>2 hours ago</span>
+																</div>
+																<div className="btn-wrapper"></div>
+															</div>
+														</div>
+														<div className="single-notification-wrapper">
+															<div className="img-wrapper">
+																<figure>
+																	<img src={no5} alt="" />
+																</figure>
+															</div>
+															<div className="notification-content-wrapper">
+																<div className="head-wrapper">
+																	<h5>Austin Gonzales added 5 photos</h5>
+																	<span>2 hours ago</span>
+																</div>
+																<div className="btn-wrapper"></div>
+															</div>
+														</div>
+													</div>
+												</div>
 											</li>
 										</ul>
 									</div>
@@ -391,172 +553,13 @@ const Header = () => {
 									</div>
 								</div>
 								{/* Messages header starts here */}
-								{open == true ? (
-									<div
-										onMouseLeave={handleclosemsg}
-										className="header-messages-wrapper"
-									>
-										<div className="heading-wrapper">
-											<h6>Messages</h6>
-										</div>
-										<div className="messsages-profile-wrapper">
-											<div className="stori-wrappper">
-												<Slider {...messsage}>
-													{messages_profile.map((data, index) => {
-														return (
-															<div key={index} className="profile-wrp">
-																<button className="msg-btn">
-																	<figure>
-																		<img src={data?.profile} alt="" />
-																		{data?.is_active ? (
-																			<div className="online"></div>
-																		) : (
-																			<div className="offline"></div>
-																		)}
-																	</figure>
-																	<div className="name-wrapper">
-																		<h6>{data?.name}</h6>
-																	</div>
-																</button>
-															</div>
-														);
-													})}
-												</Slider>
-											</div>
-										</div>
-										<div className="messages-wrapper">
-											{Conversation.map((data, index) => {
-												return (
-													<div key={index} className="single-msg-wrapper">
-														<div className="img-wrapper">
-															<figure>
-																<img src={data?.img} alt="" />
-																{data?.total_msg == 0 ? (
-																	""
-																) : (
-																	<span className="totalmsg">
-																		{" "}
-																		{data?.total_msg}{" "}
-																	</span>
-																)}
-															</figure>
-														</div>
-														<div className="mg-content-wrapper">
-															<div className="msg-name-wrapper">
-																<h6>{data?.name}</h6>
-																<span>{data?.time}</span>
-															</div>
-															<div className="msg-wrappper">
-																<p>{data?.msg}</p>
-															</div>
-														</div>
-													</div>
-												);
-											})}
-										</div>
-									</div>
+								{/* {open == true ? (
+									
 								) : (
 									""
-								)}
+								)} */}
 								{/* Messages header ends here */}
 								{/* Notifications starts here */}
-								{notification == true ? (
-									<div
-										onMouseLeave={handleclosenoti}
-										className="notification-card-wrapper"
-									>
-										<div className="notification-heading-wrapper">
-											<h6>Notifications</h6>
-										</div>
-										<div className="notifications-wrapper">
-											<div className="single-notification-wrapper">
-												<div className="img-wrapper">
-													<figure>
-														<img src={no1} alt="" />
-													</figure>
-												</div>
-												<div className="notification-content-wrapper">
-													<div className="head-wrapper">
-														<h5>Jimmy Nilson followed you</h5>
-														<span>28 minutes ago</span>
-													</div>
-													<div className="btn-wrapper">
-														<button className="btn">Follow</button>
-													</div>
-												</div>
-											</div>
-											<div className="single-notification-wrapper">
-												<div className="img-wrapper">
-													<figure>
-														<img src={no2} alt="" />
-													</figure>
-												</div>
-												<div className="notification-content-wrapper">
-													<div className="head-wrapper">
-														<h5>Katie Malone liked 3 your photos</h5>
-														<span>2 hours ago</span>
-													</div>
-													<div className="btn-wrapper">
-														<figure>
-															<img src={notification_img} alt="" />
-														</figure>
-													</div>
-												</div>
-											</div>
-											<div className="single-notification-wrapper">
-												<div className="img-wrapper">
-													<figure>
-														<img src={no3} alt="" />
-													</figure>
-												</div>
-												<div className="notification-content-wrapper">
-													<div className="head-wrapper">
-														<h5>
-															Ola Gonzales react for story "Killin’ chillin" to
-															your timeline
-														</h5>
-														<span>2 hours ago</span>
-													</div>
-													<div className="btn-wrapper"></div>
-												</div>
-											</div>
-											<div className="single-notification-wrapper">
-												<div className="img-wrapper">
-													<figure>
-														<img src={no4} alt="" />
-													</figure>
-												</div>
-												<div className="notification-content-wrapper">
-													<div className="head-wrapper">
-														<h6>@gorlova commented on photo</h6>
-														<h5>
-															The Luxury Of Traveling With Yacht Charter
-															Companies
-														</h5>
-														<span>2 hours ago</span>
-													</div>
-													<div className="btn-wrapper"></div>
-												</div>
-											</div>
-											<div className="single-notification-wrapper">
-												<div className="img-wrapper">
-													<figure>
-														<img src={no5} alt="" />
-													</figure>
-												</div>
-												<div className="notification-content-wrapper">
-													<div className="head-wrapper">
-														<h5>Austin Gonzales added 5 photos</h5>
-														<span>2 hours ago</span>
-													</div>
-													<div className="btn-wrapper"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								) : (
-									""
-								)}
 
 								{/* Notifications ends here */}
 							</div>
