@@ -18,6 +18,7 @@ import {
 import "../../assets/css/market-place.css";
 import { Link } from "react-router-dom";
 import Newslettter from "../../components/Newslettter";
+import Filter from "../../components/Filter";
 
 const MarketPlace = () => {
 	const [nav1, setNav1] = useState();
@@ -262,40 +263,51 @@ const MarketPlace = () => {
 							<h2>Our merch</h2>
 						</div>
 						<div className="row">
-							{product?.map((pro, index) => (
-								<div className="col-lg-3 col-md-6" key={index}>
-									<div className="product-box">
-										<div className="pro-img">
-											<figure>
-												<a href="/product-detail2">
-													<img src={pro?.img} alt="" className="img-fluid" />
-												</a>
-											</figure>
-										</div>
-										<div className="content-wrapper">
-											<div className="head">
-												<h3>{pro?.name}</h3>
-												<h4>{pro?.price}</h4>
-											</div>
-											<p>{pro?.description}</p>
-											<ul className="stars">
-												{[...Array(5)].map((starrr) => {
-													return (
-														<li key={`star_${starrr}`}>
-															<i className="fa fa-star"></i>
-														</li>
-													);
-												})}
-											</ul>
-											{/* <div className="button-group">
+							<div className="col-lg-3">
+								<Filter />
+							</div>
+							<div className="col-lg-9">
+								<div className="row">
+									{product?.map((pro, index) => (
+										<div className="col-lg-3 col-md-6" key={index}>
+											<div className="product-box">
+												<div className="pro-img">
+													<figure>
+														<a href="/product-detail2">
+															<img
+																src={pro?.img}
+																alt=""
+																className="img-fluid"
+															/>
+														</a>
+													</figure>
+												</div>
+												<div className="content-wrapper">
+													<div className="head">
+														<h3>{pro?.name}</h3>
+														<h4>{pro?.price}</h4>
+													</div>
+													<p>{pro?.description}</p>
+													<ul className="stars">
+														{[...Array(5)].map((starrr) => {
+															return (
+																<li key={`star_${starrr}`}>
+																	<i className="fa fa-star"></i>
+																</li>
+															);
+														})}
+													</ul>
+													{/* <div className="button-group">
 												<a href="#" className="btn">
 													View Product
 												</a>
 											</div> */}
+												</div>
+											</div>
 										</div>
-									</div>
+									))}
 								</div>
-							))}
+							</div>
 						</div>
 					</div>
 				</div>

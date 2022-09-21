@@ -2169,3 +2169,137 @@ footer#footer li button {
 /* radio orange product page css */
 
 /* zaam work ends */
+
+/* Shop Filter Css Start Here */
+.sidebar {
+	background: #171717;
+	padding: 30px 20px;
+	color: #fff;
+	box-shadow: 0px 0px 2px #ccc;
+}
+.sidebar .heading {
+	text-align: left;
+	padding: 0 0 5px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 15px;
+}
+.sidebar .heading h3 {
+	font-family: "nexa-bold";
+	font-size: 22px;
+}
+.sidebar .search form {
+	display: flex;
+}
+.sidebar .search form .form-control {
+	border-radius: 0;
+	background: transparent;
+	outline: none;
+	box-shadow: none;
+	border: 0;
+	border-bottom: 1px solid #fff;
+	padding: 7px 0 7px 5px;
+	color: #fff;
+}
+.sidebar .search form .searchBtn {
+	border: 0;
+	background: transparent;
+	border-bottom: 1px solid #fff;
+	color: #ffffff7a;
+}
+.sidebar .search form .form-control::placeholder {
+	color: #ffffff7a;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 15px;
+}
+.sidebar .filter .box {
+	padding: 20px 0px 0;
+}
+.sidebar .filter .box .title {
+	padding-bottom: 10px;
+}
+.sidebar .filter .box .title h4 {
+	font-size: 18px;
+	text-align: left;
+}
+.sidebar .filter .box ul.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.sidebar .filter .box ul.list li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid#ebebeb59;
+	padding: 0px 20px 10px;
+	margin-bottom: 15px;
+	position: relative;
+}
+.sidebar .filter .box ul.list li label {
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0;
+}
+.sidebar .filter .box ul.list li .form-check-input[type="checkbox"] {
+	border-radius: 0;
+	top: 0;
+	border: 0;
+}
+.sidebar .filter .box ul.list li .form-check-input:checked[type="checkbox"] {
+	border-color: #fff !important;
+	background-color: #fff !important;
+	background-repeat: no-repeat;
+	background-size: 10px;
+	box-shadow: none;
+}
+.sidebar .filter .box .load-more a {
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.sidebar .filter .box ul.list li:last-child {
+	border: 0;
+}
+.sidebar .price-range {
+	padding: 5px 0 35px;
+}
+.sidebar .price-range .input-group {
+	flex-wrap: unset;
+}
+.sidebar .price-range .input-group .seprator {
+	padding: 0px 10px;
+}
+.sidebar .price-range .input-group label {
+	font-size: 13px;
+	font-weight: 300;
+}
+.sidebar .price-range .input-group .form-control {
+	border: 0;
+	border-radius: 0px;
+	color: #000;
+	font-weight: 500;
+	font-size: 14px;
+	height: 40px;
+}
+.sidebar .zone .accordion-item {
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+}
+.sidebar .zone .accordion-item button {
+	border-radius: 0;
+	padding: 0;
+	height: 40px;
+	background: transparent;
+	box-shadow: none;
+	outline: none;
+	color: #fff;
+	font-family: "SF UI Display";
+	font-weight: 500;
+}
+.sidebar .zone .accordion-item button::after {
+	filter: brightness(0) invert(1);
+}
+/* Shop Filter Css End Here */
