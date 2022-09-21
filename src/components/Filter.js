@@ -37,12 +37,12 @@ const Filter = () => {
 						</div>
 						<ul class="list">
 							<li>
-								<label for="species1">Black</label>
-								<input type="checkbox" id="species1" class="form-check-input" />
+								<label for="color1">Black</label>
+								<input type="checkbox" id="color1" class="form-check-input" />
 							</li>
 							<li>
-								<label for="species2">White</label>
-								<input type="checkbox" id="species2" class="form-check-input" />
+								<label for="color2">White</label>
+								<input type="checkbox" id="color2" class="form-check-input" />
 							</li>
 						</ul>
 					</div>
@@ -52,16 +52,16 @@ const Filter = () => {
 						</div>
 						<ul class="list">
 							<li>
-								<label for="color1">Large</label>
-								<input type="checkbox" id="color1" class="form-check-input" />
+								<label for="size1">Large</label>
+								<input type="checkbox" id="size1" class="form-check-input" />
 							</li>
 							<li>
-								<label for="color2">Medium</label>
-								<input type="checkbox" id="color2" class="form-check-input" />
+								<label for="size2">Medium</label>
+								<input type="checkbox" id="size2" class="form-check-input" />
 							</li>
 							<li>
-								<label for="color2">Small</label>
-								<input type="checkbox" id="color2" class="form-check-input" />
+								<label for="size3">Small</label>
+								<input type="checkbox" id="size3" class="form-check-input" />
 							</li>
 						</ul>
 					</div>
