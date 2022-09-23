@@ -615,6 +615,12 @@ const Home = () => {
 																<img src={data?.profile_img} alt="" />
 																<h4>{data?.name}</h4>
 															</div>
+															<button>
+																<i
+																	class="fa fa-thumbs-up"
+																	aria-hidden="true"
+																></i>
+															</button>
 														</div>
 													</>
 												);

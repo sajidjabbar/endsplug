@@ -67,6 +67,15 @@ const LiveStream = () => {
 											<img src={Spinner} alt="" className="img" />
 										</button>
 									</div>
+									<div className="gift-send">
+										<button
+											type="button"
+											data-bs-toggle="modal"
+											data-bs-target="#SendGift"
+										>
+											<i class="fa fa-gift" aria-hidden="true"></i>
+										</button>
+									</div>
 								</div>
 								<div className="title-wrapper">
 									<div className="left">

@@ -314,7 +314,7 @@ const ProductDetail2 = () => {
 										</div>
 										<div className="button-group">
 											<button
-												onClick={() => navigate("/")}
+												onClick={() => navigate("/shopping-cart")}
 												className="btn edit-product"
 											>
 												Add To Cart

@@ -105,6 +105,11 @@
 	font-size: 40px;
 	line-height: 50px;
 }
+.wallet-dashboard-sec .detail-box button.btn {
+	color: #fff;
+	padding: 0;
+	outline: none;
+}
 .wallet-dashboard-sec .detail-box h5.sub-title {
 	font-size: 15px;
 	font-family: "nexa-bold";

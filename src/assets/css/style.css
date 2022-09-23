@@ -897,7 +897,32 @@ header#header .notification-card-wrapper .notification-heading-wrapper h6 {
 	margin: 0px auto;
 	cursor: pointer;
 }
-
+.stories-sec
+	.friends-story-card-wrapper
+	.friends-story-content-wrapper
+	.topbar
+	button {
+	position: absolute;
+	right: 0;
+}
+.stories-sec .friends-story-card-wrapper button {
+	position: absolute;
+	top: 15px;
+	right: 8px;
+	border: 0;
+	background: transparent;
+	padding: 0;
+	color: #fff;
+}
+.stories-sec .friends-story-card-wrapper button i {
+	font-size: 17px;
+	color: #fff;
+	background: #fb7f1b;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	line-height: 30px;
+}
 .slider-and-create-story-wrapper .slick-prev {
 	display: none !important;
 }
@@ -1802,7 +1827,32 @@ div#copyright p {
 	border: 0;
 	padding: 0 6px;
 }
-
+.wallet-dashboard-sec .detail-box button.btn {
+	color: #fff;
+	padding: 0;
+	outline: none;
+}
+.live-stream .stream .gift-send i {
+	font-size: 20px;
+	background: #fc771d;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	line-height: 36px;
+	text-align: center;
+	color: #fff;
+}
+.live-stream .stream .gift-send {
+	position: absolute;
+	right: 7px;
+	top: 40%;
+}
+.live-stream .stream .gift-send button {
+	border: 0;
+	outline: none;
+	padding: 0;
+	background: transparent;
+}
 #SpinnerCoins {
 	background: #ffffff12;
 	backdrop-filter: blur(11px);
@@ -1865,6 +1915,69 @@ div#copyright p {
 }
 
 /* Coins Modal Css Start Here */
+
+/* Send Gift Css Start Here */
+#SendGift {
+	background: #ffffff12;
+	backdrop-filter: blur(11px);
+}
+
+#SendGift .coins-detail {
+	text-align: center;
+}
+
+#SendGift .modal-content {
+	background: transparent;
+	border: 0;
+}
+
+#SendGift .coins-detail .coins {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#SendGift .coins-detail .coins figure {
+	width: 80px;
+}
+
+#SendGift .coins-detail .coins h3 {
+	margin-left: 15px;
+	font-size: 52px;
+	color: #ffffff;
+	font-weight: 400;
+}
+
+#SendGift .coins-detail p {
+	font-size: 24px;
+	color: #ffffff;
+}
+
+#SendGift .coins-detail .button-group button.btn {
+	background-image: linear-gradient(
+		to right top,
+		#fe5b25,
+		#fe6c1e,
+		#fd7c18,
+		#fb8b14,
+		#f99914
+	);
+	font-size: 14px;
+	color: #ffffff;
+	padding: 13px 50px;
+	margin-top: 15px;
+	width: 70%;
+	border-radius: 10px;
+	margin: 0px auto;
+}
+
+#SendGift button.close {
+	opacity: 1;
+	position: absolute;
+	right: -80%;
+	top: -60%;
+}
+/* Send Gift Css End Here */
 
 /* Winner Css Start Here */
 header#header {

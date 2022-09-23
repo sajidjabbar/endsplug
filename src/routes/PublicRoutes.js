@@ -52,8 +52,8 @@ const PublicRoutes = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/home2" element={<Home2 />} />
+				<Route path="/" element={<Home2 />} />
+				<Route path="/home" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/privacy" element={<Privacy />} />
 				<Route path="/Story" element={<Stories_View />} />

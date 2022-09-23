@@ -43,6 +43,10 @@
 	align-items: center;
 	justify-content: space-between;
 }
+.product-box .content-wrapper .brand-name h4 {
+	font-size: 14px;
+	font-weight: 200;
+}
 .product-box .content-wrapper .head h3 {
 	font-size: 20px;
 }

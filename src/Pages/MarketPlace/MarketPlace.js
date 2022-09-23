@@ -287,6 +287,9 @@ const MarketPlace = () => {
 														<h3>{pro?.name}</h3>
 														<h4>{pro?.price}</h4>
 													</div>
+													<div className="brand-name">
+														<h4>Brand name</h4>
+													</div>
 													<p>{pro?.description}</p>
 													<ul className="stars">
 														{[...Array(5)].map((starrr) => {

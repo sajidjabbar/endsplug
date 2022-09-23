@@ -1640,6 +1640,54 @@ const Header = () => {
 			</div>
 			{/* Spinner Coins */}
 
+			<div
+				className="modal fade"
+				id="SendGift"
+				tabIndex="-1"
+				aria-labelledby="SendGift"
+				aria-hidden="true"
+			>
+				<div className="modal-dialog modal-dialog-centered">
+					<div className="modal-content">
+						<div className="modal-body">
+							<button className="close" data-bs-dismiss="modal">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="34.479"
+									height="34.479"
+									viewBox="0 0 34.479 34.479"
+								>
+									<path
+										id="Icon_metro-cross"
+										data-name="Icon metro-cross"
+										d="M36.735,29.628h0l-10.46-10.46,10.46-10.46h0a1.08,1.08,0,0,0,0-1.523L31.794,2.243a1.08,1.08,0,0,0-1.523,0h0L19.81,12.7,9.35,2.243h0a1.08,1.08,0,0,0-1.523,0L2.886,7.184a1.08,1.08,0,0,0,0,1.523h0l10.46,10.46L2.886,29.628h0a1.08,1.08,0,0,0,0,1.523l4.941,4.941a1.08,1.08,0,0,0,1.523,0h0l10.46-10.46,10.46,10.46h0a1.08,1.08,0,0,0,1.523,0l4.941-4.941a1.08,1.08,0,0,0,0-1.523Z"
+										transform="translate(-2.571 -1.928)"
+										fill="#fff"
+									/>
+								</svg>
+							</button>
+							<div className="coins-detail">
+								<div className="coins">
+									<figure>
+										<img src={Coin} alt="" className="img-fluid" />
+									</figure>
+								</div>
+								<p>Send Gift</p>
+								<div className="button-group">
+									<button
+										className="btn"
+										data-bs-toggle="modal"
+										data-bs-dismiss="modal"
+									>
+										Send
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			{/* Winner Modal */}
 			<div
 				className="modal fade"

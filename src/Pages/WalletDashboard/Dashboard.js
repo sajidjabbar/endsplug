@@ -26,12 +26,14 @@ const Dashboard = () => {
 											<h2 className="count">
 												23<span className="symbol">K</span>
 											</h2>
+											<button className="btn">cash-out</button>
 										</div>
 									</div>
 									<div className="col-lg-3 col-md-6">
 										<div className="detail-box peach-box">
 											<h5 className="sub-title">My Nugs</h5>
 											<h2 className="count">204</h2>
+											<button className="btn">cash-out</button>
 										</div>
 									</div>
 									<div className="col-lg-3 col-md-6">
@@ -40,6 +42,7 @@ const Dashboard = () => {
 											<h2 className="count">
 												<span className="symbol">$</span>100
 											</h2>
+											<button className="btn">cash-out</button>
 										</div>
 									</div>
 									<div className="col-lg-3 col-md-6">
@@ -48,6 +51,7 @@ const Dashboard = () => {
 											<h2 className="count">
 												<span className="symbol">$</span>350
 											</h2>
+											<button className="btn">cash-out</button>
 										</div>
 									</div>
 								</div>

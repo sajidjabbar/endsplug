@@ -63,7 +63,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useFilePicker } from "use-file-picker";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home2 = () => {
 	const [openFileSelector, { filesContent, loading }] = useFilePicker({
@@ -326,9 +326,11 @@ const Home2 = () => {
 									<div className="col-lg-2">
 										<div className="create-story-card-wrapper">
 											<div className="create-story-img">
-												<figure>
-													<img src={story_img} className="img-fluid" alt="" />
-												</figure>
+												<Link to="/home">
+													<figure>
+														<img src={story_img} className="img-fluid" alt="" />
+													</figure>
+												</Link>
 											</div>
 											<div className="create-story-content-wrapper">
 												<i className="fa fa-plus"></i>
@@ -359,6 +361,12 @@ const Home2 = () => {
 																<img src={data?.profile_img} alt="" />
 																<h4>{data?.name}</h4>
 															</div>
+															<button>
+																<i
+																	class="fa fa-thumbs-up"
+																	aria-hidden="true"
+																></i>
+															</button>
 														</div>
 													</>
 												);

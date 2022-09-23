@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import "../../assets/css/thank-you.css";
+import { Link } from "react-router-dom";
 
 const ThankYou = () => {
 	return (
@@ -64,9 +65,9 @@ const ThankYou = () => {
 								</div>
 							</div>
 							<div className="button-group">
-								<a href="#" className="btn">
+								<Link to="/" className="btn">
 									Continue Shopping
-								</a>
+								</Link>
 							</div>
 						</div>
 						<div className="col-lg-2"></div>
