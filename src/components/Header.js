@@ -221,6 +221,11 @@ const Header = () => {
 												Merch
 											</Link>
 										</li>
+										<li className="nav-item">
+											<Link className="nav-link" to="/market-place">
+												Add Product
+											</Link>
+										</li>
 									</ul>
 								</div>
 								<div className="navbar-icon-wrapper">
