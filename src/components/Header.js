@@ -201,8 +201,8 @@ const Header = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-1"></div>
-						<div className="col-lg-6 align-self-center">
+						{/* <div className="col-lg-"></div> */}
+						<div className="col-lg-7 align-self-center">
 							<div className="navbar-profile-icon-wrapper">
 								<div className="navbar-wrapper">
 									<ul className="navbar-nav mr-auto">
@@ -222,7 +222,7 @@ const Header = () => {
 											</Link>
 										</li>
 										<li className="nav-item">
-											<Link className="nav-link" to="/market-place">
+											<Link className="nav-link" to="#">
 												Add Product
 											</Link>
 										</li>

@@ -89,11 +89,11 @@ button {
 }
 
 #header .navbar-profile-icon-wrapper .navbar-wrapper {
-	flex: 0 0 33%;
+    flex: 0 0 39%;
 }
 
 #header .navbar-profile-icon-wrapper .navbar-icon-wrapper {
-	flex: 0 0 33%;
+    flex: 0 0 28%;
 }
 
 #header .navbar-profile-icon-wrapper .language-icon-wrapper {
@@ -109,9 +109,9 @@ button {
 }
 
 #header .navbar-profile-icon-wrapper .navbar-wrapper ul li a {
-	font-size: 18px;
-	color: #fff;
-	font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
 }
 
 header .navbar-icon-wrapper span.count {
