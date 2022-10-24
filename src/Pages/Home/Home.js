@@ -1243,7 +1243,7 @@ const Home = () => {
 										{SingleLive?.map((data, index) => {
 											return (
 												<div className="live-boxx single-live" key={index}>
-													<Link to="/">
+													<Link to="/live-stream">
 														<figure>
 															<img
 																src={data?.img}
@@ -1269,7 +1269,7 @@ const Home = () => {
 										{MultipleLive?.map((data, index) => {
 											return (
 												<div className="live-boxx multi-live" key={index}>
-													<Link to="/">
+													<Link to="/live-stream">
 														<figure>
 															<img
 																src={data?.img}
