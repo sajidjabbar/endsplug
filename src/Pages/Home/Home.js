@@ -63,7 +63,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useFilePicker } from "use-file-picker";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Home = () => {
 	const [openFileSelector, { filesContent, loading }] = useFilePicker({
@@ -81,7 +81,7 @@ const Home = () => {
 		dots: false,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 4,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 	};
 	const stream_list = [
@@ -306,6 +306,50 @@ const Home = () => {
 			profile_img: buddies6,
 			isOnline: true,
 			Stories: true,
+		},
+	];
+
+	const SingleLive = [
+		{
+			id: 0,
+			img: buddies1,
+			title: "Title",
+			description: "Lorem Ipsum Dolar",
+		},
+		{
+			id: 1,
+			img: buddies2,
+			title: "Title",
+			description: "Lorem Ipsum Dolar",
+		},
+		{
+			id: 1,
+			img: buddies3,
+			title: "Title",
+			description: "Lorem Ipsum Dolar",
+		},
+	];
+	const MultipleLive = [
+		{
+			id: 0,
+			img: buddies4,
+			title: "Title",
+			icon: '<i class="fa fa-users" aria-hidden="true"></i>',
+			description: "Lorem Ipsum Dolar",
+		},
+		{
+			id: 1,
+			img: buddies5,
+			title: "Title",
+			icon: '<i class="fa fa-users" aria-hidden="true"></i>',
+			description: "Lorem Ipsum Dolar",
+		},
+		{
+			id: 1,
+			img: buddies6,
+			title: "Title",
+			icon: '<i class="fa fa-users" aria-hidden="true"></i>',
+			description: "Lorem Ipsum Dolar",
 		},
 	];
 	// buddies name ends here
@@ -615,12 +659,6 @@ const Home = () => {
 																<img src={data?.profile_img} alt="" />
 																<h4>{data?.name}</h4>
 															</div>
-															<button>
-																<i
-																	class="fa fa-thumbs-up"
-																	aria-hidden="true"
-																></i>
-															</button>
 														</div>
 													</>
 												);
@@ -1196,6 +1234,67 @@ const Home = () => {
 							</div>
 						</div>
 						<div className="col-lg-4">
+							<div className="whos-live">
+								<div className="title-wrapper">
+									<h5>Who's Live</h5>
+								</div>
+								<div className="all-lives">
+									<div className="dual-box">
+										{SingleLive?.map((data, index) => {
+											return (
+												<div className="live-boxx single-live" key={index}>
+													<Link to="/">
+														<figure>
+															<img
+																src={data?.img}
+																alt="123"
+																className="img-fluid"
+															/>
+															<span className="dot"></span>
+														</figure>
+														<div className="content">
+															<h5 className="title">
+																<span className="icon">
+																	<i class="fa fa-user" aria-hidden="true"></i>
+																</span>
+																{data?.title}
+																<span className="live-option">Live</span>
+															</h5>
+															<p className="description">{data?.description}</p>
+														</div>
+													</Link>
+												</div>
+											);
+										})}
+										{MultipleLive?.map((data, index) => {
+											return (
+												<div className="live-boxx multi-live" key={index}>
+													<Link to="/">
+														<figure>
+															<img
+																src={data?.img}
+																alt="123"
+																className="img-fluid"
+															/>
+															<span className="dot"></span>
+														</figure>
+														<div className="content">
+															<h5 className="title">
+																<span className="icon">
+																	<i class="fa fa-users" aria-hidden="true"></i>
+																</span>
+																{data?.title}
+																<span className="live-option">Live</span>
+															</h5>
+															<p className="description">{data?.description}</p>
+														</div>
+													</Link>
+												</div>
+											);
+										})}
+									</div>
+								</div>
+							</div>
 							<div className="budddies-wrapper">
 								<div className="buddies-heading-wrapper">
 									<h4>Buddies</h4>

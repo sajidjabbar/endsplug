@@ -89,11 +89,11 @@ button {
 }
 
 #header .navbar-profile-icon-wrapper .navbar-wrapper {
-    flex: 0 0 39%;
+	flex: 0 0 39%;
 }
 
 #header .navbar-profile-icon-wrapper .navbar-icon-wrapper {
-    flex: 0 0 28%;
+	flex: 0 0 28%;
 }
 
 #header .navbar-profile-icon-wrapper .language-icon-wrapper {
@@ -109,9 +109,9 @@ button {
 }
 
 #header .navbar-profile-icon-wrapper .navbar-wrapper ul li a {
-    font-size: 16px;
-    color: #fff;
-    font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
 }
 
 header .navbar-icon-wrapper span.count {
@@ -809,10 +809,15 @@ header#header .notification-card-wrapper .notification-heading-wrapper h6 {
 /* storiess css starts here */
 .stories-sec .create-story-card-wrapper {
 	width: 186px;
-	height: 245px;
+	height: 200px;
 	position: relative;
 }
-
+.stories-sec .create-story-card-wrapper .create-story-img img {
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
 .stories-sec .create-story-card-wrapper .create-story-content-wrapper {
 	position: absolute;
 	bottom: 0px;
@@ -892,10 +897,12 @@ header#header .notification-card-wrapper .notification-heading-wrapper h6 {
 
 .stories-sec .friends-story-card-wrapper {
 	position: relative;
-	width: 186px;
-	height: 245px;
-	margin: 0px auto;
+	width: 175px;
+	height: 200px;
+	margin: 0px 10px;
 	cursor: pointer;
+	border: 5px solid #171717;
+	border-radius: 10px;
 }
 .stories-sec
 	.friends-story-card-wrapper
@@ -926,13 +933,12 @@ header#header .notification-card-wrapper .notification-heading-wrapper h6 {
 .slider-and-create-story-wrapper .slick-prev {
 	display: none !important;
 }
-
 .friends-story-card-wrapper .friends-story-img img {
-	height: 245px;
+	height: 195px;
 	width: 186px;
 	object-fit: cover;
+	border-radius: 15px;
 }
-
 .slider-and-create-story-wrapper .slick-next:before {
 	content: "\f061";
 	font-family: "FontAwesome";
@@ -2416,3 +2422,81 @@ footer#footer li button {
 	filter: brightness(0) invert(1);
 }
 /* Shop Filter Css End Here */
+
+/* Whos Live Sec Css Start Here */
+.whos-live .title-wrapper {
+	margin-bottom: 30px;
+}
+.whos-live .dual-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.whos-live .dual-box .live-boxx a {
+	display: flex;
+	align-items: flex-start;
+}
+.whos-live .live-boxx a {
+	text-decoration: none;
+}
+.whos-live .title h5 {
+	margin: 0;
+}
+.whos-live .live-boxx .content h5 span {
+	font-size: 15px;
+}
+.whos-live .live-boxx .content h5 span {
+	margin-right: 5px;
+}
+.whos-live .live-boxx .content h5 span.live-option {
+	font-size: 10px;
+	background: #c42121;
+	padding: 1px 5px 1px 5px;
+	margin-left: 8px;
+}
+.whos-live .live-boxx figure {
+	position: relative;
+	width: 40px;
+	margin: 0px 10px 10px 0px;
+}
+.whos-live .live-boxx figure span.dot {
+	width: 8px;
+	height: 8px;
+	background: #07ca07;
+	position: absolute;
+	border-radius: 50%;
+	right: 0;
+}
+.whos-live {
+	margin: 0px 0 40px;
+	background: #292929;
+	padding: 20px 20px;
+	border-radius: 10px;
+}
+.whos-live .title h5 {
+	margin: 0;
+}
+.whos-live .live-boxx figure img {
+	width: 36px;
+}
+.whos-live .live-boxx .content h5 {
+	font-size: 16px;
+	font-family: "nexa-regular";
+	line-height: 13px;
+	color: #fff;
+}
+.whos-live .live-boxx .content p {
+	font-size: 13px;
+	color: #fff;
+}
+.whos-live .all-lives {
+	height: 150px;
+	overflow-y: scroll;
+}
+.whos-live .all-lives::-webkit-scrollbar {
+	width: 0;
+}
+.whos-live .title-wrapper {
+	margin-bottom: 25px;
+}
+/* Whos Live Sec Css End Here */

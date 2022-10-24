@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Stories, { WithHeader } from "react-insta-stories";
-import { Main_Story_img, user_profile_img } from "../../constant/index";
+import {
+	Main_Story_img,
+	user_profile_img,
+	weedEmoji,
+} from "../../constant/index";
 import "../../assets/css/stories.css";
 const Stories_View = () => {
 	const storyContent = {
@@ -59,6 +63,23 @@ const Stories_View = () => {
 									<i className="fa fa-angle-right"></i>
 								</button>
 							</p>
+							<div className="bottom-bar">
+								<div className="comment">
+									<input
+										type="text"
+										className="form-control"
+										placeholder="comment"
+									/>
+									<button>
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div className="gift">
+									<button>
+										<img src={weedEmoji} alt="123" />
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div className="col-lg-3"></div>

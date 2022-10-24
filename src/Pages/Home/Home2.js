@@ -79,7 +79,7 @@ const Home2 = () => {
 		dots: false,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 4,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 	};
 	const stream_list = [
@@ -361,12 +361,6 @@ const Home2 = () => {
 																<img src={data?.profile_img} alt="" />
 																<h4>{data?.name}</h4>
 															</div>
-															<button>
-																<i
-																	class="fa fa-thumbs-up"
-																	aria-hidden="true"
-																></i>
-															</button>
 														</div>
 													</>
 												);

@@ -86,6 +86,7 @@
 .live-chat {
 	background: #1c1c1c;
 	padding: 20px 0;
+	margin-left: 15px;
 }
 .live-chat .close {
 	background: #dd4141;
@@ -105,8 +106,10 @@
 .live-chat ul.messages {
 	padding: 15px 15px;
 	list-style: none;
-	height: 600px;
+	height: 350px;
 	overflow: auto;
+	z-index: 9;
+	position: relative;
 }
 .live-chat ul.messages::-webkit-scrollbar {
 	width: 1em;
