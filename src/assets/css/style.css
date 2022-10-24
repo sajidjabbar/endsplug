@@ -1837,14 +1837,11 @@ div#copyright p {
   outline: none;
 }
 .live-stream .stream .gift-send i {
-  font-size: 20px;
-  background: #fc771d;
-  width: 36px;
-  height: 36px;
+  font-size: 28px;
   border-radius: 50%;
-  line-height: 36px;
   text-align: center;
-  color: #fff;
+  color: #fc771d;
+  margin-bottom: 7px;
 }
 .live-stream .stream .gift-send {
   position: absolute;

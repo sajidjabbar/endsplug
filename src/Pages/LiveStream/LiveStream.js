@@ -80,9 +80,7 @@ const LiveStream = () => {
                   <div className="gift-send">
                     <ul className="all-gifts">
                       <li>
-                        <figure>
-                          <img src={Gift1} alt="" />
-                        </figure>
+                        <i class="fa fa-heart"></i>
                       </li>
                       <li>
                         <figure>
@@ -101,7 +99,7 @@ const LiveStream = () => {
                       </li>
                     </ul>
                   </div>
-				  <div className="hearts"></div>
+                  <div className="hearts"></div>
                 </div>
                 <div className="title-wrapper">
                   <div className="left">
