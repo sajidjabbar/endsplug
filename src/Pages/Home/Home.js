@@ -688,6 +688,21 @@ const Home = () => {
 											placeholder="What's on your mind, lauren?"
 											className="form-control"
 										/>
+										<button className="add-stuff">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="16"
+												height="16"
+												fill="currentColor"
+												class="bi bi-plus-lg"
+												viewBox="0 0 16 16"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+												/>
+											</svg>
+										</button>
 									</div>
 								</div>
 								<div className="status-list-wrapper">
@@ -804,24 +819,39 @@ const Home = () => {
 										<img src={newsfeed1} className="img-fluid" alt="" />
 									</figure>
 								</div>
-								<div className="likes-comment-share-wrapper">
-									<div className="likes-wrapper">
-										<button className="likes">
-											<img src={likes} alt="" />
-											<span className="total-like">1125</span>
-										</button>
+								<div className="shares-options">
+									<div className="likes-comment-share-wrapper">
+										<div className="likes-wrapper">
+											<button className="likes">
+												<img src={likes} alt="" />
+												<span className="total-like">1125</span>
+											</button>
+										</div>
+										<div className="comment-wrapper">
+											<button className="comment">
+												<img src={comment} alt="" />
+												<span className="total-comment">348</span>
+											</button>
+										</div>
+										<div className="share-wrapper">
+											<button className="share">
+												<img src={share} alt="" />
+												<span className="total-share">20</span>
+											</button>
+										</div>
 									</div>
-									<div className="comment-wrapper">
-										<button className="comment">
-											<img src={comment} alt="" />
-											<span className="total-comment">348</span>
-										</button>
-									</div>
-									<div className="share-wrapper">
-										<button className="share">
-											<img src={share} alt="" />
-											<span className="total-share">20</span>
-										</button>
+									<div className="share-pics">
+										<ul className="pics">
+											<li>
+												<img src={buddies1} alt="123" className="img-fluid" />
+											</li>
+											<li>
+												<img src={buddies2} alt="123" className="img-fluid" />
+											</li>
+											<li>
+												<img src={buddies3} alt="123" className="img-fluid" />
+											</li>
+										</ul>
 									</div>
 								</div>
 								<div className="comments-wrapper">
@@ -961,24 +991,39 @@ const Home = () => {
 										<img src={newsfeed2} className="img-fluid" alt="" />
 									</figure>
 								</div>
-								<div className="likes-comment-share-wrapper">
-									<div className="likes-wrapper">
-										<button className="likes">
-											<img src={likes} alt="" />
-											<span className="total-like">1125</span>
-										</button>
+								<div className="shares-options">
+									<div className="likes-comment-share-wrapper">
+										<div className="likes-wrapper">
+											<button className="likes">
+												<img src={likes} alt="" />
+												<span className="total-like">1125</span>
+											</button>
+										</div>
+										<div className="comment-wrapper">
+											<button className="comment">
+												<img src={comment} alt="" />
+												<span className="total-comment">348</span>
+											</button>
+										</div>
+										<div className="share-wrapper">
+											<button className="share">
+												<img src={share} alt="" />
+												<span className="total-share">20</span>
+											</button>
+										</div>
 									</div>
-									<div className="comment-wrapper">
-										<button className="comment">
-											<img src={comment} alt="" />
-											<span className="total-comment">348</span>
-										</button>
-									</div>
-									<div className="share-wrapper">
-										<button className="share">
-											<img src={share} alt="" />
-											<span className="total-share">20</span>
-										</button>
+									<div className="share-pics">
+										<ul className="pics">
+											<li>
+												<img src={buddies1} alt="123" className="img-fluid" />
+											</li>
+											<li>
+												<img src={buddies2} alt="123" className="img-fluid" />
+											</li>
+											<li>
+												<img src={buddies3} alt="123" className="img-fluid" />
+											</li>
+										</ul>
 									</div>
 								</div>
 								<div className="comments-wrapper">
@@ -1114,24 +1159,39 @@ const Home = () => {
 										<img src={newsfeed3} className="img-fluid" alt="" />
 									</figure>
 								</div>
-								<div className="likes-comment-share-wrapper">
-									<div className="likes-wrapper">
-										<button className="likes">
-											<img src={likes} alt="" />
-											<span className="total-like">1125</span>
-										</button>
+								<div className="shares-options">
+									<div className="likes-comment-share-wrapper">
+										<div className="likes-wrapper">
+											<button className="likes">
+												<img src={likes} alt="" />
+												<span className="total-like">1125</span>
+											</button>
+										</div>
+										<div className="comment-wrapper">
+											<button className="comment">
+												<img src={comment} alt="" />
+												<span className="total-comment">348</span>
+											</button>
+										</div>
+										<div className="share-wrapper">
+											<button className="share">
+												<img src={share} alt="" />
+												<span className="total-share">20</span>
+											</button>
+										</div>
 									</div>
-									<div className="comment-wrapper">
-										<button className="comment">
-											<img src={comment} alt="" />
-											<span className="total-comment">348</span>
-										</button>
-									</div>
-									<div className="share-wrapper">
-										<button className="share">
-											<img src={share} alt="" />
-											<span className="total-share">20</span>
-										</button>
+									<div className="share-pics">
+										<ul className="pics">
+											<li>
+												<img src={buddies1} alt="123" className="img-fluid" />
+											</li>
+											<li>
+												<img src={buddies2} alt="123" className="img-fluid" />
+											</li>
+											<li>
+												<img src={buddies3} alt="123" className="img-fluid" />
+											</li>
+										</ul>
 									</div>
 								</div>
 								{/* <div className="comments-wrapper">
@@ -1376,13 +1436,23 @@ const Home = () => {
 					<div className="mind-sec-wrapper">
 						<div className="mind-field-wrapper">
 							<textarea
-								name=""
-								id=""
-								cols="30"
 								placeholder="What's on your mind, Darell?"
 								className="form-control"
-								rows="5"
+								maxlength="500"
 							></textarea>
+							<div className="bottom-bar">
+								<div className="comments">
+									<label class="switch">
+										<input type="checkbox" />
+										<span class="slider">
+											<p>comment disable/enable</p>
+										</span>
+									</label>
+								</div>
+								<div className="count">
+									<p>500 word limit</p>
+								</div>
+							</div>
 						</div>
 						<div className="add-to-post">
 							<div className="post-heading">

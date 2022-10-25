@@ -24,9 +24,16 @@ const UserInfo = () => {
 									<span className="interest">Canna interest</span>
 								</p>
 								<p className="bio">
-									<a href="#">Your Bio Here. Clickable link</a>
+									<button
+										type="button"
+										class="btn btn-primary"
+										data-bs-toggle="modal"
+										data-bs-target="#bioModal"
+									>
+										Your Bio Here. Clickable link
+									</button>
 								</p>
-								<h3 className="fullname">Cathline Karen</h3>
+								{/* <h3 className="fullname">Cathline Karen</h3> */}
 							</div>
 						</div>
 					</div>

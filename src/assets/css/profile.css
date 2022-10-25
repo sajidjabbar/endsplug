@@ -2,6 +2,20 @@
 .profile-sec {
 	padding: 50px 0;
 }
+.edit-profile .edit-profile-form .close-btn {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.edit-profile .edit-profile-form .close-btn a {
+	background: transparent;
+	border: 0;
+	color: #fff;
+}
+.edit-profile .edit-profile-form .close-btn a svg {
+	width: 35px;
+	height: 35px;
+}
 .profile-sec .profile-info {
 	display: flex;
 	align-items: center;
@@ -24,6 +38,13 @@
 	margin-left: 15px;
 }
 .profile-sec .profile-info .info p span {
+	color: #bfbfbf;
+}
+.profile-sec .profile-info .info button.btn.btn-primary {
+	border: 0;
+	background: transparent;
+	padding: 0;
+	font-size: 16px;
 	color: #bfbfbf;
 }
 .profile-sec .profile-info .info p.bio a {
@@ -257,6 +278,7 @@
 	background: #242526;
 	padding: 40px 50px;
 	border-radius: 15px;
+	position: relative;
 }
 .edit-profile .edit-profile-form .form-control {
 	padding: 20px 20px;

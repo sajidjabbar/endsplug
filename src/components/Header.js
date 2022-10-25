@@ -62,6 +62,7 @@ import {
 	m4,
 	m5,
 	m6,
+	userProfile,
 } from "../constant";
 
 const Header = () => {
@@ -1906,6 +1907,65 @@ const Header = () => {
 				</div>
 			</div>
 			{/* Tier Modal */}
+
+			{/* Bio Popup */}
+			<div
+				class="modal fade"
+				id="bioModal"
+				tabindex="-1"
+				aria-labelledby="bioModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									class="bi bi-x"
+									viewBox="0 0 16 16"
+								>
+									<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+								</svg>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div className="bio-body">
+								<div className="profile-box">
+									<figure>
+										<img src={userProfile} alt="123" />
+									</figure>
+									<div className="name">
+										<h4>Cathline07</h4>
+										<p>@jorgecutis</p>
+									</div>
+								</div>
+								<form action="">
+									<div className="form-group">
+										<label>Your Bio Here</label>
+										<textarea
+											className="form-control"
+											maxlength="50"
+										></textarea>
+									</div>
+									<div class="post-btn-wrapper">
+										<button class="btn  form-control">Submit</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{/* Bio Popup */}
 		</>
 	);
 };
