@@ -61,6 +61,60 @@ const UserInfo = () => {
 									/>
 								</svg>
 							</button>
+							<button className="message">
+								<i class="fa fa-comments" aria-hidden="true"></i>
+								<span className="dot"></span>
+							</button>
+							<div class="dropdown">
+								<button
+									class="add-stuff"
+									type="button"
+									id="dropdownMenuButton1"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-plus-lg"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+										></path>
+									</svg>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+									<li>
+										<Link class="dropdown-item" to="#">
+											Post Photo/Video
+										</Link>
+									</li>
+									<li>
+										<Link class="dropdown-item" to="#">
+											Add Story
+										</Link>
+									</li>
+									<li>
+										<Link class="dropdown-item" to="#">
+											Go Live
+										</Link>
+									</li>
+									<li>
+										<Link class="dropdown-item" to="#">
+											Add merch
+										</Link>
+									</li>
+									<li>
+										<Link class="dropdown-item" to="#">
+											Request Ad Space
+										</Link>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

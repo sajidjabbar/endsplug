@@ -56,6 +56,8 @@
 }
 .profile-sec .button-group {
 	text-align: end;
+	display: flex;
+	justify-content: end;
 }
 .profile-sec .button-group button.btn {
 	font-family: "nexa-bold";
@@ -210,6 +212,70 @@
 	border-radius: 0;
 	padding: 10px 40px;
 	margin-right: 20px;
+}
+.user-profile .button-group ul.dropdown-menu {
+	background: #262626;
+	margin-top: 10px !important;
+	padding-bottom: 0;
+}
+.user-profile .button-group button.message {
+	margin-left: 15px;
+	border: 0;
+	padding: 0;
+	background: linear-gradient(
+		to right,
+		#fe5b25,
+		#fe6c1e,
+		#fd7c18,
+		#fb8b14,
+		#f99914
+	);
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	color: #fff;
+	position: relative;
+}
+.user-profile .button-group button.message span.dot {
+	background: #de0303;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	border-radius: 50%;
+	right: 0;
+	top: 0;
+}
+.user-profile .button-group ul.dropdown-menu li {
+	border-bottom: 1px solid #ffffff24;
+	padding: 5px 0;
+}
+.user-profile .button-group ul.dropdown-menu li a {
+	color: #fff;
+	font-size: 13px;
+}
+.user-profile .button-group ul.dropdown-menu li:last-child {
+	border-bottom: 0 !important;
+}
+.user-profile .button-group button.add-stuff {
+	margin-left: 15px;
+	border: 0;
+	padding: 0;
+	background: linear-gradient(
+		to right,
+		#fe5b25,
+		#fe6c1e,
+		#fd7c18,
+		#fb8b14,
+		#f99914
+	);
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+}
+.user-profile .button-group button.add-stuff svg {
+	color: #fff;
+	height: 25px;
+	width: 25px;
 }
 .user-profile .button-group button.setting {
 	padding: 0;
