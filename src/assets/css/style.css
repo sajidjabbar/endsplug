@@ -1012,7 +1012,14 @@ header#header .notification-card-wrapper .notification-heading-wrapper h6 {
 	bottom: 9px;
 	border: 0;
 	padding: 0;
-	background: #0c9dff;
+	background: linear-gradient(
+		to right,
+		#fe5b25,
+		#fe6c1e,
+		#fd7c18,
+		#fb8b14,
+		#f99914
+	);
 	border-radius: 50%;
 	width: 35px;
 	height: 35px;
