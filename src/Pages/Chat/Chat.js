@@ -142,23 +142,25 @@ const Chat = () => {
 											<div class="recieve-from-img">
 												<img src={msg1} alt="" />
 											</div>
-											<div class="message-recieved">
-												<div class="that-message">
-													<span>
-														Lorem ipsum dolor sit amet, consectetur adipiscing
-														elit, sed do eiusmod tempor incididunt ut labore
-													</span>
+											<div className="messages">
+												<div class="message-recieved">
+													<div class="that-message">
+														<span>
+															Lorem ipsum dolor sit amet, consectetur adipiscing
+															elit, sed do eiusmod tempor incididunt ut labore
+														</span>
+													</div>
+													<div class="recieved-on">
+														<span>08:08 am</span>
+													</div>
 												</div>
-												<div class="recieved-on">
-													<span>08:08 am</span>
-												</div>
-											</div>
-											<div class="message-recieved">
-												<div class="that-message">
-													<span>Duis aute irure dolor in reprehenderit</span>
-												</div>
-												<div class="recieved-on">
-													<span>08:08 am</span>
+												<div class="message-recieved">
+													<div class="that-message">
+														<span>Duis aute irure dolor in reprehenderit</span>
+													</div>
+													<div class="recieved-on">
+														<span>08:08 am</span>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -177,7 +179,7 @@ const Chat = () => {
 											<div class="message-body">
 												<span>
 													Duis aute irure dolor in reprehenderit in voluptate
-													velit{" "}
+													velit
 												</span>
 											</div>
 											<div class="send-on">
@@ -188,23 +190,25 @@ const Chat = () => {
 											<div class="recieve-from-img">
 												<img src={msg1} alt="" />
 											</div>
-											<div class="message-recieved">
-												<div class="that-message">
-													<span>
-														Lorem ipsum dolor sit amet, consectetur adipiscing
-														elit, sed do eiusmod tempor incididunt ut labore
-													</span>
+											<div className="messages">
+												<div class="message-recieved">
+													<div class="that-message">
+														<span>
+															Lorem ipsum dolor sit amet, consectetur adipiscing
+															elit, sed do eiusmod tempor incididunt ut labore
+														</span>
+													</div>
+													<div class="recieved-on">
+														<span>08:08 am</span>
+													</div>
 												</div>
-												<div class="recieved-on">
-													<span>08:08 am</span>
-												</div>
-											</div>
-											<div class="message-recieved">
-												<div class="that-message">
-													<span>Duis aute irure dolor in reprehenderit</span>
-												</div>
-												<div class="recieved-on">
-													<span>08:08 am</span>
+												<div class="message-recieved">
+													<div class="that-message">
+														<span>Duis aute irure dolor in reprehenderit</span>
+													</div>
+													<div class="recieved-on">
+														<span>08:08 am</span>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -234,23 +238,25 @@ const Chat = () => {
 											<div class="recieve-from-img">
 												<img src={msg1} alt="" />
 											</div>
-											<div class="message-recieved">
-												<div class="that-message">
-													<span>
-														Lorem ipsum dolor sit amet, consectetur adipiscing
-														elit, sed do eiusmod tempor incididunt ut labore
-													</span>
+											<div className="messages">
+												<div class="message-recieved">
+													<div class="that-message">
+														<span>
+															Lorem ipsum dolor sit amet, consectetur adipiscing
+															elit, sed do eiusmod tempor incididunt ut labore
+														</span>
+													</div>
+													<div class="recieved-on">
+														<span>08:08 am</span>
+													</div>
 												</div>
-												<div class="recieved-on">
-													<span>08:08 am</span>
-												</div>
-											</div>
-											<div class="message-recieved">
-												<div class="that-message">
-													<span>Duis aute irure dolor in reprehenderit</span>
-												</div>
-												<div class="recieved-on">
-													<span>08:08 am</span>
+												<div class="message-recieved">
+													<div class="that-message">
+														<span>Duis aute irure dolor in reprehenderit</span>
+													</div>
+													<div class="recieved-on">
+														<span>08:08 am</span>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -280,23 +286,25 @@ const Chat = () => {
 											<div class="recieve-from-img">
 												<img src={msg1} alt="" />
 											</div>
-											<div class="message-recieved">
-												<div class="that-message">
-													<span>
-														Lorem ipsum dolor sit amet, consectetur adipiscing
-														elit, sed do eiusmod tempor incididunt ut labore
-													</span>
+											<div className="messages">
+												<div class="message-recieved">
+													<div class="that-message">
+														<span>
+															Lorem ipsum dolor sit amet, consectetur adipiscing
+															elit, sed do eiusmod tempor incididunt ut labore
+														</span>
+													</div>
+													<div class="recieved-on">
+														<span>08:08 am</span>
+													</div>
 												</div>
-												<div class="recieved-on">
-													<span>08:08 am</span>
-												</div>
-											</div>
-											<div class="message-recieved">
-												<div class="that-message">
-													<span>Duis aute irure dolor in reprehenderit</span>
-												</div>
-												<div class="recieved-on">
-													<span>08:08 am</span>
+												<div class="message-recieved">
+													<div class="that-message">
+														<span>Duis aute irure dolor in reprehenderit</span>
+													</div>
+													<div class="recieved-on">
+														<span>08:08 am</span>
+													</div>
 												</div>
 											</div>
 										</div>

@@ -126,6 +126,9 @@
 .recive-message .recieve-from-img {
 	margin-bottom: 10px;
 }
+.my-chat-inner .recive-message .recieve-from-img {
+	margin-right: 12px;
+}
 .message-recieved {
 	margin: 0 auto 0 0;
 	display: table;
@@ -188,10 +191,11 @@
 		#f99914
 	);
 	border: 0px;
-	width: 225px;
-	height: 55px;
+	width: 125px;
+	height: 50px;
 	color: #ffffff;
 	font-family: "Poppins";
 	font-size: 16px;
+	border-radius: 50px;
 }
 /* Chat Css End Here */
