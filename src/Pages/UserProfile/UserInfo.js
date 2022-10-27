@@ -61,7 +61,7 @@ const UserInfo = () => {
 									/>
 								</svg>
 							</button>
-							<button className="message">
+							<button className="message" onClick={() => navigate("/chat")}>
 								<i class="fa fa-comments" aria-hidden="true"></i>
 								<span className="dot"></span>
 							</button>

@@ -47,6 +47,7 @@ import Nugs from "../Pages/WalletDashboard/Nugs";
 import Referal from "../Pages/WalletDashboard/Referal";
 import Payment from "../Pages/WalletDashboard/Payment";
 import CreateUserName from "../Pages/auth/CreateUserName";
+import Chat from "../Pages/Chat/Chat";
 
 const PublicRoutes = () => {
 	return (
@@ -113,6 +114,9 @@ const PublicRoutes = () => {
 				<Route path="/wallet-referal" element={<Referal />} />
 				<Route path="/wallet-payment" element={<Payment />} />
 				<Route path="/contact-us" element={<ContactUs />} />
+
+				{/* Chat */}
+				<Route path="/chat" element={<Chat />} />
 			</Routes>
 		</BrowserRouter>
 	);

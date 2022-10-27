@@ -1,0 +1,326 @@
+import React from "react";
+import "../../assets/css/Chat.css";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import { msg1, msg2, msg3, msg4, msg5 } from "../../constant";
+
+const Chat = () => {
+	const ChatListing = [
+		{
+			id: 1,
+			name: "Christopher",
+			profile: msg1,
+			is_active: true,
+			active_chat: true,
+		},
+		{
+			id: 2,
+			name: "Reese",
+			profile: msg2,
+			is_active: true,
+			active_chat: false,
+		},
+		{
+			id: 3,
+			name: "Christopher",
+			profile: msg3,
+			is_active: false,
+			active_chat: false,
+		},
+		{
+			id: 4,
+			name: "Laura",
+			profile: msg4,
+			is_active: true,
+			active_chat: false,
+		},
+		{
+			id: 5,
+			name: "Maldo",
+			profile: msg5,
+			is_active: false,
+			active_chat: false,
+		},
+		{
+			id: 6,
+			name: "Christopher",
+			profile: msg1,
+			is_active: false,
+			active_chat: false,
+		},
+		{
+			id: 5,
+			name: "Reese",
+			profile: msg2,
+			is_active: true,
+			active_chat: false,
+		},
+	];
+	return (
+		<>
+			{/* Header */}
+			<Header />
+			{/* Header */}
+
+			{/* Chat Sec Start Here */}
+			<section className="chat_sec">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-4 p-0">
+							<div className="chat-list">
+								<div className="title">
+									<h4>Chats</h4>
+								</div>
+								<ul className="all-chats">
+									{ChatListing?.map((data, index) => {
+										return (
+											<li key={index}>
+												<div
+													className={
+														data?.active_chat ? "chat actve-chat" : "chat"
+													}
+												>
+													<figure>
+														<img
+															src={data?.profile}
+															alt=""
+															className="img-fluid"
+														/>
+													</figure>
+													<div className="name">
+														<h4 className="user_name">{data?.name}</h4>
+														{data?.is_active ? (
+															<h5 className="online">
+																<span className="dot"></span> Online
+															</h5>
+														) : (
+															<h5 className="offline">
+																<span className="dot"></span> offline
+															</h5>
+														)}
+													</div>
+												</div>
+											</li>
+										);
+									})}
+								</ul>
+							</div>
+						</div>
+						<div className="col-lg-8 p-0">
+							<div class="the-chats">
+								<div class="my-chat">
+									<div class="my-chat-inner">
+										<div class="send-message">
+											<div class="message-body">
+												<span>
+													Duis aute irure dolor in reprehenderit in voluptate
+													velit{" "}
+												</span>
+											</div>
+											<div class="send-on">
+												<span>08:07 am</span>
+											</div>
+										</div>
+										<div class="recive-message">
+											<div class="recieve-from-img">
+												<img src={msg1} alt="" />
+											</div>
+											<div class="message-recieved">
+												<div class="that-message">
+													<span>
+														Lorem ipsum dolor sit amet, consectetur adipiscing
+														elit, sed do eiusmod tempor incididunt ut labore
+													</span>
+												</div>
+												<div class="recieved-on">
+													<span>08:08 am</span>
+												</div>
+											</div>
+											<div class="message-recieved">
+												<div class="that-message">
+													<span>Duis aute irure dolor in reprehenderit</span>
+												</div>
+												<div class="recieved-on">
+													<span>08:08 am</span>
+												</div>
+											</div>
+										</div>
+										<div class="send-message">
+											<div class="message-body">
+												<span>
+													Duis aute irure dolor in reprehenderit in voluptate
+													velit{" "}
+												</span>
+											</div>
+											<div class="send-on">
+												<span>08:07 am</span>
+											</div>
+										</div>
+										<div class="send-message">
+											<div class="message-body">
+												<span>
+													Duis aute irure dolor in reprehenderit in voluptate
+													velit{" "}
+												</span>
+											</div>
+											<div class="send-on">
+												<span>08:07 am</span>
+											</div>
+										</div>
+										<div class="recive-message">
+											<div class="recieve-from-img">
+												<img src={msg1} alt="" />
+											</div>
+											<div class="message-recieved">
+												<div class="that-message">
+													<span>
+														Lorem ipsum dolor sit amet, consectetur adipiscing
+														elit, sed do eiusmod tempor incididunt ut labore
+													</span>
+												</div>
+												<div class="recieved-on">
+													<span>08:08 am</span>
+												</div>
+											</div>
+											<div class="message-recieved">
+												<div class="that-message">
+													<span>Duis aute irure dolor in reprehenderit</span>
+												</div>
+												<div class="recieved-on">
+													<span>08:08 am</span>
+												</div>
+											</div>
+										</div>
+										<div class="send-message">
+											<div class="message-body">
+												<span>
+													Duis aute irure dolor in reprehenderit in voluptate
+													velit{" "}
+												</span>
+											</div>
+											<div class="send-on">
+												<span>08:07 am</span>
+											</div>
+										</div>
+										<div class="send-message">
+											<div class="message-body">
+												<span>
+													Duis aute irure dolor in reprehenderit in voluptate
+													velit{" "}
+												</span>
+											</div>
+											<div class="send-on">
+												<span>08:07 am</span>
+											</div>
+										</div>
+										<div class="recive-message">
+											<div class="recieve-from-img">
+												<img src={msg1} alt="" />
+											</div>
+											<div class="message-recieved">
+												<div class="that-message">
+													<span>
+														Lorem ipsum dolor sit amet, consectetur adipiscing
+														elit, sed do eiusmod tempor incididunt ut labore
+													</span>
+												</div>
+												<div class="recieved-on">
+													<span>08:08 am</span>
+												</div>
+											</div>
+											<div class="message-recieved">
+												<div class="that-message">
+													<span>Duis aute irure dolor in reprehenderit</span>
+												</div>
+												<div class="recieved-on">
+													<span>08:08 am</span>
+												</div>
+											</div>
+										</div>
+										<div class="send-message">
+											<div class="message-body">
+												<span>
+													Duis aute irure dolor in reprehenderit in voluptate
+													velit{" "}
+												</span>
+											</div>
+											<div class="send-on">
+												<span>08:07 am</span>
+											</div>
+										</div>
+										<div class="send-message">
+											<div class="message-body">
+												<span>
+													Duis aute irure dolor in reprehenderit in voluptate
+													velit{" "}
+												</span>
+											</div>
+											<div class="send-on">
+												<span>08:07 am</span>
+											</div>
+										</div>
+										<div class="recive-message">
+											<div class="recieve-from-img">
+												<img src={msg1} alt="" />
+											</div>
+											<div class="message-recieved">
+												<div class="that-message">
+													<span>
+														Lorem ipsum dolor sit amet, consectetur adipiscing
+														elit, sed do eiusmod tempor incididunt ut labore
+													</span>
+												</div>
+												<div class="recieved-on">
+													<span>08:08 am</span>
+												</div>
+											</div>
+											<div class="message-recieved">
+												<div class="that-message">
+													<span>Duis aute irure dolor in reprehenderit</span>
+												</div>
+												<div class="recieved-on">
+													<span>08:08 am</span>
+												</div>
+											</div>
+										</div>
+										<div class="send-message">
+											<div class="message-body">
+												<span>
+													Duis aute irure dolor in reprehenderit in voluptate
+													velit{" "}
+												</span>
+											</div>
+											<div class="send-on">
+												<span>08:07 am</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="send-new-message">
+									<div class="for-new-message">
+										<input
+											type="text"
+											name=""
+											placeholder="Enter your message here"
+											id=""
+										/>
+									</div>
+									<div class="for-send-msg-btn">
+										<button>Send Message</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			{/* Chat Sec End Here */}
+
+			{/* Footer */}
+			<Footer />
+			{/* Footer */}
+		</>
+	);
+};
+
+export default Chat;
