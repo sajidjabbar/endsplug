@@ -4,6 +4,7 @@
 }
 .chat_sec .row {
 	border: 1px solid #dddddd5e;
+	border-radius: 10px;
 }
 .chat_sec .chat-list {
 	border-right: 1px solid #ddd;
