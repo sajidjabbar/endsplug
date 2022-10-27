@@ -125,6 +125,17 @@ const Chat = () => {
 						</div>
 						<div className="col-lg-8 p-0">
 							<div class="the-chats">
+								<div className="chat-user">
+									<figure>
+										<img src={msg1} alt="123" className="img-fluid" />
+									</figure>
+									<div className="name">
+										<h4>Christopher</h4>
+										<h5>
+											<span className="dot"></span> Online
+										</h5>
+									</div>
+								</div>
 								<div class="my-chat">
 									<div class="my-chat-inner">
 										<div class="send-message">
