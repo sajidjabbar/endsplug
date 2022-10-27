@@ -12,6 +12,8 @@ const Chat = () => {
 			profile: msg1,
 			is_active: true,
 			active_chat: true,
+			username: "@jorgecutis",
+			interest: "Canna interest",
 		},
 		{
 			id: 2,
@@ -19,6 +21,8 @@ const Chat = () => {
 			profile: msg2,
 			is_active: true,
 			active_chat: false,
+			username: "@jorgecutis",
+			interest: "Canna interest",
 		},
 		{
 			id: 3,
@@ -26,6 +30,8 @@ const Chat = () => {
 			profile: msg3,
 			is_active: false,
 			active_chat: false,
+			username: "@jorgecutis",
+			interest: "Canna interest",
 		},
 		{
 			id: 4,
@@ -33,6 +39,8 @@ const Chat = () => {
 			profile: msg4,
 			is_active: true,
 			active_chat: false,
+			username: "@jorgecutis",
+			interest: "Canna interest",
 		},
 		{
 			id: 5,
@@ -40,6 +48,8 @@ const Chat = () => {
 			profile: msg5,
 			is_active: false,
 			active_chat: false,
+			username: "@jorgecutis",
+			interest: "Canna interest",
 		},
 		{
 			id: 6,
@@ -47,6 +57,8 @@ const Chat = () => {
 			profile: msg1,
 			is_active: false,
 			active_chat: false,
+			username: "@jorgecutis",
+			interest: "Canna interest",
 		},
 		{
 			id: 5,
@@ -54,6 +66,8 @@ const Chat = () => {
 			profile: msg2,
 			is_active: true,
 			active_chat: false,
+			username: "@jorgecutis",
+			interest: "Canna interest",
 		},
 	];
 	return (
@@ -89,6 +103,9 @@ const Chat = () => {
 													</figure>
 													<div className="name">
 														<h4 className="user_name">{data?.name}</h4>
+														<h5>
+															{data?.username} <span>{data?.interest}</span>
+														</h5>
 														{data?.is_active ? (
 															<h5 className="online">
 																<span className="dot"></span> Online
@@ -195,7 +212,7 @@ const Chat = () => {
 											<div class="message-body">
 												<span>
 													Duis aute irure dolor in reprehenderit in voluptate
-													velit{" "}
+													velit
 												</span>
 											</div>
 											<div class="send-on">
@@ -306,7 +323,7 @@ const Chat = () => {
 										/>
 									</div>
 									<div class="for-send-msg-btn">
-										<button>Send Message</button>
+										<button>Send</button>
 									</div>
 								</div>
 							</div>
