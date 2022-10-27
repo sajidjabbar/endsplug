@@ -82,9 +82,9 @@ const Chat = () => {
 					<div className="row">
 						<div className="col-lg-4 p-0">
 							<div className="chat-list">
-								<div className="title">
+								{/* <div className="title">
 									<h4>Chats</h4>
-								</div>
+								</div> */}
 								<ul className="all-chats">
 									{ChatListing?.map((data, index) => {
 										return (
