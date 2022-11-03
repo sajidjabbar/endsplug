@@ -124,7 +124,7 @@ const Chat = () => {
 							</div>
 						</div>
 						<div className="col-lg-8 p-0">
-							<div class="the-chats">
+							<div className="the-chats">
 								<div className="chat-user">
 									<figure>
 										<img src={msg1} alt="123" className="img-fluid" />
@@ -136,204 +136,204 @@ const Chat = () => {
 										</h5>
 									</div>
 								</div>
-								<div class="my-chat">
-									<div class="my-chat-inner">
-										<div class="send-message">
-											<div class="message-body">
+								<div className="my-chat">
+									<div className="my-chat-inner">
+										<div className="send-message">
+											<div className="message-body">
 												<span>
 													Duis aute irure dolor in reprehenderit in voluptate
 													velit{" "}
 												</span>
 											</div>
-											<div class="send-on">
+											<div className="send-on">
 												<span>08:07 am</span>
 											</div>
 										</div>
-										<div class="recive-message">
-											<div class="recieve-from-img">
+										<div className="recive-message">
+											<div className="recieve-from-img">
 												<img src={msg1} alt="" />
 											</div>
 											<div className="messages">
-												<div class="message-recieved">
-													<div class="that-message">
+												<div className="message-recieved">
+													<div className="that-message">
 														<span>
 															Lorem ipsum dolor sit amet, consectetur adipiscing
 															elit, sed do eiusmod tempor incididunt ut labore
 														</span>
 													</div>
-													<div class="recieved-on">
+													<div className="recieved-on">
 														<span>08:08 am</span>
 													</div>
 												</div>
-												<div class="message-recieved">
-													<div class="that-message">
+												<div className="message-recieved">
+													<div className="that-message">
 														<span>Duis aute irure dolor in reprehenderit</span>
 													</div>
-													<div class="recieved-on">
+													<div className="recieved-on">
 														<span>08:08 am</span>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="send-message">
-											<div class="message-body">
+										<div className="send-message">
+											<div className="message-body">
 												<span>
 													Duis aute irure dolor in reprehenderit in voluptate
 													velit{" "}
 												</span>
 											</div>
-											<div class="send-on">
+											<div className="send-on">
 												<span>08:07 am</span>
 											</div>
 										</div>
-										<div class="send-message">
-											<div class="message-body">
+										<div className="send-message">
+											<div className="message-body">
 												<span>
 													Duis aute irure dolor in reprehenderit in voluptate
 													velit
 												</span>
 											</div>
-											<div class="send-on">
+											<div className="send-on">
 												<span>08:07 am</span>
 											</div>
 										</div>
-										<div class="recive-message">
-											<div class="recieve-from-img">
+										<div className="recive-message">
+											<div className="recieve-from-img">
 												<img src={msg1} alt="" />
 											</div>
 											<div className="messages">
-												<div class="message-recieved">
-													<div class="that-message">
+												<div className="message-recieved">
+													<div className="that-message">
 														<span>
 															Lorem ipsum dolor sit amet, consectetur adipiscing
 															elit, sed do eiusmod tempor incididunt ut labore
 														</span>
 													</div>
-													<div class="recieved-on">
+													<div className="recieved-on">
 														<span>08:08 am</span>
 													</div>
 												</div>
-												<div class="message-recieved">
-													<div class="that-message">
+												<div className="message-recieved">
+													<div className="that-message">
 														<span>Duis aute irure dolor in reprehenderit</span>
 													</div>
-													<div class="recieved-on">
+													<div className="recieved-on">
 														<span>08:08 am</span>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="send-message">
-											<div class="message-body">
+										<div className="send-message">
+											<div className="message-body">
 												<span>
 													Duis aute irure dolor in reprehenderit in voluptate
 													velit
 												</span>
 											</div>
-											<div class="send-on">
+											<div className="send-on">
 												<span>08:07 am</span>
 											</div>
 										</div>
-										<div class="send-message">
-											<div class="message-body">
+										<div className="send-message">
+											<div className="message-body">
 												<span>
 													Duis aute irure dolor in reprehenderit in voluptate
 													velit{" "}
 												</span>
 											</div>
-											<div class="send-on">
+											<div className="send-on">
 												<span>08:07 am</span>
 											</div>
 										</div>
-										<div class="recive-message">
-											<div class="recieve-from-img">
+										<div className="recive-message">
+											<div className="recieve-from-img">
 												<img src={msg1} alt="" />
 											</div>
 											<div className="messages">
-												<div class="message-recieved">
-													<div class="that-message">
+												<div className="message-recieved">
+													<div className="that-message">
 														<span>
 															Lorem ipsum dolor sit amet, consectetur adipiscing
 															elit, sed do eiusmod tempor incididunt ut labore
 														</span>
 													</div>
-													<div class="recieved-on">
+													<div className="recieved-on">
 														<span>08:08 am</span>
 													</div>
 												</div>
-												<div class="message-recieved">
-													<div class="that-message">
+												<div className="message-recieved">
+													<div className="that-message">
 														<span>Duis aute irure dolor in reprehenderit</span>
 													</div>
-													<div class="recieved-on">
+													<div className="recieved-on">
 														<span>08:08 am</span>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="send-message">
-											<div class="message-body">
+										<div className="send-message">
+											<div className="message-body">
 												<span>
 													Duis aute irure dolor in reprehenderit in voluptate
 													velit{" "}
 												</span>
 											</div>
-											<div class="send-on">
+											<div className="send-on">
 												<span>08:07 am</span>
 											</div>
 										</div>
-										<div class="send-message">
-											<div class="message-body">
+										<div className="send-message">
+											<div className="message-body">
 												<span>
 													Duis aute irure dolor in reprehenderit in voluptate
 													velit{" "}
 												</span>
 											</div>
-											<div class="send-on">
+											<div className="send-on">
 												<span>08:07 am</span>
 											</div>
 										</div>
-										<div class="recive-message">
-											<div class="recieve-from-img">
+										<div className="recive-message">
+											<div className="recieve-from-img">
 												<img src={msg1} alt="" />
 											</div>
 											<div className="messages">
-												<div class="message-recieved">
-													<div class="that-message">
+												<div className="message-recieved">
+													<div className="that-message">
 														<span>
 															Lorem ipsum dolor sit amet, consectetur adipiscing
 															elit, sed do eiusmod tempor incididunt ut labore
 														</span>
 													</div>
-													<div class="recieved-on">
+													<div className="recieved-on">
 														<span>08:08 am</span>
 													</div>
 												</div>
-												<div class="message-recieved">
-													<div class="that-message">
+												<div className="message-recieved">
+													<div className="that-message">
 														<span>Duis aute irure dolor in reprehenderit</span>
 													</div>
-													<div class="recieved-on">
+													<div className="recieved-on">
 														<span>08:08 am</span>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="send-message">
-											<div class="message-body">
+										<div className="send-message">
+											<div className="message-body">
 												<span>
 													Duis aute irure dolor in reprehenderit in voluptate
 													velit{" "}
 												</span>
 											</div>
-											<div class="send-on">
+											<div className="send-on">
 												<span>08:07 am</span>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="send-new-message">
-									<div class="for-new-message">
+								<div className="send-new-message">
+									<div className="for-new-message">
 										<input
 											type="text"
 											name=""
@@ -341,7 +341,7 @@ const Chat = () => {
 											id=""
 										/>
 									</div>
-									<div class="for-send-msg-btn">
+									<div className="for-send-msg-btn">
 										<button>Send</button>
 									</div>
 								</div>

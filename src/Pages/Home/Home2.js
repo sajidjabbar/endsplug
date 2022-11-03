@@ -376,7 +376,13 @@ const Home2 = () => {
 												</Link>
 											</div>
 											<div className="create-story-content-wrapper">
-												<i className="fa fa-plus"></i>
+												<button
+													type="button"
+													data-bs-toggle="modal"
+													data-bs-target="#AddStory"
+												>
+													<i className="fa fa-plus"></i>
+												</button>
 												<h4>Create story</h4>
 											</div>
 										</div>

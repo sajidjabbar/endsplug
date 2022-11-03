@@ -31,9 +31,9 @@ const Payment = () => {
 							<div className="row">
 								<div className="col-lg-4">
 									<div className="saved-card">
-										<label class="switch">
+										<label className="switch">
 											<input type="checkbox" hidden name="CardRadio" />
-											<span class="slider"></span>
+											<span className="slider"></span>
 											<h5 className="status">Active</h5>
 										</label>
 										<ATMCard
@@ -65,9 +65,9 @@ const Payment = () => {
 								</div>
 								<div className="col-lg-4">
 									<div className="saved-card">
-										<label class="switch">
+										<label className="switch">
 											<input type="checkbox" hidden name="CardRadio" />
-											<span class="slider"></span>
+											<span className="slider"></span>
 											<h5 className="status">Active</h5>
 										</label>
 										<ATMCard

@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { Link, useNavigate } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
+import { SketchPicker } from "react-color";
 import {
 	blue_flag,
 	cambridge,
@@ -64,8 +65,10 @@ import {
 	m6,
 	userProfile,
 } from "../constant";
+import { useEffect } from "react";
 
 const Header = () => {
+	const [color, setColor] = useState("#000");
 	const [open, setOpen] = useState(false);
 	const [notification, setnotification] = useState(false);
 	// const handleopenmsg = () => {
@@ -176,6 +179,7 @@ const Header = () => {
 	];
 
 	const navigate = useNavigate();
+
 	return (
 		<>
 			<header id="header">
@@ -1416,24 +1420,33 @@ const Header = () => {
 								<form action="">
 									<div className="form-group">
 										<textarea
+											style={{ backgroundColor: color }}
 											className="form-control"
 											placeholder="Start typing"
 										></textarea>
 									</div>
 								</form>
 								<div className="bottom-bar">
+									<div className="left-side">
+										<SketchPicker
+											color={color}
+											onChangeComplete={(color) => {
+												setColor(color.hex);
+											}}
+										/>
+									</div>
 									<div className="backgrounds">
 										{/* <label>Background</label> */}
 										<ul className="backgrounds-color">
 											<li>
 												<label class="background-container">
-													{/* <input
+													<input
 														class="form-check-input"
 														type="radio"
 														hidden
 														checked
 														name="Storyradio"
-													/> */}
+													/>
 													<span class="checkmark cursor_pointer">
 														<figure>
 															<img
@@ -1447,18 +1460,19 @@ const Header = () => {
 											</li>
 											<li>
 												<label class="background-container">
-													{/* <input
+													<input
 														class="form-check-input"
 														type="radio"
 														hidden
+														checked
 														name="Storyradio"
-													/> */}
-													<span class="checkmark">
+													/>
+													<span class="checkmark cursor_pointer">
 														<figure>
 															<img
-																src={m1}
+																src={StoryBack2}
 																alt=""
-																className="img-fluid cursor_pointer"
+																className="img-fluid"
 															/>
 														</figure>
 													</span>
@@ -1466,12 +1480,72 @@ const Header = () => {
 											</li>
 											<li>
 												<label class="background-container">
-													{/* <input
+													<input
+														class="form-check-input"
+														type="radio"
+														hidden
+														checked
+														name="Storyradio"
+													/>
+													<span class="checkmark cursor_pointer">
+														<figure>
+															<img
+																src={StoryBack3}
+																alt=""
+																className="img-fluid"
+															/>
+														</figure>
+													</span>
+												</label>
+											</li>
+											<li>
+												<label class="background-container">
+													<input
+														class="form-check-input"
+														type="radio"
+														hidden
+														checked
+														name="Storyradio"
+													/>
+													<span class="checkmark cursor_pointer">
+														<figure>
+															<img
+																src={StoryBack4}
+																alt=""
+																className="img-fluid"
+															/>
+														</figure>
+													</span>
+												</label>
+											</li>
+											<li>
+												<label class="background-container">
+													<input
+														class="form-check-input"
+														type="radio"
+														hidden
+														checked
+														name="Storyradio"
+													/>
+													<span class="checkmark cursor_pointer">
+														<figure>
+															<img
+																src={StoryBack5}
+																alt=""
+																className="img-fluid"
+															/>
+														</figure>
+													</span>
+												</label>
+											</li>
+											{/* <li>
+												<label class="background-container">
+													<input
 														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/> */}
+													/>
 													<span class="checkmark">
 														<figure>
 															<img
@@ -1484,40 +1558,24 @@ const Header = () => {
 												</label>
 											</li>
 											<li>
-												{/* <label className="background-container">
+												<label className="background-container">
 													<input
 														className="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
 													/>
-													<span className="checkmark"> */}
-												<label class="background-container">
-													{/* <input
-														class="form-check-input"
-														type="radio"
-														hidden
-														name="Storyradio"
-													/> */}
-													<span class="checkmark">
-														<figure>
-															<img
-																src={m3}
-																alt=""
-																className="img-fluid cursor_pointer"
-															/>
-														</figure>
-													</span>
+													<span className="checkmark"></span>
 												</label>
 											</li>
 											<li>
 												<label class="background-container">
-													{/* <input
+													<input
 														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/> */}
+													/>
 													<span class="checkmark">
 														<figure>
 															<img
@@ -1531,12 +1589,12 @@ const Header = () => {
 											</li>
 											<li>
 												<label class="background-container">
-													{/* <input
+													<input
 														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/> */}
+													/>
 													<span class="checkmark">
 														<figure>
 															<img
@@ -1549,12 +1607,12 @@ const Header = () => {
 												</label>
 											</li>
 											<li>
-												{/* <input
+												<input
 														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/> */}
+													/>
 												<span class="checkmark faemojii">
 													<figure style={{ marginBottom: "0px" }}>
 														<i class="fa fa-smile-o" aria-hidden="true"></i>
@@ -1562,19 +1620,19 @@ const Header = () => {
 												</span>
 											</li>
 											<li>
-												{/* <input
+												<input
 														class="form-check-input"
 														type="radio"
 														hidden
 														name="Storyradio"
-													/> */}
+													/>
 												<img
 													className="cursor_pointer"
 													alt="m6"
 													width={100}
 													src={m6}
 												/>
-											</li>
+											</li> */}
 										</ul>
 									</div>
 									<div className="button-group">

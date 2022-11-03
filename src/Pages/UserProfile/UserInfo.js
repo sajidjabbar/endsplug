@@ -26,7 +26,7 @@ const UserInfo = () => {
 								<p className="bio">
 									<button
 										type="button"
-										class="btn btn-primary"
+										className="btn btn-primary"
 										data-bs-toggle="modal"
 										data-bs-target="#bioModal"
 									>
@@ -62,12 +62,12 @@ const UserInfo = () => {
 								</svg>
 							</button>
 							<button className="message" onClick={() => navigate("/chat")}>
-								<i class="fa fa-comments" aria-hidden="true"></i>
+								<i className="fa fa-comments" aria-hidden="true"></i>
 								<span className="dot"></span>
 							</button>
-							<div class="dropdown">
+							<div className="dropdown">
 								<button
-									class="add-stuff"
+									className="add-stuff"
 									type="button"
 									id="dropdownMenuButton1"
 									data-bs-toggle="dropdown"
@@ -78,7 +78,7 @@ const UserInfo = () => {
 										width="16"
 										height="16"
 										fill="currentColor"
-										class="bi bi-plus-lg"
+										className="bi bi-plus-lg"
 										viewBox="0 0 16 16"
 									>
 										<path
@@ -87,29 +87,32 @@ const UserInfo = () => {
 										></path>
 									</svg>
 								</button>
-								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<ul
+									className="dropdown-menu"
+									aria-labelledby="dropdownMenuButton1"
+								>
 									<li>
-										<Link class="dropdown-item" to="#">
+										<Link className="dropdown-item" to="#">
 											Post Photo/Video
 										</Link>
 									</li>
 									<li>
-										<Link class="dropdown-item" to="#">
+										<Link className="dropdown-item" to="#">
 											Add Story
 										</Link>
 									</li>
 									<li>
-										<Link class="dropdown-item" to="#">
+										<Link className="dropdown-item" to="#">
 											Go Live
 										</Link>
 									</li>
 									<li>
-										<Link class="dropdown-item" to="#">
+										<Link className="dropdown-item" to="#">
 											Add merch
 										</Link>
 									</li>
 									<li>
-										<Link class="dropdown-item" to="#">
+										<Link className="dropdown-item" to="#">
 											Request Ad Space
 										</Link>
 									</li>

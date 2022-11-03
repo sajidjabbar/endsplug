@@ -3,81 +3,109 @@ import React from "react";
 const Filter = () => {
 	return (
 		<>
-			<div class="sidebar">
-				<div class="heading">
+			<div className="sidebar">
+				<div className="heading">
 					<h3>Apply Filters</h3>
 				</div>
-				<div class="search">
+				<div className="search">
 					<form action="">
-						<input type="text" placeholder="Search" class="form-control" />
-						<button class="searchBtn" type="submit">
-							<i class="fa fa-search" aria-hidden="true"></i>
+						<input type="text" placeholder="Search" className="form-control" />
+						<button className="searchBtn" type="submit">
+							<i className="fa fa-search" aria-hidden="true"></i>
 						</button>
 					</form>
 				</div>
-				<div class="filter">
-					<div class="box">
-						<div class="title">
+				<div className="filter">
+					<div className="box">
+						<div className="title">
 							<h4>Brands</h4>
 						</div>
-						<ul class="list">
+						<ul className="list">
 							<li>
 								<label for="species1">Lorem</label>
-								<input type="checkbox" id="species1" class="form-check-input" />
+								<input
+									type="checkbox"
+									id="species1"
+									className="form-check-input"
+								/>
 							</li>
 							<li>
 								<label for="species2">Lorem</label>
-								<input type="checkbox" id="species2" class="form-check-input" />
+								<input
+									type="checkbox"
+									id="species2"
+									className="form-check-input"
+								/>
 							</li>
 						</ul>
 					</div>
-					<div class="box">
-						<div class="title">
+					<div className="box">
+						<div className="title">
 							<h4>Color</h4>
 						</div>
-						<ul class="list">
+						<ul className="list">
 							<li>
 								<label for="color1">Black</label>
-								<input type="checkbox" id="color1" class="form-check-input" />
+								<input
+									type="checkbox"
+									id="color1"
+									className="form-check-input"
+								/>
 							</li>
 							<li>
 								<label for="color2">White</label>
-								<input type="checkbox" id="color2" class="form-check-input" />
+								<input
+									type="checkbox"
+									id="color2"
+									className="form-check-input"
+								/>
 							</li>
 						</ul>
 					</div>
-					<div class="box">
-						<div class="title">
+					<div className="box">
+						<div className="title">
 							<h4>Size</h4>
 						</div>
-						<ul class="list">
+						<ul className="list">
 							<li>
 								<label for="size1">Large</label>
-								<input type="checkbox" id="size1" class="form-check-input" />
+								<input
+									type="checkbox"
+									id="size1"
+									className="form-check-input"
+								/>
 							</li>
 							<li>
 								<label for="size2">Medium</label>
-								<input type="checkbox" id="size2" class="form-check-input" />
+								<input
+									type="checkbox"
+									id="size2"
+									className="form-check-input"
+								/>
 							</li>
 							<li>
 								<label for="size3">Small</label>
-								<input type="checkbox" id="size3" class="form-check-input" />
+								<input
+									type="checkbox"
+									id="size3"
+									className="form-check-input"
+								/>
 							</li>
 						</ul>
 					</div>
-					<div class="price-range">
-						<div class="title">
+					<div className="price-range">
+						<div className="title">
 							<h4>Price</h4>
 						</div>
-						<div class="input-group">
-							<div class="form-group">
+						<div className="input-group">
+							<div className="form-group">
 								<label for="From">From</label>
-								<input type="text" id="From" class="form-control" />
+								<input type="text" id="From" className="form-control" />
 							</div>
-							<div class="seprator"></div>
-							<div class="form-group">
+							<div className="seprator"></div>
+							<div className="form-group">
 								<label for="To">To</label>
-								<input type="text" id="To" class="form-control" />
+								<input type="text" id="To" className="form-control" />
 							</div>
 						</div>
 					</div>

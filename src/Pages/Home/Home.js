@@ -334,21 +334,21 @@ const Home = () => {
 			id: 0,
 			img: buddies4,
 			title: "Title",
-			icon: '<i class="fa fa-users" aria-hidden="true"></i>',
+			icon: '<i className="fa fa-users" aria-hidden="true"></i>',
 			description: "Lorem Ipsum Dolar",
 		},
 		{
 			id: 1,
 			img: buddies5,
 			title: "Title",
-			icon: '<i class="fa fa-users" aria-hidden="true"></i>',
+			icon: '<i className="fa fa-users" aria-hidden="true"></i>',
 			description: "Lorem Ipsum Dolar",
 		},
 		{
 			id: 1,
 			img: buddies6,
 			title: "Title",
-			icon: '<i class="fa fa-users" aria-hidden="true"></i>',
+			icon: '<i className="fa fa-users" aria-hidden="true"></i>',
 			description: "Lorem Ipsum Dolar",
 		},
 	];
@@ -694,7 +694,7 @@ const Home = () => {
 												width="16"
 												height="16"
 												fill="currentColor"
-												class="bi bi-plus-lg"
+												className="bi bi-plus-lg"
 												viewBox="0 0 16 16"
 											>
 												<path
@@ -1315,7 +1315,10 @@ const Home = () => {
 														<div className="content">
 															<h5 className="title">
 																<span className="icon">
-																	<i class="fa fa-user" aria-hidden="true"></i>
+																	<i
+																		className="fa fa-user"
+																		aria-hidden="true"
+																	></i>
 																</span>
 																{data?.title}
 																<span className="live-option">Live</span>
@@ -1341,7 +1344,10 @@ const Home = () => {
 														<div className="content">
 															<h5 className="title">
 																<span className="icon">
-																	<i class="fa fa-users" aria-hidden="true"></i>
+																	<i
+																		className="fa fa-users"
+																		aria-hidden="true"
+																	></i>
 																</span>
 																{data?.title}
 																<span className="live-option">Live</span>
@@ -1442,9 +1448,9 @@ const Home = () => {
 							></textarea>
 							<div className="bottom-bar">
 								<div className="comments">
-									<label class="switch">
+									<label className="switch">
 										<input type="checkbox" />
-										<span class="slider">
+										<span className="slider">
 											<p>comment disable/enable</p>
 										</span>
 									</label>

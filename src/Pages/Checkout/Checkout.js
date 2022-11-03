@@ -12,12 +12,12 @@ const Checkout = () => {
 			{/* Header */}
 
 			{/* <!-- Checkout Start Here --> */}
-			<section class="checkout">
-				<div class="container">
+			<section className="checkout">
+				<div className="container">
 					<form action="/thank-you">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="first-top-bar">
+						<div className="row">
+							<div className="col-lg-6">
+								<div className="first-top-bar">
 									<h3>Shipment Details</h3>
 								</div>
 								<div className="saved-address">
@@ -26,7 +26,7 @@ const Checkout = () => {
 									</div>
 									{/* <!-- Saved Address --> */}
 									<label className="container">
-										<input type="radio" checked="checked" name="radio" />
+										<input type="radio" defaultChecked name="radio" />
 										<span className="checkmark">
 											<div className="select-address">
 												<div className="selection">
@@ -148,11 +148,7 @@ const Checkout = () => {
 										<h5>Use Saved Payments</h5>
 										{/* <!-- Saved payments Method --> */}
 										<label className="container">
-											<input
-												type="radio"
-												checked="checked"
-												name="payment-radio"
-											/>
+											<input type="radio" name="payment-radio" />
 											<span className="checkmark">
 												<div className="card-details">
 													<div className="radio-btn">
@@ -223,11 +219,7 @@ const Checkout = () => {
 											<label className="container">
 												{" "}
 												Add New Payment
-												<input
-													type="radio"
-													checked="checked"
-													name="payment-radio"
-												/>
+												<input type="radio" name="payment-radio" />
 												<span className="checkmark"></span>
 											</label>
 											<div className="form-group">

@@ -219,19 +219,23 @@ const UploadProduct = () => {
 									<div className="form-group">
 										<div className="radio_main_div">
 											<div>
-												<input id="radio-1" class="radio-custom" name="radio-group" type="radio" />
-												<label for="radio-1" class="radio-custom-label"></label>
+												<input
+													id="radio-1"
+													className="radio-custom"
+													name="radio-group"
+													type="radio"
+												/>
+												<label
+													for="radio-1"
+													className="radio-custom-label"
+												></label>
 											</div>
-											<div className="brdr-Right_radio_uplpoad_product">
-
-											</div>
+											<div className="brdr-Right_radio_uplpoad_product"></div>
 											<div>
 												<div>
 													<label>Basic</label>
 												</div>
-												<p className="nineinec_prod">
-													99c 10 products
-												</p>
+												<p className="nineinec_prod">99c 10 products</p>
 											</div>
 										</div>
 										<div className="button-group mt-3 ml-1">
@@ -243,20 +247,26 @@ const UploadProduct = () => {
 									<div className="form-group">
 										<div className="radio_main_div">
 											<div>
-												<input id="radio-2" class="radio-custom" name="radio-group" type="radio" />
-												<label for="radio-2" class="radio-custom-label"></label>
+												<input
+													id="radio-2"
+													className="radio-custom"
+													name="radio-group"
+													type="radio"
+												/>
+												<label
+													for="radio-2"
+													className="radio-custom-label"
+												></label>
 											</div>
-											<div className="brdr-Right_radio_uplpoad_product">
-
-											</div>
+											<div className="brdr-Right_radio_uplpoad_product"></div>
 											<div>
 												<div>
 													<label>Boss</label>
 												</div>
+												<p className="nineinec_prod mb-0">5.99 30 products</p>
 												<p className="nineinec_prod mb-0">
-													5.99 30 products
+													3 free ad spaces a month
 												</p>
-												<p className="nineinec_prod mb-0">3 free ad spaces a month</p>
 											</div>
 										</div>
 									</div>
@@ -265,12 +275,18 @@ const UploadProduct = () => {
 									<div className="form-group">
 										<div className="radio_main_div">
 											<div>
-												<input id="radio-3" class="radio-custom" name="radio-group" type="radio" />
-												<label for="radio-3" class="radio-custom-label"></label>
+												<input
+													id="radio-3"
+													className="radio-custom"
+													name="radio-group"
+													type="radio"
+												/>
+												<label
+													for="radio-3"
+													className="radio-custom-label"
+												></label>
 											</div>
-											<div className="brdr-Right_radio_uplpoad_product">
-
-											</div>
+											<div className="brdr-Right_radio_uplpoad_product"></div>
 											<div>
 												<div>
 													<label>mogul </label>
@@ -282,7 +298,6 @@ const UploadProduct = () => {
 													Products listing optimization <br />
 													Exclusive Networking Operrunites
 												</p>
-
 											</div>
 										</div>
 									</div>

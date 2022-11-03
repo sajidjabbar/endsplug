@@ -238,7 +238,7 @@ const ProductDetail = () => {
 													type="radio"
 													hidden
 													className="input-group-text"
-													checked="checked"
+													defaultChecked
 													name="variationRadio"
 												/>
 												<span className="checkmark">
