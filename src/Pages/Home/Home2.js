@@ -477,12 +477,12 @@ const Home2 = () => {
 											Photos
 										</button>
 									</div>
-									<div className="live-btn-wrapper">
+									{/* <div className="live-btn-wrapper">
 										<button type="button">
 											<img src={bxsmile} className="img-fluid" alt="" />
 											Feeling
 										</button>
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</div>
