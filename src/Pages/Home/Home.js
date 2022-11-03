@@ -725,8 +725,8 @@ const Home = () => {
                   <div className="live-btn-wrapper">
                     <label for="openImages">
                       <img src={photos} className="img-fluid" alt="" />
-                      Photos
-                    </label>
+                      Photos/Videos
+                    </label>	
                     <input type="file" id="openImages" hidden />
                   </div>
                   {/* <div className="live-btn-wrapper">
