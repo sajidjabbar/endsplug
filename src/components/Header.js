@@ -73,8 +73,8 @@ const Header = () => {
   const [fontopen, setFontopen] = useState(false);
   const [open, setOpen] = useState(false);
   const [notification, setnotification] = useState(false);
+  
 
-  console.log(fontopen);
   // const handleopenmsg = () => {
   // 	setOpen(true);
   // };

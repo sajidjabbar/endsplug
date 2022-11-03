@@ -1047,6 +1047,7 @@ header#header .notification-card-wrapper .notification-heading-wrapper h6 {
   object-fit: cover;
 }
 
+.status-list-wrapper label,
 .status-list-wrapper button {
   background: transparent;
   border: 0px;
@@ -1055,8 +1056,10 @@ header#header .notification-card-wrapper .notification-heading-wrapper h6 {
   font-weight: 400;
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
+.status-list-wrapper label img,
 .status-list-wrapper button img {
   margin-right: 11px;
 }
@@ -1927,12 +1930,12 @@ div#copyright p {
   border-radius: 6px;
   font-weight: 500;
 }
-#AddStory .bottom-bar .color-picker {
+.color-picker {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#AddStory .bottom-bar .color-picker button {
+.color-picker button {
   background: #fd771a;
   font-size: 14px;
   color: #fff;
@@ -1943,25 +1946,25 @@ div#copyright p {
   width: 83%;
   border-radius: 5px;
 }
-#AddStory .bottom-bar .color-picker .left-side {
+.color-picker .left-side {
   position: relative;
   flex: 1;
 }
-#AddStory .bottom-bar .color-picker .left-side .chrome-picker {
+.color-picker .left-side .chrome-picker {
   position: absolute;
   bottom: 2.4rem;
   left: 0;
 }
-#AddStory .bottom-bar .color-picker .right-side {
+.color-picker .right-side {
   position: relative;
   flex: 1;
 }
-#AddStory .bottom-bar .color-picker .right-side .chrome-picker {
+.color-picker .right-side .chrome-picker {
   position: absolute;
   bottom: 2.4rem;
   right: 0;
 }
-#AddStory .bottom-bar .color-picker .right-side button {
+.color-picker .right-side button {
   margin: 0 0 0 auto;
   display: table;
 }

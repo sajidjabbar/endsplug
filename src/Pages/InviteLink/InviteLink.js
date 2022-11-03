@@ -50,7 +50,7 @@ const InviteLink = () => {
 								<div id="inviteCode" className="invite-page">
 									<input
 										id="link"
-										value="https://xd.adobe.com/view/040b5b14-018f-4667/"
+										value="https://google.com"
 										readonly
 									/>
 									<div id="copy">

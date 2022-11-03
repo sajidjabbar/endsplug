@@ -16,11 +16,11 @@ import {
   Gift4,
 } from "../../constant";
 import $ from "jquery";
+import { useNavigate } from "react-router-dom";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
 const LiveStream = () => {
-  const [copytext, setCopytext] = useState(false);
   const [setting, SetSetting] = useState(false);
   const [text, setText] = useState("");
 
@@ -54,7 +54,7 @@ const LiveStream = () => {
       }, c * 900);
     });
   }, []);
-
+  const navigate = useNavigate();
   return (
     <>
       {/* Header */}
@@ -111,18 +111,12 @@ const LiveStream = () => {
                   </div>
                   <div className="right">
                     <div className="action-btn">
-                      <div className="for-share">
-                        <input
-                          value={text} hidden
-                          onChange={(e) => setCopytext(e.target.value)}
-                        />
-                        <CopyToClipboard
-                          text={'https://www.google.com/'}
-                          onCopy={copytext}
-                        >
-                          <button onClick={()=> setCopytext(true)} className="btn subscribe">{copytext ? "Copied" : "Share"}</button>
-                        </CopyToClipboard>
-                      </div>
+                      <button
+                        onClick={() => navigate("/invite-link")}
+                        className="btn subscribe"
+                      >
+                        Share
+                      </button>
                       <button className="btn subscribe">Subscribe</button>
                       <button className="btn follow">Follow</button>
                     </div>
