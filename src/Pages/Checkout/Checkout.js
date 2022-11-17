@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import "../../assets/css/Checkout.css";
-import { CartProduct1, VisaCard } from "../../constant";
+import { CartProduct1, Diamond, GiftCard, VisaCard } from "../../constant";
 
 const Checkout = () => {
 	return (
@@ -450,6 +450,11 @@ const Checkout = () => {
 										<h3 className="property">Order Total</h3>
 										<h3 className="value">$45</h3>
 									</div>
+								</div>
+								<div className="button-group">
+									<button className="buy buy-with-gift">Pay with Gift card <img src={GiftCard} alt="" /></button>
+									<span className="seprator"></span>
+									<button className="buy buy-with-diamond">Pay with Diamonds <span className="count">04</span> <img src={Diamond} alt="" /></button>
 								</div>
 							</div>
 						</div>

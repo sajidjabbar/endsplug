@@ -169,6 +169,9 @@ import m4 from "../assets/img/m4.png";
 import m5 from "../assets/img/m5.png";
 import m6 from "../assets/img/m6.png";
 import WalletNugsBack from "../assets/img/wallet-nug.png";
+import GiftBox from "../assets/img/giftbox.png"
+import GiftCard from "../assets/img/gift-card.png"
+import Diamond from "../assets/img/diamond.png"
 
 // Live Stream Gift icons
 import Gift1 from "../assets/img/gift1.gif";
@@ -351,4 +354,7 @@ export {
   Gift2,
   Gift3,
   Gift4,
+  GiftBox,
+  GiftCard,
+  Diamond,
 };
